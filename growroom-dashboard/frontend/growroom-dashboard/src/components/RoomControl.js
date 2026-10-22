@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import {
   Grid, Card, CardContent, Typography, Slider, Box, Button,
-  ToggleButtonGroup, ToggleButton, Chip, CircularProgress
+  ToggleButtonGroup, ToggleButton, Chip, CircularProgress,
+  Select, MenuItem, FormControl, InputLabel, TextField,
+  Table, TableBody, TableCell, TableHead, TableRow, Divider
 } from '@mui/material';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { Terminal } from '@mui/icons-material';
+import { Terminal, Grass } from '@mui/icons-material';
 import { useAuth } from '../context/AuthContext';
 
 const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
@@ -25,6 +27,10 @@ function RoomControl() {
   const [irrigationTimer, setIrrigationTimer] = useState(30);
   const [history, setHistory] = useState([]);
   const [historyLoading, setHistoryLoading] = useState(false);
+  const [fertilizer, setFertilizer] = useState(null);
+  const [fertilizerLoading, setFertilizerLoading] = useState(false);
+  const [bucketSize, setBucketSize] = useState(10);
+  const [growCycleEdit, setGrowCycleEdit] = useState({ cycleStartDate: '', fertilizerFamily: '' });
 
   useEffect(() => {
     fetchRoom();
@@ -32,6 +38,10 @@ function RoomControl() {
     const interval = setInterval(fetchRoom, 5000);
     return () => clearInterval(interval);
   }, [id, token]);
+
+  useEffect(() => {
+    if (room?.fertilizerFamily) fetchFertilizer();
+  }, [room?.fertilizerFamily, room?.growWeek]);
 
   const authHeaders = () => ({ Authorization: `Bearer ${token}` });
 
@@ -51,8 +61,48 @@ function RoomControl() {
         lightCycleHours: data.lightCycleHours,
         lightOnAt: data.lightOnAt,
       });
+      setGrowCycleEdit({
+        cycleStartDate: data.cycleStartDate || '',
+        fertilizerFamily: data.fertilizerFamily || '',
+      });
     } catch (error) {
       console.error('Failed to fetch room:', error);
+    }
+  };
+
+  const fetchFertilizer = async (bucket = bucketSize) => {
+    if (!room?.fertilizerFamily) return;
+    setFertilizerLoading(true);
+    try {
+      const response = await fetch(
+        `${API_URL}/api/rooms/${id}/fertilizer?bucketSize=${bucket}`,
+        { headers: authHeaders() }
+      );
+      if (!response.ok) return;
+      const data = await response.json();
+      setFertilizer(data);
+    } catch (error) {
+      console.error('Failed to fetch fertilizer:', error);
+    } finally {
+      setFertilizerLoading(false);
+    }
+  };
+
+  const saveGrowCycle = async () => {
+    try {
+      const response = await fetch(`${API_URL}/api/rooms/${id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json', ...authHeaders() },
+        body: JSON.stringify({
+          cycleStartDate: growCycleEdit.cycleStartDate || null,
+          fertilizerFamily: growCycleEdit.fertilizerFamily || null,
+        }),
+      });
+      if (response.ok) {
+        await fetchRoom();
+      }
+    } catch (error) {
+      console.error('Failed to save grow cycle:', error);
     }
   };
 
@@ -305,6 +355,135 @@ function RoomControl() {
                     <Line yAxisId="hum" type="monotone" dataKey="humidity" stroke="#4ecdc4" name="Humidity (%)" strokeWidth={2} dot={false} />
                   </LineChart>
                 </ResponsiveContainer>
+              )}
+            </CardContent>
+          </Card>
+        </Grid>
+
+        {/* Grow Cycle & Fertilizer */}
+        <Grid item xs={12}>
+          <Card>
+            <CardContent>
+              <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 2 }}>
+                <Grass color="success" />
+                <Typography variant="h6">Grow Cycle</Typography>
+                {room.growWeek && (
+                  <Chip label={`Week ${room.growWeek}`} color="success" size="small" />
+                )}
+              </Box>
+
+              {/* Cycle configuration */}
+              <Grid container spacing={2} sx={{ mb: 3 }}>
+                <Grid item xs={12} sm={4}>
+                  <TextField
+                    label="Cycle Start Date"
+                    type="date"
+                    fullWidth
+                    size="small"
+                    InputLabelProps={{ shrink: true }}
+                    value={growCycleEdit.cycleStartDate}
+                    onChange={e => setGrowCycleEdit(prev => ({ ...prev, cycleStartDate: e.target.value }))}
+                  />
+                </Grid>
+                <Grid item xs={12} sm={4}>
+                  <FormControl fullWidth size="small">
+                    <InputLabel>Fertilizer Family</InputLabel>
+                    <Select
+                      value={growCycleEdit.fertilizerFamily}
+                      label="Fertilizer Family"
+                      onChange={e => setGrowCycleEdit(prev => ({ ...prev, fertilizerFamily: e.target.value }))}
+                    >
+                      <MenuItem value="">None</MenuItem>
+                      <MenuItem value="canna-coco">CANNA COCO</MenuItem>
+                      <MenuItem value="sensi-coco">AN Sensi Coco</MenuItem>
+                    </Select>
+                  </FormControl>
+                </Grid>
+                <Grid item xs={12} sm={4} sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                  <Button variant="contained" size="small" onClick={saveGrowCycle}>
+                    Save
+                  </Button>
+                  {room.cycleStartDate && (
+                    <Typography variant="caption" color="text.secondary">
+                      Started {room.cycleStartDate}
+                    </Typography>
+                  )}
+                </Grid>
+              </Grid>
+
+              {/* Fertilizer dosage */}
+              {room.fertilizerFamily && (
+                <>
+                  <Divider sx={{ mb: 2 }} />
+                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 2 }}>
+                    <Typography variant="subtitle2">Bucket size:</Typography>
+                    <ToggleButtonGroup
+                      value={String(bucketSize)}
+                      exclusive
+                      onChange={(e, val) => {
+                        if (!val) return;
+                        const l = parseInt(val);
+                        setBucketSize(l);
+                        fetchFertilizer(l);
+                      }}
+                      size="small"
+                    >
+                      {[5, 10, 20, 50].map(l => (
+                        <ToggleButton key={l} value={String(l)}>{l}L</ToggleButton>
+                      ))}
+                    </ToggleButtonGroup>
+                    {fertilizerLoading && <CircularProgress size={16} />}
+                  </Box>
+
+                  {fertilizer && fertilizer.schedule?.weeks?.length > 0 && (() => {
+                    const w = fertilizer.schedule.weeks[0];
+                    return (
+                      <Box>
+                        <Typography variant="subtitle2" gutterBottom>
+                          {fertilizer.schedule.familyName} · Week {w.week} — {w.label}
+                        </Typography>
+                        {w.ec && (
+                          <Typography variant="caption" color="text.secondary" display="block" sx={{ mb: 1 }}>
+                            EC: {w.ec.total} mS/cm · pH: {w.ph}
+                          </Typography>
+                        )}
+                        <Table size="small">
+                          <TableHead>
+                            <TableRow>
+                              <TableCell>Product</TableCell>
+                              <TableCell align="right">ml/L</TableCell>
+                              <TableCell align="right">{bucketSize}L bucket</TableCell>
+                            </TableRow>
+                          </TableHead>
+                          <TableBody>
+                            {w.products.map(p => (
+                              <TableRow key={p.name}>
+                                <TableCell>{p.name}</TableCell>
+                                <TableCell align="right">
+                                  {p.mlPerLiter.min === p.mlPerLiter.max
+                                    ? p.mlPerLiter.min
+                                    : `${p.mlPerLiter.min}–${p.mlPerLiter.max}`}
+                                </TableCell>
+                                <TableCell align="right">
+                                  <strong>
+                                    {p.dosageMl.min === p.dosageMl.max
+                                      ? `${p.dosageMl.min} ml`
+                                      : `${p.dosageMl.min}–${p.dosageMl.max} ml`}
+                                  </strong>
+                                </TableCell>
+                              </TableRow>
+                            ))}
+                          </TableBody>
+                        </Table>
+                        {w.note && (
+                          <Typography variant="caption" color="text.secondary" sx={{ mt: 1, display: 'block' }}>
+                            {w.note}
+                          </Typography>
+                        )}
+                      </Box>
+                    );
+                  })()}
+                </>
               )}
             </CardContent>
           </Card>
