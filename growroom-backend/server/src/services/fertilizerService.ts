@@ -68,6 +68,16 @@ function scaleWeek(week: FertilizerWeek, weekNumber: number, bucketLiters: numbe
   };
 }
 
+/**
+ * Current grow week for a room: week 1 begins on the cycle start date.
+ * Weeks are counted in 7-day steps (day 0-6 = week 1, day 7-13 = week 2, ...).
+ */
+export function computeGrowWeek(cycleStartDate: string, now: Date = new Date()): number {
+  const start = new Date(cycleStartDate + 'T00:00:00');
+  const days = Math.floor((now.getTime() - start.getTime()) / (24 * 60 * 60 * 1000));
+  return Math.max(1, Math.floor(days / 7) + 1);
+}
+
 export class FertilizerService {
   getFamily(familyId: string): FertilizerFamily | undefined {
     return FERTILIZER_FAMILIES.find((family) => family.id === familyId);

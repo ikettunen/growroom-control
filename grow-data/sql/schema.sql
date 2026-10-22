@@ -1,13 +1,3 @@
-CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    email VARCHAR(255) NOT NULL UNIQUE,
-    password_hash VARCHAR(255) NOT NULL,
-    name VARCHAR(255),
-    role ENUM('admin', 'operator') NOT NULL DEFAULT 'operator',
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-);
-
 CREATE TABLE rooms (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
@@ -23,6 +13,9 @@ CREATE TABLE rooms (
     -- Light cycle schedule (photoperiod). lightOn is computed by the backend scheduler.
     light_cycle_hours INT DEFAULT 12,      -- hours of light per day: 0 (off), 12, 18, 24 (always on)
     light_on_at TIME DEFAULT '06:00:00',   -- local time of day the daily on-window starts
+    -- Grow cycle (fertilizer week calculation)
+    cycle_start_date DATE,                 -- day the grow cycle started (that day = week 1)
+    fertilizer_family VARCHAR(50),        -- fertilizer schedule family, e.g. 'canna-coco'
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );

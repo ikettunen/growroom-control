@@ -1,6 +1,7 @@
 import db from '../db/mysql';
 import { Room, SensorReading, HistoryPoint } from '../types';
 import { isLightOn } from './lightScheduler';
+import { computeGrowWeek } from './fertilizerService';
 
 // Mock data for development (when the DB is unavailable)
 const mockRooms: Room[] = [
@@ -16,7 +17,10 @@ const mockRooms: Room[] = [
     irrigation: false,
     lightCycleHours: 18,
     lightOnAt: '06:00:00',
-    lightOn: true
+    lightOn: true,
+    cycleStartDate: '2026-10-08',
+    fertilizerFamily: 'canna-coco',
+    growWeek: 3
   },
   {
     id: 2,
@@ -30,7 +34,10 @@ const mockRooms: Room[] = [
     irrigation: false,
     lightCycleHours: 12,
     lightOnAt: '06:00:00',
-    lightOn: true
+    lightOn: true,
+    cycleStartDate: '2026-09-18',
+    fertilizerFamily: 'canna-coco',
+    growWeek: 6
   },
   {
     id: 3,
@@ -44,14 +51,29 @@ const mockRooms: Room[] = [
     irrigation: true,
     lightCycleHours: 18,
     lightOnAt: '06:00:00',
-    lightOn: true
+    lightOn: true,
+    cycleStartDate: '2026-08-29',
+    fertilizerFamily: 'sensi-coco',
+    growWeek: 9
   }
 ];
 
-/** Map a DB row to the API room shape, including scheduler output. */
+/** Format a date-ish DB value as 'YYYY-MM-DD'. */
+function toDateOnly(value: any): string | null {
+  if (!value) return null;
+  const date = value instanceof Date ? value : new Date(value);
+  if (isNaN(date.getTime())) return null;
+  const y = date.getFullYear();
+  const m = String(date.getMonth() + 1).padStart(2, '0');
+  const d = String(date.getDate()).padStart(2, '0');
+  return `${y}-${m}-${d}`;
+}
+
+/** Map a DB row to the API room shape, including scheduler and grow week output. */
 function toRoom(row: any): Room {
   const lightCycleHours = Number(row.light_cycle_hours ?? 12);
   const lightOnAt: string = row.light_on_at ? String(row.light_on_at).slice(0, 8) : '06:00:00';
+  const cycleStartDate = toDateOnly(row.cycle_start_date);
   return {
     id: row.id,
     name: row.name,
@@ -64,7 +86,10 @@ function toRoom(row: any): Room {
     irrigation: Boolean(row.irrigation_setting),
     lightCycleHours,
     lightOnAt,
-    lightOn: isLightOn(lightCycleHours, lightOnAt)
+    lightOn: isLightOn(lightCycleHours, lightOnAt),
+    cycleStartDate,
+    fertilizerFamily: row.fertilizer_family ? String(row.fertilizer_family) : null,
+    growWeek: cycleStartDate ? computeGrowWeek(cycleStartDate) : null
   };
 }
 

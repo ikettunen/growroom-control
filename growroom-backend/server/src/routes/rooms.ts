@@ -7,6 +7,7 @@ const roomsController = new RoomsController();
 router.get('/', roomsController.getRooms.bind(roomsController));
 router.get('/:id', roomsController.getRoomData.bind(roomsController));
 router.get('/:id/history', roomsController.getRoomHistory.bind(roomsController));
+router.get('/:id/fertilizer', roomsController.getRoomFertilizer.bind(roomsController));
 router.post('/:id/sensors', roomsController.receiveSensorData.bind(roomsController));
 router.put('/:id', roomsController.updateRoomSettings.bind(roomsController));
 

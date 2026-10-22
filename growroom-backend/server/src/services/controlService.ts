@@ -35,6 +35,14 @@ export class ControlService {
       updates.push('light_on_at = ?');
       values.push(settings.lightOnAt);
     }
+    if (settings.cycleStartDate !== undefined) {
+      updates.push('cycle_start_date = ?');
+      values.push(settings.cycleStartDate);
+    }
+    if (settings.fertilizerFamily !== undefined) {
+      updates.push('fertilizer_family = ?');
+      values.push(settings.fertilizerFamily);
+    }
 
     if (updates.length === 0) {
       return;

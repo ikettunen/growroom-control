@@ -1,17 +1,22 @@
 import { Request, Response } from 'express';
 import { SensorService } from '../services/sensorService';
 import { ControlService } from '../services/controlService';
+import { FertilizerService } from '../services/fertilizerService';
 import { SensorReading } from '../types';
 
 const DEFAULT_HISTORY_HOURS = 24;
+const DEFAULT_BUCKET_LITERS = 10;
+const MAX_BUCKET_LITERS = 1000;
 
 export class RoomsController {
     private sensorService: SensorService;
     private controlService: ControlService;
+    private fertilizerService: FertilizerService;
 
     constructor() {
         this.sensorService = new SensorService();
         this.controlService = new ControlService();
+        this.fertilizerService = new FertilizerService();
     }
 
     public async getRooms(req: Request, res: Response): Promise<void> {
@@ -40,8 +45,7 @@ export class RoomsController {
     /**
      * GET /api/rooms/:id/history?from=&to=
      * Sensor readings time series for one room, pivoted per timestamp.
-     * from/to accept ISO 8601 strings (default: last 24 h). Returns an
-     * array of { timestamp (epoch ms), temperature?, humidity?, light?, irrigation? }.
+     * from/to accept ISO 8601 strings (default: last 24 h).
      */
     public async getRoomHistory(req: Request, res: Response): Promise<void> {
         const roomId = parseInt(req.params.id, 10);
@@ -74,6 +78,79 @@ export class RoomsController {
             }
             console.error('Failed to retrieve room history:', error);
             res.status(503).json({ message: 'Storage unavailable, history not retrievable' });
+        }
+    }
+
+    /**
+     * GET /api/rooms/:id/fertilizer?bucketSize=<L>[&week=<n>][&family=<id>]
+     * Fertilizer schedule for a room's current grow week (from cycle_start_date),
+     * scaled to the bucket size. Optional overrides: week and family.
+     */
+    public async getRoomFertilizer(req: Request, res: Response): Promise<void> {
+        const roomId = req.params.id;
+
+        let bucketSize = DEFAULT_BUCKET_LITERS;
+        if (req.query.bucketSize !== undefined) {
+            const parsed = Number(req.query.bucketSize);
+            if (isNaN(parsed) || parsed <= 0 || parsed > MAX_BUCKET_LITERS) {
+                res.status(400).json({ message: 'Invalid bucketSize: expected liters as a positive number (max ' + MAX_BUCKET_LITERS + ')' });
+                return;
+            }
+            bucketSize = parsed;
+        }
+
+        try {
+            const room = await this.sensorService.getRoomData(roomId);
+
+            const familyId = String(req.query.family ?? room.fertilizerFamily ?? '');
+            if (!familyId) {
+                res.status(400).json({ message: 'Room has no fertilizer family; set fertilizerFamily via PUT /api/rooms/' + roomId + ' or pass ?family=' });
+                return;
+            }
+            const family = this.fertilizerService.getFamily(familyId);
+            if (!family) {
+                res.status(404).json({ message: 'Unknown fertilizer family: ' + familyId });
+                return;
+            }
+
+            let week = room.growWeek;
+            if (req.query.week !== undefined) {
+                const parsed = parseInt(String(req.query.week), 10);
+                if (isNaN(parsed) || parsed < 1) {
+                    res.status(400).json({ message: 'Invalid week' });
+                    return;
+                }
+                week = parsed;
+            }
+            if (week === null || week === undefined) {
+                res.status(400).json({ message: 'Room has no cycle start date; set cycleStartDate via PUT /api/rooms/' + roomId + ' or pass ?week=' });
+                return;
+            }
+            if (week > family.weeks.length) {
+                res.status(400).json({
+                    message: 'Room is in week ' + week + ' but family ' + familyId + ' only covers weeks 1-' + family.weeks.length + ' (pass ?week= to override)'
+                });
+                return;
+            }
+
+            const schedule = this.fertilizerService.calculate(familyId, bucketSize, week);
+            res.status(200).json({
+                room: {
+                    id: room.id,
+                    name: room.name,
+                    cycleStartDate: room.cycleStartDate,
+                    growWeek: room.growWeek,
+                    fertilizerFamily: familyId
+                },
+                schedule
+            });
+        } catch (error) {
+            if ((error as Error).message === 'Room not found') {
+                res.status(404).json({ message: 'Room not found' });
+                return;
+            }
+            console.error('Failed to calculate room fertilizer schedule:', error);
+            res.status(500).json({ message: 'Error calculating fertilizer schedule', error });
         }
     }
 
