@@ -35,16 +35,9 @@ function Login() {
     >
       <Card sx={{ width: 380, p: 2 }}>
         <CardContent>
-          <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb: 3 }}>
-            <WaterDrop sx={{ fontSize: 36, color: 'primary.main', mr: 1 }} />
-            <Typography variant="h5" fontWeight="bold">
-              GrowRoom
-            </Typography>
+          <Box sx={{ display: 'flex', justifyContent: 'center', mb: 3 }}>
+            <WaterDrop sx={{ fontSize: 48, color: 'primary.main' }} />
           </Box>
-
-          <Typography variant="body2" color="text.secondary" align="center" sx={{ mb: 3 }}>
-            Sign in to manage your grow rooms
-          </Typography>
 
           {error && <Alert severity="error" sx={{ mb: 2 }}>{error}</Alert>}
 
