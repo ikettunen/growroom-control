@@ -1,0 +1,29 @@
+{
+  "name": "growroom-dashboard-server",
+  "version": "1.0.0",
+  "description": "Backend server for managing grow room data and controls.",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.0.2",
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
