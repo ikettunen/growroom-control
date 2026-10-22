@@ -47,3 +47,16 @@ export interface ControlSettings {
     lightCycleHours?: number;
     lightOnAt?: string;
 }
+
+export interface User {
+    id: number;
+    email: string;
+    name: string | null;
+    role: 'admin' | 'operator';
+}
+
+export interface JwtPayload {
+    userId: number;
+    email: string;
+    role: 'admin' | 'operator';
+}

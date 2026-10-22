@@ -1,7 +1,10 @@
+-- Default admin user (password: growroom123 — change after first login)
+INSERT INTO users (email, password_hash, name, role) VALUES
+('admin@growroom.local', '$2b$10$VDH7C9oGlopZiC8uKwIKyu5Q5be9OLL/CNM1qOVA5vK/BAicZG6Je', 'Admin', 'admin');
+
 -- Seed data for 4 rooms (A-D) with typical grow-room setpoints.
 -- Live values (light/humidity/temperature on rooms) start in sync with setpoints
 -- and are then updated by incoming Pi readings.
-
 INSERT INTO rooms (id, name, light_setting, humidity_setting, temperature_setting,
                    irrigation_setting, light_cycle_hours, light_on_at,
                    light, humidity, temperature) VALUES
