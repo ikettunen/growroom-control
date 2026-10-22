@@ -1,6 +1,6 @@
 # Growroom Control System — System Specification
 
-**Version:** 1.1  
+**Version:** 1.2  
 **Date:** 2026-10-22  
 **Project:** growroom-*
 
@@ -29,6 +29,7 @@ A multi-room growroom/greenhouse automation system. Each physical grow room has 
   REST endpoints:
     GET  /api/rooms              list all rooms + current values
     GET  /api/rooms/:id          single room data (incl. scheduled lightOn)
+    GET  /api/rooms/:id/history  sensor readings time series (?from=&to=, default last 24 h)
     PUT  /api/rooms/:id          update control settings + light schedule
     POST /api/rooms/:id/sensors  receive sensor readings from Pi
 
@@ -40,7 +41,7 @@ A multi-room growroom/greenhouse automation system. Each physical grow room has 
   Pages: Overview dashboard, per-room control panel
   Per-room controls: light intensity slider, light cycle selector,
     target temperature slider, irrigation timer + trigger button
-  Charts: temperature + humidity history
+  Charts: temperature + humidity history (from GET /api/rooms/:id/history)
   SSH console link to each Pi
 ```
 
@@ -81,11 +82,11 @@ A multi-room growroom/greenhouse automation system. Each physical grow room has 
 | `src/index.ts` | Express app, CORS, port 5000 |
 | `src/routes/rooms.ts` | Route definitions |
 | `src/controllers/roomsController.ts` | Request handlers |
-| `src/services/sensorService.ts` | DB queries for room/sensor data; records incoming Pi readings (transaction: sensors rows + rooms live values); falls back to mock data if DB unavailable |
+| `src/services/sensorService.ts` | DB queries for room/sensor data; records incoming Pi readings (transactional); history/time-series queries |
 | `src/services/controlService.ts` | DB update for room control setpoints + light schedule |
 | `src/services/lightScheduler.ts` | Computes `lightOn` from the room's light cycle |
 | `src/db/mysql.ts` | MySQL2 connection pool |
-| `src/types/index.ts` | TypeScript interfaces: Room, SensorReading, ControlSettings |
+| `src/types/index.ts` | TypeScript interfaces: Room, SensorReading, HistoryPoint, ControlSettings |
 
 **Core types:**
 ```ts
@@ -93,12 +94,15 @@ Room            { id, name, light, humidity, temperature,              // live v
                   lightSetting, humiditySetting, temperatureSetting,  // setpoints
                   irrigation, lightCycleHours, lightOnAt, lightOn }   // schedule
 SensorReading   { temperature?, humidity?, light? }
+HistoryPoint    { timestamp (epoch ms), temperature?, humidity?, light?, irrigation? }
 ControlSettings { light, humidity, temperature, irrigation, lightCycleHours?, lightOnAt? }
 ```
 
 **Light scheduling:** the backend stores a photoperiod per room (`light_cycle_hours`: 0/12/18/24) and a daily on-window start (`light_on_at`, server local time). Every `GET /api/rooms` and `GET /api/rooms/:id` returns a computed `lightOn` boolean; the Pi actuates on it. The cycle can wrap midnight. `24` = always on, `0` = always off.
 
 **Sensor ingestion:** `POST /api/rooms/:id/sensors` accepts `{ temperature?, humidity?, light? }`, validates numeric values, and writes one row per metric into `sensors` plus the latest values on `rooms`, in a single transaction. Returns 201; 400 on invalid input, 404 on unknown room, 503 when the DB is unavailable (Pi logs and retries next poll).
+
+**History API:** `GET /api/rooms/:id/history?from=&to=` returns the recorded `sensors` rows for the requested window (inclusive) pivoted into one point per reading timestamp: `[{ timestamp, temperature, humidity, light }]`. `from`/`to` accept ISO 8601 dates and default to the last 24 h. Returns 200 (`[]` for an empty range); 400 on invalid/inverted dates, 404 on unknown room, 503 when the DB is unavailable.
 
 **Note:** settings now live in `*_setting` columns on `rooms`, separate from live values, so readings never overwrite setpoints. The `controls` table still exists but remains unused by the service layer (candidate for removal or future use).
 
@@ -108,7 +112,7 @@ ControlSettings { light, humidity, temperature, irrigation, lightCycleHours?, li
 |---|---|
 | `src/App.js` | Router, navigation |
 | `src/components/Dashboard.js` | Overview — card grid of all rooms (temp, humidity, light, irrigation) |
-| `src/components/RoomControl.js` | Per-room panel — live readings, sliders, irrigation trigger, history chart, SSH link |
+| `src/components/RoomControl.js` | Per-room panel — live readings, sliders, irrigation trigger, history chart (GET /:id/history), SSH link |
 | `src/components/SSHConsole.js` | SSH terminal component (stub/WIP) |
 
 *(Not yet in the repository.)*
@@ -138,7 +142,8 @@ Seed data defines 4 rooms (A–D) with typical grow-room setpoints and 12/18 h l
 2. **Settings pull:** Pi GETs `GET /api/rooms/:id`, reads `lightSetting / temperatureSetting / humiditySetting / irrigation` and the computed `lightOn`.
 3. **Control actuator:** Pi compares live sensor vs setpoints and toggles GPIO relays (light from schedule, fans from temperature, dehumidifier from humidity, pump from irrigation flag).
 4. **Dashboard poll:** Browser fetches `GET /api/rooms` every 5 s to refresh the overview.
-5. **Operator input:** Dashboard sends `PUT /api/rooms/:id` with updated settings/schedule; backend persists to MySQL; Pi picks up on next poll.
+5. **History chart:** Browser fetches `GET /api/rooms/:id/history?from=&to=` for the chart time range.
+6. **Operator input:** Dashboard sends `PUT /api/rooms/:id` with updated settings/schedule; backend persists to MySQL; Pi picks up on next poll.
 
 ---
 
@@ -168,6 +173,9 @@ Seed data defines 4 rooms (A–D) with typical grow-room setpoints and 12/18 h l
 
 ## 7. Changelog
 
+**v1.2 (2026-10-22):**
+- Added `GET /api/rooms/:id/history?from=&to=`: time-series endpoint over the recorded sensors rows, pivoted per timestamp; defaults to the last 24 h.
+
 **v1.1 (2026-10-22):**
 - Implemented `POST /api/rooms/:id/sensors`: Pi readings are persisted (time series + live values, transactional).
 - Added light-cycle scheduling: `light_cycle_hours` / `light_on_at` per room, computed `lightOn` returned by the API and consumed by the Pi.
@@ -183,18 +191,16 @@ Seed data defines 4 rooms (A–D) with typical grow-room setpoints and 12/18 h l
 
 1. **No authentication** — the API and dashboard have no auth layer.
 2. **SSH console stub** — `SSHConsole.js` exists but the `/ssh/:id` route is not wired up.
-3. **No sensor history API** — the backend now records a time series, but `GET /api/rooms/:id/history?from=&to=` is still missing and the dashboard `history` state is never populated.
-4. **No humidifier relay** — too-dry air is detected and logged but not actuated.
-5. **`controls` table unused** — kept in the schema but never written.
-6. **Dashboard not in the repo** — described in §3.3 but the code is missing.
+3. **No humidifier relay** — too-dry air is detected and logged but not actuated.
+4. **`controls` table unused** — kept in the schema but never written.
+5. **Dashboard not in the repo** — described in §3.3 but the code is missing; the history chart still needs to be wired to `GET /api/rooms/:id/history`.
 
 ---
 
 ## 9. Suggested Next Steps
 
-- Add the time-series endpoint `GET /api/rooms/:id/history?from=&to=` and wire it to the dashboard chart (data is already being recorded).
+- Add the dashboard to the repository (or rebuild it against the v1.2 API) and wire the history chart to `GET /api/rooms/:id/history`.
 - Add JWT or API-key auth on the backend.
 - Wire a humidifier relay for too-dry conditions (mirror of the dehumidifier logic).
-- Add the dashboard to the repository (or rebuild it against the v1.1 API).
 - Complete the SSH console (xterm.js + ws proxy).
 - Either use or drop the `controls` table.

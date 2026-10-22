@@ -30,6 +30,15 @@ export interface SensorData {
     timestamp: Date;
 }
 
+/** One point of the room history time series (GET /api/rooms/:id/history). */
+export interface HistoryPoint {
+    timestamp: number;         // epoch ms
+    temperature?: number;
+    humidity?: number;
+    light?: number;
+    irrigation?: boolean;
+}
+
 export interface ControlSettings {
     light: number;
     humidity: number;

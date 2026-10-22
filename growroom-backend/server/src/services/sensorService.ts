@@ -1,5 +1,5 @@
 import db from '../db/mysql';
-import { Room, SensorReading } from '../types';
+import { Room, SensorReading, HistoryPoint } from '../types';
 import { isLightOn } from './lightScheduler';
 
 // Mock data for development (when the DB is unavailable)
@@ -97,6 +97,55 @@ export class SensorService {
         throw new Error('Room not found');
       }
       return room;
+    }
+  }
+
+  /**
+   * Time-series history for a room (GET /api/rooms/:id/history).
+   * Reads the sensors table between from/to (inclusive) and pivots the
+   * per-type rows into one HistoryPoint per reading timestamp.
+   * Throws on DB failure or unknown room; returns [] for an empty range.
+   */
+  async getRoomHistory(roomId: number, from: Date, to: Date): Promise<HistoryPoint[]> {
+    const conn = await db.getConnection();
+    try {
+      const [roomRows] = await conn.query('SELECT id FROM rooms WHERE id = ?', [roomId]);
+      if ((roomRows as any[]).length === 0) {
+        throw new Error('Room not found');
+      }
+
+      const [rows] = await conn.query(
+        'SELECT type, value, created_at FROM sensors WHERE room_id = ? AND created_at >= ? AND created_at <= ? ORDER BY created_at ASC',
+        [roomId, from, to]
+      );
+
+      const points = new Map<number, HistoryPoint>();
+      for (const row of rows as any[]) {
+        const ts = new Date(row.created_at).getTime();
+        let point = points.get(ts);
+        if (!point) {
+          point = { timestamp: ts };
+          points.set(ts, point);
+        }
+        const value = Number(row.value);
+        switch (row.type) {
+          case 'temperature':
+            point.temperature = value;
+            break;
+          case 'humidity':
+            point.humidity = value;
+            break;
+          case 'light':
+            point.light = value;
+            break;
+          case 'irrigation':
+            point.irrigation = Boolean(value);
+            break;
+        }
+      }
+      return Array.from(points.values());
+    } finally {
+      conn.release();
     }
   }
 
