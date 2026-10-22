@@ -32,13 +32,20 @@ class GrowRoomService:
             'light': False,
             'fan_in': False,
             'fan_out': False,
-            'pump': False
+            'pump': False,
+            'humidity': False
         }
         
     def handle_shutdown(self, signum, frame):
         """Handle graceful shutdown"""
         logger.info("Shutdown signal received")
         self.running = False
+        
+    def _set_relay(self, name, state):
+        """Set a relay and track its state, only on state change"""
+        if self.relay_states[name] != state:
+            self.relay.set_relay(name, state)
+            self.relay_states[name] = state
         
     def apply_control_logic(self, sensor_data, settings):
         """Apply control logic based on sensor data and settings"""
@@ -48,36 +55,48 @@ class GrowRoomService:
         temp = sensor_data['temperature']
         humidity = sensor_data['humidity']
         
-        # Light control (simple on/off based on setting)
-        light_on = settings['light'] > 0
-        if self.relay_states['light'] != light_on:
-            self.relay.set_relay('light', light_on)
-            self.relay_states['light'] = light_on
+        # Light control. The backend computes 'light_on' from the room's
+        # light cycle schedule (lightCycleHours / lightOnAt); fall back to
+        # the simple intensity boolean when the schedule is unavailable.
+        light_on = settings.get('light_on')
+        if light_on is None:
+            light_on = settings['light'] > 0
+        self._set_relay('light', light_on)
         
         # Temperature control with fans
         target_temp = settings['temperature']
         if target_temp > 0:
             if temp > target_temp + 2:
                 # Too hot - turn on exhaust fan
-                if not self.relay_states['fan_out']:
-                    self.relay.set_relay('fan_out', True)
-                    self.relay_states['fan_out'] = True
+                self._set_relay('fan_out', True)
             elif temp < target_temp - 2:
                 # Too cold - turn off fans
-                if self.relay_states['fan_out']:
-                    self.relay.set_relay('fan_out', False)
-                    self.relay_states['fan_out'] = False
+                self._set_relay('fan_out', False)
             else:
-                # In range - turn off exhaust, maybe run intake
-                if self.relay_states['fan_out']:
-                    self.relay.set_relay('fan_out', False)
-                    self.relay_states['fan_out'] = False
+                # In range - exhaust off, run intake
+                self._set_relay('fan_out', False)
+                self._set_relay('fan_in', True)
+        
+        # Humidity control (dehumidifier on dedicated relay, hysteresis band).
+        # ON when humidity > target + band, OFF when humidity < target - band;
+        # inside the band the current state is kept to prevent relay chatter.
+        # Note: too-dry air is only logged - wire a humidifier relay to act on it.
+        target_humidity = settings.get('humidity') or 0
+        if target_humidity > 0:
+            band = config.HUMIDITY_HYSTERESIS
+            if humidity > target_humidity + band:
+                if not self.relay_states['humidity']:
+                    logger.info(f"Humidity {humidity}% above target {target_humidity}% +{band}, dehumidifier ON")
+                self._set_relay('humidity', True)
+            elif humidity < target_humidity - band:
+                self._set_relay('humidity', False)
+                if humidity < target_humidity - 2 * band:
+                    logger.warning(f"Humidity {humidity}% well below target {target_humidity}% (no humidifier relay wired)")
+            # inside band: keep current state
         
         # Irrigation control
         irrigation_on = settings['irrigation']
-        if self.relay_states['pump'] != irrigation_on:
-            self.relay.set_relay('pump', irrigation_on)
-            self.relay_states['pump'] = irrigation_on
+        self._set_relay('pump', irrigation_on)
     
     def run(self):
         """Main service loop"""

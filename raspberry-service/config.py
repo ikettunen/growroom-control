@@ -18,5 +18,13 @@ RELAY_FAN_IN_PIN = int(os.getenv('RELAY_FAN_IN_PIN', '27'))
 RELAY_FAN_OUT_PIN = int(os.getenv('RELAY_FAN_OUT_PIN', '22'))
 RELAY_PUMP_PIN = int(os.getenv('RELAY_PUMP_PIN', '23'))
 
+# Humidity actuator (dehumidifier) on a dedicated relay
+RELAY_HUMIDITY_PIN = int(os.getenv('RELAY_HUMIDITY_PIN', '24'))
+
+# Humidity control hysteresis band (+/- around the target setpoint, % RH).
+# The dehumidifier turns ON above target + band and OFF below target - band,
+# which prevents relay chatter.
+HUMIDITY_HYSTERESIS = float(os.getenv('HUMIDITY_HYSTERESIS', '5'))
+
 # Relay is active LOW (common for relay modules)
 RELAY_ACTIVE_LOW = True

@@ -13,7 +13,8 @@ class RelayController:
             'light': config.RELAY_LIGHT_PIN,
             'fan_in': config.RELAY_FAN_IN_PIN,
             'fan_out': config.RELAY_FAN_OUT_PIN,
-            'pump': config.RELAY_PUMP_PIN
+            'pump': config.RELAY_PUMP_PIN,
+            'humidity': config.RELAY_HUMIDITY_PIN
         }
         
         # Initialize all relay pins
@@ -31,8 +32,8 @@ class RelayController:
             
         pin = self.relays[relay_name]
         
-        # Handle active LOW relays
-        gpio_state = GPIO.LOW if state else GPIO.HIGH
+        # Relay modules are typically active LOW: the relay is energized
+        # when the GPIO pin is driven LOW.
         if config.RELAY_ACTIVE_LOW:
             gpio_state = GPIO.LOW if state else GPIO.HIGH
         else:
