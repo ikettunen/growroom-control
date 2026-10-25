@@ -104,9 +104,9 @@
         "durationWeeksMin": 1,
         "durationWeeksMax": 2,
         "environment": {
-          "tempDayMin": 22,
-          "tempDayMax": 28,
-          "tempNightMin": 18,
+          "tempDayMin": 24,
+          "tempDayMax": 26,
+          "tempNightMin": 20,
           "tempNightMax": 22,
           "humidityMin": 40,
           "humidityMax": 55,
@@ -116,7 +116,12 @@
           "vpdMin": 1.2,
           "vpdMax": 1.6
         },
-        "careNotes": [],
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Verified: PMC meta-analysis confirms 12 h photoperiod switch maximizes floral biomass (standard 18→12 h transition)."
+          }
+        ],
         "fertilizerHint": {
           "phaseLabel": "Early Bloom",
           "notes": [],
@@ -138,9 +143,9 @@
         "durationWeeksMin": 4,
         "durationWeeksMax": 6,
         "environment": {
-          "tempDayMin": 22,
-          "tempDayMax": 28,
-          "tempNightMin": 18,
+          "tempDayMin": 24,
+          "tempDayMax": 26,
+          "tempNightMin": 20,
           "tempNightMax": 22,
           "humidityMin": 40,
           "humidityMax": 55,
@@ -150,7 +155,12 @@
           "vpdMin": 1.2,
           "vpdMax": 1.6
         },
-        "careNotes": [],
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Verified: Wageningen study (Holweg et al.) — bloom at 25/21 °C day/night maximizes specialized metabolite yield; 31/27 °C significantly reduces cannabinoid content."
+          }
+        ],
         "fertilizerHint": {
           "phaseLabel": "Bloom",
           "notes": [],
@@ -172,9 +182,9 @@
         "durationWeeksMin": 2,
         "durationWeeksMax": 3,
         "environment": {
-          "tempDayMin": 22,
-          "tempDayMax": 28,
-          "tempNightMin": 18,
+          "tempDayMin": 24,
+          "tempDayMax": 26,
+          "tempNightMin": 20,
           "tempNightMax": 22,
           "humidityMin": 40,
           "humidityMax": 55,
@@ -271,7 +281,9 @@
     ],
     "sources": [
       "https://www.canna.com/growing/",
-      "https://www.growbarato.net/blog/en/"
+      "https://www.growbarato.net/blog/en/",
+      "https://edepot.wur.nl/686107",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC8786113/"
     ],
     "updatedAt": "2026-10-25"
   }

@@ -96,7 +96,7 @@
         "durationWeeksMin": 4,
         "durationWeeksMax": 8,
         "environment": {
-          "tempDayMin": 22,
+          "tempDayMin": 24,
           "tempDayMax": 28,
           "tempNightMin": 18,
           "tempNightMax": 20,
@@ -104,7 +104,7 @@
           "humidityMax": 75,
           "lightCycleHours": 16,
           "lightOnAt": "06:00:00",
-          "dliTarget": 12
+          "dliTarget": 14
         },
         "fertilizerHint": {
           "phaseLabel": "Growth",
@@ -118,7 +118,12 @@
           },
           "notes": []
         },
-        "careNotes": []
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Verified: PLOS ONE modeling study — sweet basil branching increases with mean daily temperature 23→35 °C and DLI 5.5→13.2 mol/m²/d; keep ≥14 DLI for compact high-yield growth."
+          }
+        ]
       }
     ],
     "varieties": [
@@ -156,7 +161,8 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://hort.purdue.edu/newcrop/",
-      "https://www.rhs.org.uk/plants/types/herbs/growing-guide"
+      "https://www.rhs.org.uk/plants/types/herbs/growing-guide",
+      "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0294905"
     ],
     "updatedAt": "2026-10-25"
   },

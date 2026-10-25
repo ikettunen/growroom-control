@@ -20,9 +20,9 @@
         "durationWeeksMax": 3,
         "environment": {
           "tempDayMin": 21,
-          "tempDayMax": 27,
-          "tempNightMin": 17,
-          "tempNightMax": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 18,
+          "tempNightMax": 21,
           "humidityMin": 67,
           "humidityMax": 82,
           "lightCycleHours": 16,
@@ -37,14 +37,16 @@
         ],
         "fertilizerHint": {
           "phaseLabel": "Seedling",
-          "notes": [],
+          "notes": [
+            "Verified: Purdue CEA greenhouse tomato (EC 2.0–2.5, pH 5.5–6.0, DLI >20, CO₂ to 600 ppm); MSU P1828 (day 21–28 °C / night 17–18 °C)."
+          ],
           "ecTarget": {
-            "min": 0.8,
-            "max": 1.2
+            "min": 2,
+            "max": 2.5
           },
           "phTarget": {
-            "min": 5.8,
-            "max": 6.5
+            "min": 5.5,
+            "max": 6
           }
         }
       },
@@ -56,14 +58,14 @@
         "durationWeeksMax": 5,
         "environment": {
           "tempDayMin": 21,
-          "tempDayMax": 27,
-          "tempNightMin": 16,
-          "tempNightMax": 19,
+          "tempDayMax": 28,
+          "tempNightMin": 17,
+          "tempNightMax": 18,
           "humidityMin": 60,
           "humidityMax": 75,
           "lightCycleHours": 16,
           "lightOnAt": "06:00:00",
-          "dliTarget": 21
+          "dliTarget": 22
         },
         "careNotes": [
           {
@@ -77,18 +79,24 @@
           {
             "category": "pruning",
             "note": "Prune lower foliage to improve airflow."
+          },
+          {
+            "category": "general",
+            "note": "Verified setpoints: day 21–28 °C, night 17–18 °C (MSU P1828); pollination suffers above 29 °C."
           }
         ],
         "fertilizerHint": {
           "phaseLabel": "Vegetative",
-          "notes": [],
+          "notes": [
+            "Verified: Purdue CEA greenhouse tomato (EC 2.0–2.5, pH 5.5–6.0, DLI >20, CO₂ to 600 ppm); MSU P1828 (day 21–28 °C / night 17–18 °C)."
+          ],
           "ecTarget": {
-            "min": 1.2,
-            "max": 2
+            "min": 2,
+            "max": 2.5
           },
           "phTarget": {
-            "min": 5.8,
-            "max": 6.5
+            "min": 5.5,
+            "max": 6
           }
         }
       },
@@ -100,26 +108,28 @@
         "durationWeeksMax": 10,
         "environment": {
           "tempDayMin": 21,
-          "tempDayMax": 27,
-          "tempNightMin": 16,
-          "tempNightMax": 19,
+          "tempDayMax": 28,
+          "tempNightMin": 17,
+          "tempNightMax": 18,
           "humidityMin": 47,
           "humidityMax": 62,
           "lightCycleHours": 16,
           "lightOnAt": "06:00:00",
-          "dliTarget": 25
+          "dliTarget": 22
         },
         "careNotes": [],
         "fertilizerHint": {
           "phaseLabel": "Flowering & Fruit Set",
-          "notes": [],
+          "notes": [
+            "Verified: Purdue CEA greenhouse tomato (EC 2.0–2.5, pH 5.5–6.0, DLI >20, CO₂ to 600 ppm); MSU P1828 (day 21–28 °C / night 17–18 °C)."
+          ],
           "ecTarget": {
-            "min": 1.6,
-            "max": 2.4
+            "min": 2,
+            "max": 2.5
           },
           "phTarget": {
-            "min": 5.8,
-            "max": 6.5
+            "min": 5.5,
+            "max": 6
           }
         }
       },
@@ -131,26 +141,28 @@
         "durationWeeksMax": 2,
         "environment": {
           "tempDayMin": 21,
-          "tempDayMax": 27,
-          "tempNightMin": 16,
-          "tempNightMax": 19,
+          "tempDayMax": 28,
+          "tempNightMin": 17,
+          "tempNightMax": 18,
           "humidityMin": 50,
           "humidityMax": 65,
           "lightCycleHours": 16,
           "lightOnAt": "06:00:00",
-          "dliTarget": 25
+          "dliTarget": 22
         },
         "careNotes": [],
         "fertilizerHint": {
           "phaseLabel": "Harvest",
-          "notes": [],
+          "notes": [
+            "Verified: Purdue CEA greenhouse tomato (EC 2.0–2.5, pH 5.5–6.0, DLI >20, CO₂ to 600 ppm); MSU P1828 (day 21–28 °C / night 17–18 °C)."
+          ],
           "ecTarget": {
-            "min": 1.2,
-            "max": 2
+            "min": 2,
+            "max": 2.5
           },
           "phTarget": {
-            "min": 5.8,
-            "max": 6.5
+            "min": 5.5,
+            "max": 6
           }
         }
       }
@@ -190,7 +202,9 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://gardens.cornell.edu/vegetation-growing-guides/",
-      "https://extension.psu.edu/vegetable-gardening-resources"
+      "https://extension.psu.edu/vegetable-gardening-resources",
+      "https://cerberus.ext.msstate.edu/sites/default/files/publications/publications/p1828_web.pdf",
+      "https://www.purdue.edu/hla/sites/cea/wp-content/uploads/sites/15/2024/05/Greenhouse-Tomato-Production.pdf"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -214,10 +228,10 @@
         "durationWeeksMin": 2,
         "durationWeeksMax": 3,
         "environment": {
-          "tempDayMin": 21,
+          "tempDayMin": 23,
           "tempDayMax": 27,
-          "tempNightMin": 17,
-          "tempNightMax": 19,
+          "tempNightMin": 20,
+          "tempNightMax": 22,
           "humidityMin": 67,
           "humidityMax": 77,
           "lightCycleHours": 16,
@@ -232,14 +246,16 @@
         ],
         "fertilizerHint": {
           "phaseLabel": "Seedling",
-          "notes": [],
+          "notes": [
+            "Verified: Johnny’s Selected Seeds greenhouse pepper protocol (germination 27–32 °C; days 21–24 °C, nights 18–20 °C; EC 1.5–2.0, pH 5.2 in feed)."
+          ],
           "ecTarget": {
-            "min": 0.8,
-            "max": 1.2
+            "min": 1.5,
+            "max": 2
           },
           "phTarget": {
-            "min": 5.8,
-            "max": 6.5
+            "min": 5.5,
+            "max": 6.2
           }
         }
       },
@@ -251,9 +267,9 @@
         "durationWeeksMax": 5,
         "environment": {
           "tempDayMin": 21,
-          "tempDayMax": 27,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
           "humidityMin": 60,
           "humidityMax": 70,
           "lightCycleHours": 18,
@@ -272,18 +288,24 @@
           {
             "category": "pruning",
             "note": "Prune lower foliage to improve airflow."
+          },
+          {
+            "category": "general",
+            "note": "Verified setpoints: days 21–24 °C, nights 18–20 °C; lower night temps after establishment steer to fruiting (Johnny’s GH protocol)."
           }
         ],
         "fertilizerHint": {
           "phaseLabel": "Vegetative",
-          "notes": [],
+          "notes": [
+            "Verified: Johnny’s Selected Seeds greenhouse pepper protocol (germination 27–32 °C; days 21–24 °C, nights 18–20 °C; EC 1.5–2.0, pH 5.2 in feed)."
+          ],
           "ecTarget": {
-            "min": 1.2,
+            "min": 1.5,
             "max": 2
           },
           "phTarget": {
-            "min": 5.8,
-            "max": 6.5
+            "min": 5.5,
+            "max": 6.2
           }
         }
       },
@@ -295,9 +317,9 @@
         "durationWeeksMax": 10,
         "environment": {
           "tempDayMin": 21,
-          "tempDayMax": 27,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
           "humidityMin": 47,
           "humidityMax": 57,
           "lightCycleHours": 18,
@@ -307,14 +329,16 @@
         "careNotes": [],
         "fertilizerHint": {
           "phaseLabel": "Flowering & Fruit Set",
-          "notes": [],
+          "notes": [
+            "Verified: Johnny’s Selected Seeds greenhouse pepper protocol (germination 27–32 °C; days 21–24 °C, nights 18–20 °C; EC 1.5–2.0, pH 5.2 in feed)."
+          ],
           "ecTarget": {
-            "min": 1.6,
-            "max": 2.4
+            "min": 1.5,
+            "max": 2
           },
           "phTarget": {
-            "min": 5.8,
-            "max": 6.5
+            "min": 5.5,
+            "max": 6.2
           }
         }
       },
@@ -326,9 +350,9 @@
         "durationWeeksMax": 2,
         "environment": {
           "tempDayMin": 21,
-          "tempDayMax": 27,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
           "humidityMin": 50,
           "humidityMax": 60,
           "lightCycleHours": 18,
@@ -338,14 +362,16 @@
         "careNotes": [],
         "fertilizerHint": {
           "phaseLabel": "Harvest",
-          "notes": [],
+          "notes": [
+            "Verified: Johnny’s Selected Seeds greenhouse pepper protocol (germination 27–32 °C; days 21–24 °C, nights 18–20 °C; EC 1.5–2.0, pH 5.2 in feed)."
+          ],
           "ecTarget": {
-            "min": 1.2,
+            "min": 1.5,
             "max": 2
           },
           "phTarget": {
-            "min": 5.8,
-            "max": 6.5
+            "min": 5.5,
+            "max": 6.2
           }
         }
       }
@@ -379,7 +405,8 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://gardens.cornell.edu/vegetation-growing-guides/",
-      "https://extension.psu.edu/vegetable-gardening-resources"
+      "https://extension.psu.edu/vegetable-gardening-resources",
+      "https://prod-na02.johnnyseeds.com/growers-library/vegetables/peppers/greenhouse-peppers-key-growing-information.html"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -403,10 +430,10 @@
         "durationWeeksMin": 2,
         "durationWeeksMax": 3,
         "environment": {
-          "tempDayMin": 22,
-          "tempDayMax": 28,
-          "tempNightMin": 18,
-          "tempNightMax": 20,
+          "tempDayMin": 23,
+          "tempDayMax": 27,
+          "tempNightMin": 20,
+          "tempNightMax": 22,
           "humidityMin": 62,
           "humidityMax": 77,
           "lightCycleHours": 16,
@@ -421,14 +448,16 @@
         ],
         "fertilizerHint": {
           "phaseLabel": "Seedling",
-          "notes": [],
+          "notes": [
+            "Verified: Johnny’s Selected Seeds greenhouse pepper protocol (germination 27–32 °C; days 21–24 °C, nights 18–20 °C; EC 1.5–2.0, pH 5.2 in feed)."
+          ],
           "ecTarget": {
-            "min": 0.8,
-            "max": 1.2
+            "min": 1.5,
+            "max": 2
           },
           "phTarget": {
-            "min": 5.8,
-            "max": 6.5
+            "min": 5.5,
+            "max": 6.2
           }
         }
       },
@@ -439,10 +468,10 @@
         "durationWeeksMin": 3,
         "durationWeeksMax": 5,
         "environment": {
-          "tempDayMin": 22,
-          "tempDayMax": 28,
-          "tempNightMin": 17,
-          "tempNightMax": 19,
+          "tempDayMin": 21,
+          "tempDayMax": 24,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
           "humidityMin": 55,
           "humidityMax": 70,
           "lightCycleHours": 18,
@@ -461,18 +490,24 @@
           {
             "category": "pruning",
             "note": "Prune lower foliage to improve airflow."
+          },
+          {
+            "category": "general",
+            "note": "Verified setpoints: days 21–24 °C, nights 18–20 °C; lower night temps after establishment steer to fruiting (Johnny’s GH protocol)."
           }
         ],
         "fertilizerHint": {
           "phaseLabel": "Vegetative",
-          "notes": [],
+          "notes": [
+            "Verified: Johnny’s Selected Seeds greenhouse pepper protocol (germination 27–32 °C; days 21–24 °C, nights 18–20 °C; EC 1.5–2.0, pH 5.2 in feed)."
+          ],
           "ecTarget": {
-            "min": 1.2,
+            "min": 1.5,
             "max": 2
           },
           "phTarget": {
-            "min": 5.8,
-            "max": 6.5
+            "min": 5.5,
+            "max": 6.2
           }
         }
       },
@@ -483,10 +518,10 @@
         "durationWeeksMin": 5,
         "durationWeeksMax": 10,
         "environment": {
-          "tempDayMin": 22,
-          "tempDayMax": 28,
-          "tempNightMin": 17,
-          "tempNightMax": 19,
+          "tempDayMin": 21,
+          "tempDayMax": 24,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
           "humidityMin": 42,
           "humidityMax": 57,
           "lightCycleHours": 18,
@@ -496,14 +531,16 @@
         "careNotes": [],
         "fertilizerHint": {
           "phaseLabel": "Flowering & Fruit Set",
-          "notes": [],
+          "notes": [
+            "Verified: Johnny’s Selected Seeds greenhouse pepper protocol (germination 27–32 °C; days 21–24 °C, nights 18–20 °C; EC 1.5–2.0, pH 5.2 in feed)."
+          ],
           "ecTarget": {
-            "min": 1.6,
-            "max": 2.4
+            "min": 1.5,
+            "max": 2
           },
           "phTarget": {
-            "min": 5.8,
-            "max": 6.5
+            "min": 5.5,
+            "max": 6.2
           }
         }
       },
@@ -514,10 +551,10 @@
         "durationWeeksMin": 1,
         "durationWeeksMax": 2,
         "environment": {
-          "tempDayMin": 22,
-          "tempDayMax": 28,
-          "tempNightMin": 17,
-          "tempNightMax": 19,
+          "tempDayMin": 21,
+          "tempDayMax": 24,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
           "humidityMin": 45,
           "humidityMax": 60,
           "lightCycleHours": 18,
@@ -527,14 +564,16 @@
         "careNotes": [],
         "fertilizerHint": {
           "phaseLabel": "Harvest",
-          "notes": [],
+          "notes": [
+            "Verified: Johnny’s Selected Seeds greenhouse pepper protocol (germination 27–32 °C; days 21–24 °C, nights 18–20 °C; EC 1.5–2.0, pH 5.2 in feed)."
+          ],
           "ecTarget": {
-            "min": 1.2,
+            "min": 1.5,
             "max": 2
           },
           "phTarget": {
-            "min": 5.8,
-            "max": 6.5
+            "min": 5.5,
+            "max": 6.2
           }
         }
       }
@@ -574,7 +613,8 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://gardens.cornell.edu/vegetation-growing-guides/",
-      "https://extension.psu.edu/vegetable-gardening-resources"
+      "https://extension.psu.edu/vegetable-gardening-resources",
+      "https://prod-na02.johnnyseeds.com/growers-library/vegetables/peppers/greenhouse-peppers-key-growing-information.html"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -770,9 +810,9 @@
         "durationWeeksMax": 3,
         "environment": {
           "tempDayMin": 22,
-          "tempDayMax": 28,
-          "tempNightMin": 19,
-          "tempNightMax": 22,
+          "tempDayMax": 24,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
           "humidityMin": 72,
           "humidityMax": 82,
           "lightCycleHours": 16,
@@ -805,8 +845,8 @@
         "durationWeeksMin": 3,
         "durationWeeksMax": 4,
         "environment": {
-          "tempDayMin": 22,
-          "tempDayMax": 28,
+          "tempDayMin": 21,
+          "tempDayMax": 24,
           "tempNightMin": 18,
           "tempNightMax": 21,
           "humidityMin": 65,
@@ -827,6 +867,10 @@
           {
             "category": "pruning",
             "note": "Prune lower foliage to improve airflow."
+          },
+          {
+            "category": "general",
+            "note": "Verified setpoints: day 21–24 °C, night ≥18 °C, minimum 14 h light (UAF HGA-00434)."
           }
         ],
         "fertilizerHint": {
@@ -849,8 +893,8 @@
         "durationWeeksMin": 4,
         "durationWeeksMax": 8,
         "environment": {
-          "tempDayMin": 22,
-          "tempDayMax": 28,
+          "tempDayMin": 21,
+          "tempDayMax": 24,
           "tempNightMin": 18,
           "tempNightMax": 21,
           "humidityMin": 52,
@@ -862,7 +906,9 @@
         "careNotes": [],
         "fertilizerHint": {
           "phaseLabel": "Flowering & Fruit Set",
-          "notes": [],
+          "notes": [
+            "Verified: UAF CES greenhouse cucumbers — germination 27–28 °C (seedless), day 21–24 °C, night ≥18 °C, min 14 h light."
+          ],
           "ecTarget": {
             "min": 1.6,
             "max": 2.4
@@ -880,8 +926,8 @@
         "durationWeeksMin": 1,
         "durationWeeksMax": 2,
         "environment": {
-          "tempDayMin": 22,
-          "tempDayMax": 28,
+          "tempDayMin": 21,
+          "tempDayMax": 24,
           "tempNightMin": 18,
           "tempNightMax": 21,
           "humidityMin": 55,
@@ -934,7 +980,8 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://gardens.cornell.edu/vegetation-growing-guides/",
-      "https://extension.psu.edu/vegetable-gardening-resources"
+      "https://extension.psu.edu/vegetable-gardening-resources",
+      "https://www.uaf.edu/ces/publications/database/gardening/growing-cucumbers-greenhouses.php"
     ],
     "updatedAt": "2026-10-25"
   },

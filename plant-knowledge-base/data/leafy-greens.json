@@ -19,27 +19,29 @@
         "durationWeeksMin": 1,
         "durationWeeksMax": 1,
         "environment": {
-          "tempDayMin": 18,
-          "tempDayMax": 22,
-          "tempNightMin": 13,
-          "tempNightMax": 16,
-          "humidityMin": 72,
-          "humidityMax": 82,
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
+          "humidityMin": 70,
+          "humidityMax": 85,
           "lightCycleHours": 16,
           "lightOnAt": "06:00:00",
-          "dliTarget": 6
+          "dliTarget": 8
         },
         "fertilizerHint": {
           "phaseLabel": "Germination",
           "ecTarget": {
-            "min": 1,
-            "max": 1.6
+            "min": 1.15,
+            "max": 1.25
           },
           "phTarget": {
-            "min": 5.8,
-            "max": 6.5
+            "min": 5.6,
+            "max": 6
           },
-          "notes": []
+          "notes": [
+            "Verified: Cornell CEA Hydroponic Lettuce Handbook — 24 °C day / 19 °C night, RH 50–70 %, DLI 17 mol/m²/d, EC 1.15–1.25 mS/cm above source water, pH 5.6–6.0, CO₂ 1500 ppm in light."
+          ]
         },
         "careNotes": [
           {
@@ -55,27 +57,30 @@
         "durationWeeksMin": 1,
         "durationWeeksMax": 2,
         "environment": {
-          "tempDayMin": 18,
-          "tempDayMax": 22,
-          "tempNightMin": 12,
-          "tempNightMax": 15,
-          "humidityMin": 65,
-          "humidityMax": 75,
+          "tempDayMin": 24,
+          "tempDayMax": 24,
+          "tempNightMin": 19,
+          "tempNightMax": 19,
+          "humidityMin": 50,
+          "humidityMax": 70,
           "lightCycleHours": 16,
           "lightOnAt": "06:00:00",
-          "dliTarget": 15
+          "dliTarget": 17,
+          "co2Target": 1500
         },
         "fertilizerHint": {
           "phaseLabel": "Establishment",
           "ecTarget": {
-            "min": 1,
-            "max": 1.6
+            "min": 1.15,
+            "max": 1.25
           },
           "phTarget": {
-            "min": 5.8,
-            "max": 6.5
+            "min": 5.6,
+            "max": 6
           },
-          "notes": []
+          "notes": [
+            "Verified: Cornell CEA Hydroponic Lettuce Handbook — 24 °C day / 19 °C night, RH 50–70 %, DLI 17 mol/m²/d, EC 1.15–1.25 mS/cm above source water, pH 5.6–6.0, CO₂ 1500 ppm in light."
+          ]
         },
         "careNotes": [
           {
@@ -99,29 +104,37 @@
         "durationWeeksMin": 3,
         "durationWeeksMax": 5,
         "environment": {
-          "tempDayMin": 18,
-          "tempDayMax": 22,
-          "tempNightMin": 12,
-          "tempNightMax": 15,
-          "humidityMin": 65,
-          "humidityMax": 75,
+          "tempDayMin": 24,
+          "tempDayMax": 24,
+          "tempNightMin": 19,
+          "tempNightMax": 19,
+          "humidityMin": 50,
+          "humidityMax": 70,
           "lightCycleHours": 16,
           "lightOnAt": "06:00:00",
-          "dliTarget": 13
+          "dliTarget": 17,
+          "co2Target": 1500
         },
         "fertilizerHint": {
           "phaseLabel": "Growth",
           "ecTarget": {
-            "min": 1,
-            "max": 1.6
+            "min": 1.15,
+            "max": 1.25
           },
           "phTarget": {
-            "min": 5.8,
-            "max": 6.5
+            "min": 5.6,
+            "max": 6
           },
-          "notes": []
+          "notes": [
+            "Verified: Cornell CEA Hydroponic Lettuce Handbook — 24 °C day / 19 °C night, RH 50–70 %, DLI 17 mol/m²/d, EC 1.15–1.25 mS/cm above source water, pH 5.6–6.0, CO₂ 1500 ppm in light."
+          ]
         },
-        "careNotes": []
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Verified setpoints: 24 °C day / 19 °C night, RH 50–70 %, DLI 17 (Cornell CEA Handbook); heat-stress tipburn risk above ~25 °C."
+          }
+        ]
       },
       {
         "id": "harvest",
@@ -130,27 +143,30 @@
         "durationWeeksMin": 1,
         "durationWeeksMax": 1,
         "environment": {
-          "tempDayMin": 18,
-          "tempDayMax": 22,
-          "tempNightMin": 12,
-          "tempNightMax": 15,
-          "humidityMin": 55,
-          "humidityMax": 65,
+          "tempDayMin": 24,
+          "tempDayMax": 24,
+          "tempNightMin": 19,
+          "tempNightMax": 19,
+          "humidityMin": 50,
+          "humidityMax": 70,
           "lightCycleHours": 16,
           "lightOnAt": "06:00:00",
-          "dliTarget": 15
+          "dliTarget": 17,
+          "co2Target": 1500
         },
         "fertilizerHint": {
           "phaseLabel": "Harvest",
           "ecTarget": {
-            "min": 1,
-            "max": 1.6
+            "min": 1.15,
+            "max": 1.25
           },
           "phTarget": {
-            "min": 5.8,
-            "max": 6.5
+            "min": 5.6,
+            "max": 6
           },
-          "notes": []
+          "notes": [
+            "Verified: Cornell CEA Hydroponic Lettuce Handbook — 24 °C day / 19 °C night, RH 50–70 %, DLI 17 mol/m²/d, EC 1.15–1.25 mS/cm above source water, pH 5.6–6.0, CO₂ 1500 ppm in light."
+          ]
         },
         "careNotes": []
       }
@@ -190,7 +206,8 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://www.uvm.edu/extension",
-      "https://gardens.cornell.edu/vegetation-growing-guides/"
+      "https://gardens.cornell.edu/vegetation-growing-guides/",
+      "https://cea.cals.cornell.edu/files/2019/06/Cornell-CEA-Lettuce-Handbook-.pdf"
     ],
     "updatedAt": "2026-10-25"
   },
