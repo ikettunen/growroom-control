@@ -140,7 +140,8 @@ export class RoomsController {
                     name: room.name,
                     cycleStartDate: room.cycleStartDate,
                     growWeek: room.growWeek,
-                    fertilizerFamily: familyId
+                    fertilizerFamily: familyId,
+                    totalWeeks: family.weeks.length
                 },
                 schedule
             });

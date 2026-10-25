@@ -44,6 +44,7 @@ export interface HistoryPoint {
 }
 
 export interface ControlSettings {
+    name?: string;
     light: number;
     humidity: number;
     temperature: number;

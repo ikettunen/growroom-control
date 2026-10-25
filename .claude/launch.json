@@ -1,0 +1,20 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "growroom-backend",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "start"],
+      "cwd": "growroom-backend/server",
+      "port": 5000
+    },
+    {
+      "name": "growroom-dashboard",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["start"],
+      "cwd": "growroom-dashboard/frontend/growroom-dashboard",
+      "port": 3000,
+      "url": "http://localhost:3000"
+    }
+  ]
+}

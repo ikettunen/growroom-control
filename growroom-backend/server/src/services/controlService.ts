@@ -11,6 +11,10 @@ export class ControlService {
     const updates: string[] = [];
     const values: any[] = [];
 
+    if (settings.name !== undefined) {
+      updates.push('name = ?');
+      values.push(settings.name);
+    }
     if (settings.light !== undefined) {
       updates.push('light_setting = ?');
       values.push(settings.light);

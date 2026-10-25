@@ -4,11 +4,45 @@ import {
   Grid, Card, CardContent, Typography, Slider, Box, Button,
   ToggleButtonGroup, ToggleButton, Chip, CircularProgress,
   Select, MenuItem, FormControl, InputLabel, TextField,
-  Table, TableBody, TableCell, TableHead, TableRow, Divider
+  Table, TableBody, TableCell, TableHead, TableRow, Divider,
+  IconButton, InputBase,
 } from '@mui/material';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { Terminal, Grass } from '@mui/icons-material';
+import { Terminal, Grass, Edit, Check, Close, Settings } from '@mui/icons-material';
 import { useAuth } from '../context/AuthContext';
+
+function Gauge({ value, max, color, label, unit, status, statusColor }) {
+  const r = 38;
+  const circ = 2 * Math.PI * r;
+  const pct = Math.min(Math.max(value / max, 0), 1);
+  const offset = circ * (1 - pct);
+  return (
+    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <Typography sx={{ fontSize: '0.65rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'text.secondary', mb: 1 }}>
+        {label}
+      </Typography>
+      <Box sx={{ position: 'relative', width: 100, height: 100, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <svg width="100" height="100" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r={r} stroke="#e8efe9" strokeWidth="8" fill="none" />
+          <circle cx="50" cy="50" r={r} stroke={color} strokeWidth="8" fill="none"
+            strokeDasharray={circ} strokeDashoffset={offset} strokeLinecap="round"
+            style={{ transform: 'rotate(-90deg)', transformOrigin: '50% 50%', transition: 'stroke-dashoffset 0.8s cubic-bezier(0.4,0,0.2,1)' }}
+          />
+        </svg>
+        <Box sx={{ position: 'absolute', textAlign: 'center' }}>
+          <Typography sx={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontWeight: 800, fontSize: '1.25rem', lineHeight: 1, color: '#1c2a1e' }}>
+            {value}{unit}
+          </Typography>
+          {status && (
+            <Box sx={{ mt: 0.3, px: 1, py: 0.2, borderRadius: 99, bgcolor: `${statusColor}18`, display: 'inline-block' }}>
+              <Typography sx={{ fontSize: '0.55rem', fontWeight: 700, color: statusColor, lineHeight: 1 }}>{status}</Typography>
+            </Box>
+          )}
+        </Box>
+      </Box>
+    </Box>
+  );
+}
 
 const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 
@@ -16,6 +50,9 @@ function RoomControl() {
   const { id } = useParams();
   const { token } = useAuth();
   const [room, setRoom] = useState(null);
+  const [editingName, setEditingName] = useState(false);
+  const [nameInput, setNameInput] = useState('');
+  const [settingsOpen, setSettingsOpen] = useState(false);
   const [settings, setSettings] = useState({
     light: 0,
     temperature: 22,
@@ -164,64 +201,130 @@ function RoomControl() {
 
   if (!room) return <Box sx={{ display: 'flex', justifyContent: 'center', mt: 4 }}><CircularProgress /></Box>;
 
+  const handleNameSave = async () => {
+    const trimmed = nameInput.trim();
+    if (trimmed && trimmed !== room.name) {
+      await updateSetting('name', trimmed);
+      await fetchRoom();
+    }
+    setEditingName(false);
+  };
+
+  const totalWeeks = fertilizer?.room?.totalWeeks || room.growWeek || 4;
+  const currentWeek = room.growWeek || 1;
+  const weekLabels = Array.from({ length: totalWeeks }, (_, i) => i + 1);
+
+  // Which day within the current week are we on (1-7)
+  const currentDay = (() => {
+    if (!room.cycleStartDate) return 1;
+    const start = new Date(room.cycleStartDate + 'T00:00:00');
+    const days = Math.floor((Date.now() - start.getTime()) / (24 * 60 * 60 * 1000));
+    return (days % 7) + 1;
+  })();
+  // Total days elapsed out of totalWeeks * 7
+  const totalDays = totalWeeks * 7;
+  const elapsedDays = (currentWeek - 1) * 7 + currentDay;
+
   return (
     <Box>
-      <Typography variant="h4" gutterBottom>
-        {room.name} Control
-      </Typography>
+      <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
+        {editingName ? (
+          <>
+            <InputBase
+              value={nameInput}
+              onChange={e => setNameInput(e.target.value)}
+              onKeyDown={e => { if (e.key === 'Enter') handleNameSave(); if (e.key === 'Escape') setEditingName(false); }}
+              autoFocus
+              sx={{ fontSize: '2rem', fontWeight: 700, flexGrow: 1, borderBottom: '2px solid', borderColor: 'primary.main', pb: 0.5 }}
+            />
+            <IconButton onClick={handleNameSave} color="primary" size="small"><Check /></IconButton>
+            <IconButton onClick={() => setEditingName(false)} size="small"><Close /></IconButton>
+          </>
+        ) : (
+          <>
+            <Typography variant="h4" sx={{ flexGrow: 1 }}>{room.name}</Typography>
+            <IconButton onClick={() => { setNameInput(room.name); setEditingName(true); }} size="small" sx={{ opacity: 0.5 }}>
+              <Edit fontSize="small" />
+            </IconButton>
+          </>
+        )}
+      </Box>
+
+      <Box sx={{ mb: 3, px: 1 }}>
+        {/* Track */}
+        <Box sx={{ position: 'relative', height: 12, borderRadius: 6, bgcolor: '#a8d5b5', overflow: 'visible' }}>
+          {/* Day ticks */}
+          <Box sx={{ position: 'absolute', inset: 0, borderRadius: 6, overflow: 'hidden' }}>
+            {Array.from({ length: totalDays - 1 }, (_, i) => i + 1).map(day => {
+              const isWeekBoundary = day % 7 === 0;
+              return (
+                <Box key={day} sx={{
+                  position: 'absolute',
+                  left: `${(day / totalDays) * 100}%`,
+                  top: 0, bottom: 0,
+                  width: isWeekBoundary ? 2 : 1,
+                  bgcolor: isWeekBoundary ? 'rgba(255,255,255,0.6)' : 'rgba(255,255,255,0.35)',
+                }} />
+              );
+            })}
+          </Box>
+          {/* Today dot */}
+          <Box sx={{
+            position: 'absolute',
+            left: `${(elapsedDays / totalDays) * 100}%`,
+            top: '50%',
+            transform: 'translate(-50%, -50%)',
+            width: 20,
+            height: 20,
+            borderRadius: '50%',
+            bgcolor: '#fff',
+            boxShadow: '0 1px 4px rgba(0,0,0,0.25)',
+            zIndex: 1,
+          }} />
+        </Box>
+        {/* Week labels below */}
+        <Box sx={{ display: 'flex', mt: 0.75 }}>
+          {weekLabels.map(week => {
+            const active = week === currentWeek;
+            return (
+              <Box key={week} sx={{ flex: 1, textAlign: 'center' }}>
+                <Typography sx={{
+                  fontSize: '0.6rem',
+                  fontWeight: active ? 700 : 400,
+                  color: active ? 'primary.dark' : 'text.secondary',
+                  lineHeight: 1,
+                }}>
+                  W{week}
+                </Typography>
+              </Box>
+            );
+          })}
+        </Box>
+      </Box>
 
       <Grid container spacing={3}>
         {/* Live readings */}
         <Grid item xs={12} md={6}>
           <Card>
-            <CardContent>
-              <Typography variant="h6" gutterBottom>Live Readings</Typography>
-              <Grid container spacing={2}>
-                <Grid item xs={6}>
-                  <Box sx={{ textAlign: 'center', p: 2 }}>
-                    <Box sx={{ fontSize: 40, mb: 1 }}>🌡️</Box>
-                    <Typography variant="h3" color="primary">{room.temperature}°C</Typography>
-                    <Typography variant="caption" color="text.secondary">
-                      Target: {room.temperatureSetting}°C
-                    </Typography>
-                  </Box>
-                </Grid>
-
-                <Grid item xs={6}>
-                  <Box sx={{ textAlign: 'center', p: 2 }}>
-                    <Box sx={{ fontSize: 40, mb: 1 }}>💧</Box>
-                    <Typography variant="h3" color="primary">{room.humidity}%</Typography>
-                    <Typography variant="caption" color="text.secondary">
-                      Target: {room.humiditySetting}%
-                    </Typography>
-                  </Box>
-                </Grid>
-
-                <Grid item xs={6}>
-                  <Box sx={{ textAlign: 'center', p: 2 }}>
-                    <Box sx={{ fontSize: 40, mb: 1 }}>{room.lightOn ? '☀️' : '🌙'}</Box>
-                    <Chip
-                      label={room.lightOn ? 'ON' : 'OFF'}
-                      color={room.lightOn ? 'warning' : 'default'}
-                      size="large"
-                    />
-                    <Typography variant="caption" display="block" color="text.secondary" sx={{ mt: 1 }}>
-                      {room.lightCycleHours}h cycle · starts {room.lightOnAt?.slice(0, 5)}
-                    </Typography>
-                  </Box>
-                </Grid>
-
-                <Grid item xs={6}>
-                  <Box sx={{ textAlign: 'center', p: 2 }}>
-                    <Box sx={{ fontSize: 40, mb: 1 }}>💦</Box>
-                    <Chip
-                      label={room.irrigation ? 'ACTIVE' : 'OFF'}
-                      color={room.irrigation ? 'primary' : 'default'}
-                      size="large"
-                    />
-                  </Box>
-                </Grid>
-              </Grid>
+            <CardContent sx={{ p: 3 }}>
+              <Box sx={{ display: 'flex', justifyContent: 'space-around', py: 1 }}>
+                <Gauge
+                  value={room.temperature} max={35} color="#16a34a"
+                  label="Temperature" unit="°"
+                  status={Math.abs(room.temperature - room.temperatureSetting) < 1 ? 'On target' : 'Adjusting'}
+                  statusColor={Math.abs(room.temperature - room.temperatureSetting) < 1 ? '#16a34a' : '#b45309'}
+                />
+                <Gauge
+                  value={room.humidity} max={100} color="#0ea5e9"
+                  label="Humidity" unit="%"
+                  status={Math.abs(room.humidity - room.humiditySetting) < 5 ? 'Optimal' : 'Adjusting'}
+                  statusColor={Math.abs(room.humidity - room.humiditySetting) < 5 ? '#0284c7' : '#b45309'}
+                />
+                <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 2 }}>
+                  <Typography sx={{ fontSize: '2rem' }}>{room.lightOn ? '☀️' : '🌙'}</Typography>
+                  <Typography sx={{ fontSize: '2rem', opacity: room.irrigation ? 1 : 0.25 }}>💦</Typography>
+                </Box>
+              </Box>
             </CardContent>
           </Card>
         </Grid>
@@ -230,100 +333,93 @@ function RoomControl() {
         <Grid item xs={12} md={6}>
           <Card>
             <CardContent>
-              <Typography variant="h6" gutterBottom>Controls</Typography>
-
-              {/* Light cycle */}
-              <Box sx={{ mb: 3 }}>
-                <Typography gutterBottom>Light Cycle (hours/day)</Typography>
-                <ToggleButtonGroup
-                  value={String(settings.lightCycleHours)}
-                  exclusive
-                  onChange={(e, val) => val && updateLightCycle(parseInt(val))}
-                  fullWidth
-                  sx={{ mb: 1 }}
-                >
-                  <ToggleButton value="0">Off</ToggleButton>
-                  <ToggleButton value="12">12h</ToggleButton>
-                  <ToggleButton value="18">18h</ToggleButton>
-                  <ToggleButton value="24">24h</ToggleButton>
-                </ToggleButtonGroup>
-                <Typography variant="caption" color="text.secondary">
-                  {settings.lightCycleHours === 0
-                    ? 'Lights off'
-                    : settings.lightCycleHours === 24
-                    ? 'Always on'
-                    : `${settings.lightCycleHours}h on / ${24 - settings.lightCycleHours}h off · starts ${settings.lightOnAt?.slice(0, 5)}`}
-                </Typography>
+              <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
+                <IconButton size="small" onClick={() => setSettingsOpen(o => !o)} sx={{ opacity: settingsOpen ? 1 : 0.4 }}>
+                  <Settings fontSize="small" />
+                </IconButton>
               </Box>
 
-              {/* Light intensity */}
-              <Box sx={{ mb: 3 }}>
-                <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 1 }}>
-                  <Typography>Light Intensity</Typography>
-                  <Typography color="primary">{settings.light}%</Typography>
+              {settingsOpen && (
+                <Box sx={{ mt: 1 }}>
+                  {/* Light cycle */}
+                  <Box sx={{ mb: 3 }}>
+                    <Typography gutterBottom>Light Cycle (hours/day)</Typography>
+                    <ToggleButtonGroup
+                      value={String(settings.lightCycleHours)}
+                      exclusive
+                      onChange={(e, val) => val && updateLightCycle(parseInt(val))}
+                      fullWidth
+                      sx={{ mb: 1 }}
+                    >
+                      <ToggleButton value="0">Off</ToggleButton>
+                      <ToggleButton value="12">12h</ToggleButton>
+                      <ToggleButton value="18">18h</ToggleButton>
+                      <ToggleButton value="24">24h</ToggleButton>
+                    </ToggleButtonGroup>
+                    <Typography variant="caption" color="text.secondary">
+                      {settings.lightCycleHours === 0
+                        ? 'Lights off'
+                        : settings.lightCycleHours === 24
+                        ? 'Always on'
+                        : `${settings.lightCycleHours}h on / ${24 - settings.lightCycleHours}h off · starts ${settings.lightOnAt?.slice(0, 5)}`}
+                    </Typography>
+                  </Box>
+
+                  {/* Target temperature */}
+                  <Box sx={{ mb: 3 }}>
+                    <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 1 }}>
+                      <Typography>Target Temperature</Typography>
+                      <Typography color="primary">{settings.temperature}°C</Typography>
+                    </Box>
+                    <Slider
+                      value={settings.temperature}
+                      onChange={(e, val) => setSettings(prev => ({ ...prev, temperature: val }))}
+                      onChangeCommitted={(e, val) => updateSetting('temperature', val)}
+                      min={17} max={29}
+                      marks={[{ value: 17, label: '17°C' }, { value: 23, label: '23°C' }, { value: 29, label: '29°C' }]}
+                    />
+                  </Box>
+
+                  {/* Target humidity */}
+                  <Box sx={{ mb: 3 }}>
+                    <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 1 }}>
+                      <Typography>Target Humidity</Typography>
+                      <Typography color="primary">{settings.humidity}%</Typography>
+                    </Box>
+                    <Slider
+                      value={settings.humidity}
+                      onChange={(e, val) => setSettings(prev => ({ ...prev, humidity: val }))}
+                      onChangeCommitted={(e, val) => updateSetting('humidity', val)}
+                      min={40} max={80}
+                      marks={[{ value: 40, label: '40%' }, { value: 60, label: '60%' }, { value: 80, label: '80%' }]}
+                    />
+                    <Typography variant="caption" color="text.secondary">
+                      Dehumidifier triggers outside ±5% band
+                    </Typography>
+                  </Box>
+
+                  {/* Irrigation */}
+                  <Box sx={{ mb: 1 }}>
+                    <Typography gutterBottom>Irrigation Timer</Typography>
+                    <Slider
+                      value={irrigationTimer}
+                      onChange={(e, val) => setIrrigationTimer(val)}
+                      min={10} max={120} step={10}
+                      marks={[{ value: 10, label: '10s' }, { value: 60, label: '1m' }, { value: 120, label: '2m' }]}
+                      valueLabelDisplay="auto"
+                      valueLabelFormat={val => `${val}s`}
+                    />
+                  </Box>
+                  <Button
+                    variant="contained"
+                    fullWidth
+                    onClick={startIrrigation}
+                    disabled={settings.irrigation}
+                  >
+                    {settings.irrigation ? 'Irrigation Running…' : `Start Irrigation (${irrigationTimer}s)`}
+                  </Button>
                 </Box>
-                <Slider
-                  value={settings.light}
-                  onChange={(e, val) => setSettings(prev => ({ ...prev, light: val }))}
-                  onChangeCommitted={(e, val) => updateSetting('light', val)}
-                  min={0} max={100}
-                  marks={[{ value: 0, label: 'Off' }, { value: 50, label: '50%' }, { value: 100, label: 'Max' }]}
-                />
-              </Box>
-
-              {/* Target temperature */}
-              <Box sx={{ mb: 3 }}>
-                <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 1 }}>
-                  <Typography>Target Temperature</Typography>
-                  <Typography color="primary">{settings.temperature}°C</Typography>
-                </Box>
-                <Slider
-                  value={settings.temperature}
-                  onChange={(e, val) => setSettings(prev => ({ ...prev, temperature: val }))}
-                  onChangeCommitted={(e, val) => updateSetting('temperature', val)}
-                  min={17} max={29}
-                  marks={[{ value: 17, label: '17°C' }, { value: 23, label: '23°C' }, { value: 29, label: '29°C' }]}
-                />
-              </Box>
-
-              {/* Target humidity */}
-              <Box sx={{ mb: 3 }}>
-                <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 1 }}>
-                  <Typography>Target Humidity</Typography>
-                  <Typography color="primary">{settings.humidity}%</Typography>
-                </Box>
-                <Slider
-                  value={settings.humidity}
-                  onChange={(e, val) => setSettings(prev => ({ ...prev, humidity: val }))}
-                  onChangeCommitted={(e, val) => updateSetting('humidity', val)}
-                  min={40} max={80}
-                  marks={[{ value: 40, label: '40%' }, { value: 60, label: '60%' }, { value: 80, label: '80%' }]}
-                />
-                <Typography variant="caption" color="text.secondary">
-                  Dehumidifier triggers outside ±5% band
-                </Typography>
-              </Box>
-
-              {/* Irrigation */}
-              <Box sx={{ mb: 1 }}>
-                <Typography gutterBottom>Irrigation Timer</Typography>
-                <Slider
-                  value={irrigationTimer}
-                  onChange={(e, val) => setIrrigationTimer(val)}
-                  min={10} max={120} step={10}
-                  marks={[{ value: 10, label: '10s' }, { value: 60, label: '1m' }, { value: 120, label: '2m' }]}
-                  valueLabelDisplay="auto"
-                  valueLabelFormat={val => `${val}s`}
-                />
-              </Box>
-              <Button
-                variant="contained"
-                fullWidth
-                onClick={startIrrigation}
-                disabled={settings.irrigation}
-              >
-                {settings.irrigation ? 'Irrigation Running…' : `Start Irrigation (${irrigationTimer}s)`}
-              </Button>
+              )}
             </CardContent>
           </Card>
         </Grid>

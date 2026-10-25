@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SproutOS — Smart Greenhouse Automation</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Inter & Plus Jakarta Sans Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              300: '#86efac',
+              400: '#4ade80',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+              dark: '#0e381e'
+            },
+            surface: {
+              bg: '#f3f6f3',
+              card: '#ffffff',
+              border: '#e2e8e2',
+              muted: '#f8faf8',
+              accent: '#e6f4ea'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'Inter', 'sans-serif']
+          },
+          boxShadow: {
+            'soft': '0 10px 30px -5px rgba(24, 50, 29, 0.05), 0 4px 12px -2px rgba(24, 50, 29, 0.03)',
+            'card': '0 4px 20px -2px rgba(0, 0, 0, 0.04), 0 2px 6px -1px rgba(0, 0, 0, 0.02)',
+            'float': '0 20px 40px -10px rgba(18, 60, 28, 0.12)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* CSS & SCSS Variables & Typography Sharpening Rules */
+    :root {
+      --bg-main: #f3f6f3;
+      --card-bg: #ffffff;
+      --accent-green: #22c55e;
+      --brand-dark: #14532d;
+      --text-main: #1c2a1e;
+      --text-muted: #64748b;
+      --border-color: #e2e8e2;
+      --ring-track: #e8efe9;
+    }
+
+    /* Text Sharpening & Subpixel Rendering Improvements */
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      font-family: 'Inter', system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+      letter-spacing: -0.015em;
+    }
+
+    h1, h2, h3, h4, .font-display {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      letter-spacing: -0.025em;
+    }
+
+    /* Circular SVG Gauge Dynamics */
+    .gauge-circle {
+      transition: stroke-dashoffset 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+      transform: rotate(-90deg);
+      transform-origin: 50% 50%;
+    }
+
+    /* Custom Scrollbar for Smooth UX */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgba(0,0,0,0.02);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 99px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+
+    /* Mobile Frame Mockup Container */
+    .mobile-wrapper {
+      max-width: 412px;
+      margin: 0 auto;
+      border-radius: 44px;
+      box-shadow: 0 25px 60px -15px rgba(0,0,0,0.22), 0 0 0 12px #1e293b;
+      overflow: hidden;
+      transition: all 0.4s ease;
+    }
+
+    .mobile-wrapper .hide-on-mobile-frame {
+      display: none !important;
+    }
+
+    /* Toggle Switch Styling */
+    .switch-input:checked + .switch-slider {
+      background-color: #16a34a;
+    }
+    .switch-input:checked + .switch-slider:before {
+      transform: translateX(18px);
+    }
+
+    /* Grow Cycle Timeline Step Chevron Effect */
+    .step-chevron {
+      clip-path: polygon(0% 0%, calc(100% - 12px) 0%, 100% 50%, calc(100% - 12px) 100%, 0% 100%, 12px 50%);
+    }
+    .step-chevron-first {
+      clip-path: polygon(0% 0%, calc(100% - 12px) 0%, 100% 50%, calc(100% - 12px) 100%, 0% 100%);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- Top Global Header / Navigation -->
+  <header class="bg-white border-b border-surface-border sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        
+        <!-- Logo & Brand -->
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-brand-700 to-brand-400 flex items-center justify-center text-white shadow-md shadow-brand-600/20">
+            <i class="fa-solid font-bold fa-seedling text-lg"></i>
+          </div>
+          <div>
+            <span class="font-display font-bold text-xl tracking-tight text-brand-900 block leading-none">SproutOS</span>
+            <span class="text-[10px] font-semibold tracking-wider uppercase text-brand-600">Greenhouse Automation</span>
+          </div>
+        </div>
+
+        <!-- Center View Navigation Tabs (Desktop) -->
+        <nav class="hidden md:flex items-center bg-surface-bg p-1 rounded-2xl border border-surface-border">
+          <button onclick="switchTab('dashboard')" id="nav-dashboard" class="nav-btn flex items-center gap-2 px-4 py-2 rounded-xl font-semibold text-sm transition-all duration-200 bg-white text-brand-800 shadow-sm">
+            <i class="fa-solid fa-chart-pie text-xs"></i> Dashboard
+          </button>
+          <button onclick="switchTab('schedules')" id="nav-schedules" class="nav-btn flex items-center gap-2 px-4 py-2 rounded-xl font-medium text-sm text-slate-600 hover:text-slate-900 transition-all duration-200">
+            <i class="fa-solid fa-calendar-days text-xs"></i> Schedules
+          </button>
+          <button onclick="switchTab('plants')" id="nav-plants" class="nav-btn flex items-center gap-2 px-4 py-2 rounded-xl font-medium text-sm text-slate-600 hover:text-slate-900 transition-all duration-200">
+            <i class="fa-solid fa-leaf text-xs"></i> Crop Catalog
+          </button>
+          <button onclick="switchTab('scss')" id="nav-scss" class="nav-btn flex items-center gap-2 px-4 py-2 rounded-xl font-medium text-sm text-slate-600 hover:text-slate-900 transition-all duration-200">
+            <i class="fa-solid fa-code text-xs"></i> SCSS System
+          </button>
+        </nav>
+
+        <!-- Right Side Controls & View Mode Toggle -->
+        <div class="flex items-center gap-3">
+          
+          <!-- View Device Mode Toggle (Tablet/Desktop vs Mobile Frame) -->
+          <div class="bg-surface-bg p-1 rounded-xl border border-surface-border flex items-center text-xs">
+            <button id="mode-desktop" onclick="setDeviceMode('desktop')" class="px-2.5 py-1.5 rounded-lg font-semibold bg-white shadow-xs text-brand-800 transition-all">
+              <i class="fa-solid fa-display mr-1"></i> Full Tablet/Desktop
+            </button>
+            <button id="mode-mobile" onclick="setDeviceMode('mobile')" class="px-2.5 py-1.5 rounded-lg font-medium text-slate-500 hover:text-slate-800 transition-all">
+              <i class="fa-solid fa-mobile-screen mr-1"></i> Mobile
+            </button>
+          </div>
+
+          <!-- Alert Badge & Profile -->
+          <button class="w-9 h-9 rounded-xl border border-surface-border flex items-center justify-center text-slate-600 hover:bg-surface-bg relative">
+            <i class="fa-regular fa-bell text-sm"></i>
+            <span class="w-2 h-2 rounded-full bg-brand-500 absolute top-2 right-2 ring-2 ring-white"></span>
+          </button>
+          <div class="w-9 h-9 rounded-xl bg-brand-100 border border-brand-200 flex items-center justify-center font-bold text-brand-800 text-xs">
+            GH1
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main View Frame Wrapper -->
+  <main id="app-frame" class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 transition-all duration-300">
+    
+    <!-- TOP INTERACTIVE GROW CYCLE TIMELINE HEADER -->
+    <section class="mb-6 bg-white rounded-3xl p-4 sm:p-5 shadow-soft border border-surface-border">
+      <div class="flex flex-col md:flex-row md:items-center justify-between mb-3 gap-2">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Active Crop Cycle</span>
+          <h2 class="text-lg font-bold text-slate-800 flex items-center gap-2">
+            Roma Tomato Batch #42 
+            <span class="text-xs px-2.5 py-0.5 rounded-full bg-brand-100 text-brand-800 font-semibold border border-brand-200">Day 23 of 70</span>
+          </h2>
+        </div>
+        <div class="text-xs text-slate-500 font-medium flex items-center gap-4">
+          <span><strong class="text-slate-700">Photoperiod:</strong> 18h ON / 6h OFF</span>
+          <span><strong class="text-slate-700">DLI Target:</strong> 22 mol/m²/d</span>
+        </div>
+      </div>
+
+      <!-- Chevron Step Timeline -->
+      <div class="w-full overflow-x-auto pb-1 pt-2">
+        <div class="flex items-center min-w-[650px] gap-1 text-xs font-semibold">
+          
+          <button onclick="setGrowPhase(1)" id="phase-1" class="phase-btn flex-1 py-2 px-3 text-center bg-brand-50 text-slate-500 rounded-l-xl border border-surface-border hover:bg-brand-100 transition-all">
+            Seedling W1
+          </button>
+          
+          <button onclick="setGrowPhase(2)" id="phase-2" class="phase-btn flex-1 py-2 px-3 text-center bg-brand-50 text-slate-500 border border-surface-border hover:bg-brand-100 transition-all">
+            Veg W1
+          </button>
+          
+          <button onclick="setGrowPhase(3)" id="phase-3" class="phase-btn flex-1 py-2 px-3 text-center bg-brand-600 text-white font-bold rounded-lg shadow-sm border border-brand-700 ring-2 ring-brand-300 transition-all">
+            <i class="fa-solid fa-circle-dot text-[10px] mr-1 text-brand-200"></i> Veg W2 (Active)
+          </button>
+          
+          <button onclick="setGrowPhase(4)" id="phase-4" class="phase-btn flex-1 py-2 px-3 text-center bg-brand-50 text-slate-500 border border-surface-border hover:bg-brand-100 transition-all">
+            Veg W3
+          </button>
+
+          <button onclick="setGrowPhase(5)" id="phase-5" class="phase-btn flex-1 py-2 px-3 text-center bg-brand-50 text-slate-500 border border-surface-border hover:bg-brand-100 transition-all">
+            Bloom W1
+          </button>
+
+          <button onclick="setGrowPhase(6)" id="phase-6" class="phase-btn flex-1 py-2 px-3 text-center bg-brand-50 text-slate-500 border border-surface-border hover:bg-brand-100 transition-all">
+            Bloom W2
+          </button>
+
+          <button onclick="setGrowPhase(7)" id="phase-7" class="phase-btn flex-1 py-2 px-3 text-center bg-brand-50 text-slate-500 border border-surface-border hover:bg-brand-100 transition-all">
+            Bloom W3
+          </button>
+
+          <button onclick="setGrowPhase(8)" id="phase-8" class="phase-btn flex-1 py-2 px-3 text-center bg-brand-50 text-slate-500 rounded-r-xl border border-surface-border hover:bg-brand-100 transition-all">
+            Harvest
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 1: DASHBOARD MAIN -->
+    <div id="view-dashboard" class="tab-view space-y-6">
+      
+      <!-- Top Row Telemetry: Circular Visual Dials -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        
+        <!-- Gauge 1: Soil Moisture -->
+        <div class="bg-white rounded-3xl p-4 shadow-soft border border-surface-border flex flex-col items-center text-center relative overflow-hidden group hover:border-brand-300 transition-all">
+          <span class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Soil Moisture</span>
+          
+          <div class="relative w-28 h-28 flex items-center justify-center my-1">
+            <svg class="w-full h-full" viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="40" stroke="#e8efe9" stroke-width="8" fill="none" />
+              <circle id="gauge-moisture" class="gauge-circle" cx="50" cy="50" r="40" stroke="#22c55e" stroke-width="8" stroke-dasharray="251.2" stroke-dashoffset="70" stroke-linecap="round" fill="none" />
+            </svg>
+            <div class="absolute flex flex-col items-center">
+              <span id="val-moisture" class="font-display font-extrabold text-2xl text-slate-800">72%</span>
+              <span class="text-[10px] font-semibold text-brand-600 bg-brand-50 px-2 py-0.5 rounded-full mt-0.5">Optimal</span>
+            </div>
+          </div>
+
+          <div class="w-full flex justify-between items-center text-[11px] text-slate-500 mt-2 pt-2 border-t border-slate-100">
+            <span>Target: 70-75%</span>
+            <i class="fa-solid fa-droplet text-brand-500"></i>
+          </div>
+        </div>
+
+        <!-- Gauge 2: Temperature -->
+        <div class="bg-white rounded-3xl p-4 shadow-soft border border-surface-border flex flex-col items-center text-center relative overflow-hidden group hover:border-brand-300 transition-all">
+          <span class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Temperature</span>
+          
+          <div class="relative w-28 h-28 flex items-center justify-center my-1">
+            <svg class="w-full h-full" viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="40" stroke="#e8efe9" stroke-width="8" fill="none" />
+              <circle id="gauge-temp" class="gauge-circle" cx="50" cy="50" r="40" stroke="#16a34a" stroke-width="8" stroke-dasharray="251.2" stroke-dashoffset="92" stroke-linecap="round" fill="none" />
+            </svg>
+            <div class="absolute flex flex-col items-center">
+              <span id="val-temp" class="font-display font-extrabold text-2xl text-slate-800">23.5°</span>
+              <span class="text-[10px] font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full mt-0.5">Balanced</span>
+            </div>
+          </div>
+
+          <div class="w-full flex justify-between items-center text-[11px] text-slate-500 mt-2 pt-2 border-t border-slate-100">
+            <span>Target: 24.0°C</span>
+            <i class="fa-solid fa-temperature-half text-amber-500"></i>
+          </div>
+        </div>
+
+        <!-- Gauge 3: Air Humidity -->
+        <div class="bg-white rounded-3xl p-4 shadow-soft border border-surface-border flex flex-col items-center text-center relative overflow-hidden group hover:border-brand-300 transition-all">
+          <span class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Humidity</span>
+          
+          <div class="relative w-28 h-28 flex items-center justify-center my-1">
+            <svg class="w-full h-full" viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="40" stroke="#e8efe9" stroke-width="8" fill="none" />
+              <circle id="gauge-humidity" class="gauge-circle" cx="50" cy="50" r="40" stroke="#0ea5e9" stroke-width="8" stroke-dasharray="251.2" stroke-dashoffset="88" stroke-linecap="round" fill="none" />
+            </svg>
+            <div class="absolute flex flex-col items-center">
+              <span id="val-humidity" class="font-display font-extrabold text-2xl text-slate-800">65%</span>
+              <span class="text-[10px] font-semibold text-sky-600 bg-sky-50 px-2 py-0.5 rounded-full mt-0.5">VPD: 0.95</span>
+            </div>
+          </div>
+
+          <div class="w-full flex justify-between items-center text-[11px] text-slate-500 mt-2 pt-2 border-t border-slate-100">
+            <span>Target: 60-70%</span>
+            <i class="fa-solid fa-wind text-sky-500"></i>
+          </div>
+        </div>
+
+        <!-- Gauge 4: CO2 Levels -->
+        <div class="bg-white rounded-3xl p-4 shadow-soft border border-surface-border flex flex-col items-center text-center relative overflow-hidden group hover:border-brand-300 transition-all">
+          <span class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">CO₂ Concentration</span>
+          
+          <div class="relative w-28 h-28 flex items-center justify-center my-1">
+            <svg class="w-full h-full" viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="40" stroke="#e8efe9" stroke-width="8" fill="none" />
+              <circle id="gauge-co2" class="gauge-circle" cx="50" cy="50" r="40" stroke="#8b5cf6" stroke-width="8" stroke-dasharray="251.2" stroke-dashoffset="100" stroke-linecap="round" fill="none" />
+            </svg>
+            <div class="absolute flex flex-col items-center">
+              <span id="val-co2" class="font-display font-extrabold text-xl text-slate-800">850</span>
+              <span class="text-[10px] font-medium text-slate-500">PPM</span>
+            </div>
+          </div>
+
+          <div class="w-full flex justify-between items-center text-[11px] text-slate-500 mt-2 pt-2 border-t border-slate-100">
+            <span>Target: 900 PPM</span>
+            <i class="fa-solid fa-cloud text-purple-500"></i>
+          </div>
+        </div>
+
+        <!-- Gauge 5: PAR Lighting -->
+        <div class="bg-white rounded-3xl p-4 shadow-soft border border-surface-border flex flex-col items-center text-center relative overflow-hidden group hover:border-brand-300 transition-all sm:col-span-2 lg:col-span-1">
+          <span class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">PAR Light Index</span>
+          
+          <div class="relative w-28 h-28 flex items-center justify-center my-1">
+            <svg class="w-full h-full" viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="40" stroke="#e8efe9" stroke-width="8" fill="none" />
+              <circle id="gauge-par" class="gauge-circle" cx="50" cy="50" r="40" stroke="#eab308" stroke-width="8" stroke-dasharray="251.2" stroke-dashoffset="65" stroke-linecap="round" fill="none" />
+            </svg>
+            <div class="absolute flex flex-col items-center">
+              <span id="val-par" class="font-display font-extrabold text-xl text-slate-800">450</span>
+              <span class="text-[9px] font-semibold text-amber-600 bg-amber-50 px-1.5 py-0.5 rounded mt-0.5">µmol/m²/s</span>
+            </div>
+          </div>
+
+          <div class="w-full flex justify-between items-center text-[11px] text-slate-500 mt-2 pt-2 border-t border-slate-100">
+            <span>85% Intensity</span>
+            <i class="fa-solid fa-sun text-amber-500"></i>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Actuator Switches & Manual Overrides -->
+      <div class="bg-white rounded-3xl p-6 shadow-soft border border-surface-border">
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h3 class="font-display font-bold text-slate-800 text-base">Actuators & Environmental Controls</h3>
+            <p class="text-xs text-slate-500">Toggle automated routines or initiate immediate manual override</p>
+          </div>
+          <button onclick="resetActuators()" class="text-xs font-semibold text-brand-700 bg-brand-50 hover:bg-brand-100 px-3 py-1.5 rounded-xl border border-brand-200 transition-all">
+            <i class="fa-solid fa-rotate-left mr-1"></i> Reset Auto
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          
+          <!-- Control Card 1: Lighting -->
+          <div class="p-4 rounded-2xl bg-surface-muted border border-surface-border flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-lg">
+                <i class="fa-solid fa-lightbulb"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-slate-800">Full Grow Spectrum</h4>
+                <p class="text-xs text-slate-500">Zone A • 450 W</p>
+              </div>
+            </div>
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" id="toggle-light" class="sr-only peer" checked onchange="handleToggle('Lighting', this.checked)">
+              <div class="w-11 h-6 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-brand-600"></div>
+            </label>
+          </div>
+
+          <!-- Control Card 2: Drip Irrigation -->
+          <div class="p-4 rounded-2xl bg-surface-muted border border-surface-border flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-lg">
+                <i class="fa-solid fa-faucet-drip"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-slate-800">Automated Watering</h4>
+                <p class="text-xs text-slate-500">Next: 2h 15m</p>
+              </div>
+            </div>
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" id="toggle-water" class="sr-only peer" checked onchange="handleToggle('Watering', this.checked)">
+              <div class="w-11 h-6 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-brand-600"></div>
+            </label>
+          </div>
+
+          <!-- Control Card 3: Exhaust Fans -->
+          <div class="p-4 rounded-2xl bg-surface-muted border border-surface-border flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-teal-100 text-teal-700 flex items-center justify-center text-lg">
+                <i class="fa-solid fa-fan"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-slate-800">Ventilation Fans</h4>
+                <p class="text-xs text-slate-500">Speed: 60% Active</p>
+              </div>
+            </div>
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" id="toggle-vent" class="sr-only peer" checked onchange="handleToggle('Ventilation', this.checked)">
+              <div class="w-11 h-6 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-brand-600"></div>
+            </label>
+          </div>
+
+          <!-- Control Card 4: Nutrient Dosing -->
+          <div class="p-4 rounded-2xl bg-surface-muted border border-surface-border flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-lg">
+                <i class="fa-solid fa-flask text-lg"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-slate-800">Nutrient Dosing</h4>
+                <p class="text-xs text-slate-500">EC 1.8 • pH 6.2</p>
+              </div>
+            </div>
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" id="toggle-nutrients" class="sr-only peer" onchange="handleToggle('Nutrients', this.checked)">
+              <div class="w-11 h-6 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-brand-600"></div>
+            </label>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Live Telemetry Simulation Control Bar -->
+      <div class="bg-brand-900 text-white rounded-3xl p-5 shadow-float flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center text-brand-300">
+            <i class="fa-solid fa-sliders text-sm"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-sm">Interactive Sensor Simulation</h4>
+            <p class="text-xs text-brand-200">Adjust parameters in real-time to watch gauge UI responsiveness</p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-4 w-full md:w-auto">
+          <div class="flex items-center gap-2 text-xs">
+            <span class="text-brand-200">Moisture:</span>
+            <input type="range" min="10" max="100" value="72" class="w-24 accent-brand-400 cursor-pointer" oninput="updateMoisture(this.value)">
+          </div>
+          <div class="flex items-center gap-2 text-xs">
+            <span class="text-brand-200">Temp:</span>
+            <input type="range" min="15" max="35" value="23.5" step="0.5" class="w-24 accent-brand-400 cursor-pointer" oninput="updateTemp(this.value)">
+          </div>
+          <button onclick="triggerQuickWatering()" class="ml-auto px-4 py-2 bg-brand-500 hover:bg-brand-400 text-brand-950 font-bold text-xs rounded-xl transition-all shadow-sm">
+            <i class="fa-solid fa-bolt mr-1"></i> Quick Flush
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- VIEW 2: SCHEDULES MAIN -->
+    <div id="view-schedules" class="tab-view hidden space-y-6">
+      
+      <!-- Date Strip Header -->
+      <div class="bg-white rounded-3xl p-5 shadow-soft border border-surface-border">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="font-display font-bold text-slate-800 text-base flex items-center gap-2">
+            <i class="fa-solid fa-calendar text-brand-600"></i> Weekly Automation Planner
+          </h3>
+          <span class="text-xs font-semibold text-slate-500">October 2026</span>
+        </div>
+
+        <!-- Horizontal Date Picker -->
+        <div class="grid grid-cols-7 gap-2 text-center">
+          <div class="p-2 rounded-2xl bg-surface-bg border border-surface-border cursor-pointer hover:border-brand-300">
+            <span class="block text-[10px] font-bold uppercase text-slate-400">Mon</span>
+            <span class="font-display font-bold text-sm text-slate-700">23</span>
+          </div>
+          <div class="p-2 rounded-2xl bg-brand-600 text-white shadow-md shadow-brand-600/20 cursor-pointer">
+            <span class="block text-[10px] font-bold uppercase text-brand-200">Tue</span>
+            <span class="font-display font-bold text-sm">24</span>
+          </div>
+          <div class="p-2 rounded-2xl bg-surface-bg border border-surface-border cursor-pointer hover:border-brand-300">
+            <span class="block text-[10px] font-bold uppercase text-slate-400">Wed</span>
+            <span class="font-display font-bold text-sm text-slate-700">25</span>
+          </div>
+          <div class="p-2 rounded-2xl bg-surface-bg border border-surface-border cursor-pointer hover:border-brand-300">
+            <span class="block text-[10px] font-bold uppercase text-slate-400">Thu</span>
+            <span class="font-display font-bold text-sm text-slate-700">26</span>
+          </div>
+          <div class="p-2 rounded-2xl bg-surface-bg border border-surface-border cursor-pointer hover:border-brand-300">
+            <span class="block text-[10px] font-bold uppercase text-slate-400">Fri</span>
+            <span class="font-display font-bold text-sm text-slate-700">27</span>
+          </div>
+          <div class="p-2 rounded-2xl bg-surface-bg border border-surface-border cursor-pointer hover:border-brand-300">
+            <span class="block text-[10px] font-bold uppercase text-slate-400">Sat</span>
+            <span class="font-display font-bold text-sm text-slate-700">28</span>
+          </div>
+          <div class="p-2 rounded-2xl bg-surface-bg border border-surface-border cursor-pointer hover:border-brand-300">
+            <span class="block text-[10px] font-bold uppercase text-slate-400">Sun</span>
+            <span class="font-display font-bold text-sm text-slate-700">29</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Time Blocks & Event Queue -->
+      <div class="bg-white rounded-3xl p-6 shadow-soft border border-surface-border">
+        <h4 class="font-display font-bold text-slate-800 text-sm mb-4">Today's Automated Routine Timeline</h4>
+        
+        <div class="space-y-4">
+          
+          <!-- Event Item 1 -->
+          <div class="flex items-start gap-4 p-4 rounded-2xl bg-brand-50/50 border border-brand-100">
+            <div class="w-12 text-center">
+              <span class="font-bold text-xs text-brand-800">06:00</span>
+              <span class="block text-[10px] text-brand-600 font-semibold">AM</span>
+            </div>
+            <div class="w-2 h-12 rounded-full bg-brand-500"></div>
+            <div class="flex-1">
+              <div class="flex items-center justify-between">
+                <h5 class="font-bold text-sm text-slate-800">Grow Light Sunrise Ramping</h5>
+                <span class="text-[10px] font-semibold bg-brand-100 text-brand-800 px-2 py-0.5 rounded-full">Completed</span>
+              </div>
+              <p class="text-xs text-slate-500 mt-0.5">Gradually increase LED output from 0% to 85% over 30 minutes.</p>
+            </div>
+          </div>
+
+          <!-- Event Item 2 -->
+          <div class="flex items-start gap-4 p-4 rounded-2xl bg-blue-50/50 border border-blue-100">
+            <div class="w-12 text-center">
+              <span class="font-bold text-xs text-blue-800">10:30</span>
+              <span class="block text-[10px] text-blue-600 font-semibold">AM</span>
+            </div>
+            <div class="w-2 h-12 rounded-full bg-blue-500"></div>
+            <div class="flex-1">
+              <div class="flex items-center justify-between">
+                <h5 class="font-bold text-sm text-slate-800">Zone 1 & 2 Drip Fertigation</h5>
+                <span class="text-[10px] font-semibold bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full">Active Next</span>
+              </div>
+              <p class="text-xs text-slate-500 mt-0.5">Dispense 450ml nutrient solution (EC 1.8) directly to root zone.</p>
+            </div>
+          </div>
+
+          <!-- Event Item 3 -->
+          <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-surface-border">
+            <div class="w-12 text-center">
+              <span class="font-bold text-xs text-slate-700">02:00</span>
+              <span class="block text-[10px] text-slate-400 font-semibold">PM</span>
+            </div>
+            <div class="w-2 h-12 rounded-full bg-slate-300"></div>
+            <div class="flex-1">
+              <div class="flex items-center justify-between">
+                <h5 class="font-bold text-sm text-slate-800">High Humidity Pulse Flush</h5>
+                <span class="text-[10px] font-semibold bg-slate-200 text-slate-700 px-2 py-0.5 rounded-full">Scheduled</span>
+              </div>
+              <p class="text-xs text-slate-500 mt-0.5">Activate ultrasonic fogger for 8 minutes to maintain 65% RH target.</p>
+            </div>
+          </div>
+
+          <!-- Event Item 4 -->
+          <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-surface-border">
+            <div class="w-12 text-center">
+              <span class="font-bold text-xs text-slate-700">11:59</span>
+              <span class="block text-[10px] text-slate-400 font-semibold">PM</span>
+            </div>
+            <div class="w-2 h-12 rounded-full bg-slate-300"></div>
+            <div class="flex-1">
+              <div class="flex items-center justify-between">
+                <h5 class="font-bold text-sm text-slate-800">Night Phase Shift (Darkness)</h5>
+                <span class="text-[10px] font-semibold bg-slate-200 text-slate-700 px-2 py-0.5 rounded-full">Scheduled</span>
+              </div>
+              <p class="text-xs text-slate-500 mt-0.5">Turn off main grow lights, lower target temp to 18.5°C.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- VIEW 3: PLANTS / CROP CATALOG MAIN -->
+    <div id="view-plants" class="tab-view hidden space-y-6">
+      
+      <div class="flex items-center justify-between">
+        <div>
+          <h3 class="font-display font-bold text-slate-800 text-lg">Greenhouse Crop Profiles</h3>
+          <p class="text-xs text-slate-500">Individual species health status, targets, and stage tracking</p>
+        </div>
+        <button class="px-3.5 py-2 bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs rounded-xl shadow-sm transition-all">
+          <i class="fa-solid fa-plus mr-1"></i> Add Crop Profile
+        </button>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        
+        <!-- Crop Card 1 -->
+        <div class="bg-white rounded-3xl p-5 shadow-soft border border-surface-border flex flex-col justify-between space-y-4">
+          <div>
+            <div class="flex items-start justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-2xl bg-emerald-100 flex items-center justify-center text-emerald-700 font-bold text-xl">
+                  🪴
+                </div>
+                <div>
+                  <h4 class="font-bold text-base text-slate-800">Monstera Adansonii</h4>
+                  <span class="text-xs text-slate-500">Swiss Cheese Plant</span>
+                </div>
+              </div>
+              <span class="text-[10px] font-bold bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full border border-emerald-200">
+                Healthy
+              </span>
+            </div>
+
+            <!-- Mini Stage Timeline -->
+            <div class="space-y-1 my-3">
+              <div class="flex justify-between text-[11px] font-semibold text-slate-600">
+                <span>Stage: Vegetative</span>
+                <span class="text-brand-600">Week 4 of 8</span>
+              </div>
+              <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+                <div class="h-full bg-brand-500 rounded-full" style="width: 50%"></div>
+              </div>
+            </div>
+
+            <div class="bg-surface-bg p-3 rounded-2xl space-y-1.5 text-xs">
+              <div class="flex justify-between text-slate-600">
+                <span>Ideal Temp:</span>
+                <strong class="text-slate-800">18 - 24°C</strong>
+              </div>
+              <div class="flex justify-between text-slate-600">
+                <span>Ideal Moisture:</span>
+                <strong class="text-slate-800">65 - 75%</strong>
+              </div>
+              <div class="flex justify-between text-slate-600">
+                <span>Last Fertigated:</span>
+                <strong class="text-slate-800">6 hours ago</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between pt-2 border-t border-slate-100">
+            <span class="text-xs font-semibold text-slate-600">Automated Care</span>
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" class="sr-only peer" checked>
+              <div class="w-9 h-5 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-brand-600"></div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Crop Card 2 -->
+        <div class="bg-white rounded-3xl p-5 shadow-soft border border-surface-border flex flex-col justify-between space-y-4">
+          <div>
+            <div class="flex items-start justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-2xl bg-amber-100 flex items-center justify-center text-amber-700 font-bold text-xl">
+                  🍅
+                </div>
+                <div>
+                  <h4 class="font-bold text-base text-slate-800">Roma Heirloom Tomato</h4>
+                  <span class="text-xs text-slate-500">Hydroponic Batch #42</span>
+                </div>
+              </div>
+              <span class="text-[10px] font-bold bg-amber-100 text-amber-800 px-2.5 py-1 rounded-full border border-amber-200">
+                Needs Nitrogen
+              </span>
+            </div>
+
+            <!-- Mini Stage Timeline -->
+            <div class="space-y-1 my-3">
+              <div class="flex justify-between text-[11px] font-semibold text-slate-600">
+                <span>Stage: Flowering</span>
+                <span class="text-amber-600">Week 6 of 10</span>
+              </div>
+              <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+                <div class="h-full bg-amber-500 rounded-full" style="width: 60%"></div>
+              </div>
+            </div>
+
+            <div class="bg-surface-bg p-3 rounded-2xl space-y-1.5 text-xs">
+              <div class="flex justify-between text-slate-600">
+                <span>Ideal Temp:</span>
+                <strong class="text-slate-800">22 - 26°C</strong>
+              </div>
+              <div class="flex justify-between text-slate-600">
+                <span>Ideal Moisture:</span>
+                <strong class="text-slate-800">70 - 80%</strong>
+              </div>
+              <div class="flex justify-between text-slate-600">
+                <span>Last Fertigated:</span>
+                <strong class="text-slate-800">1 hour ago</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between pt-2 border-t border-slate-100">
+            <span class="text-xs font-semibold text-slate-600">Automated Care</span>
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" class="sr-only peer" checked>
+              <div class="w-9 h-5 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-brand-600"></div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Crop Card 3 -->
+        <div class="bg-white rounded-3xl p-5 shadow-soft border border-surface-border flex flex-col justify-between space-y-4">
+          <div>
+            <div class="flex items-start justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-2xl bg-teal-100 flex items-center justify-center text-teal-700 font-bold text-xl">
+                  🌿
+                </div>
+                <div>
+                  <h4 class="font-bold text-base text-slate-800">Sweet Genovese Basil</h4>
+                  <span class="text-xs text-slate-500">Indoor Herb Rack</span>
+                </div>
+              </div>
+              <span class="text-[10px] font-bold bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full border border-emerald-200">
+                Healthy
+              </span>
+            </div>
+
+            <!-- Mini Stage Timeline -->
+            <div class="space-y-1 my-3">
+              <div class="flex justify-between text-[11px] font-semibold text-slate-600">
+                <span>Stage: Harvest Ready</span>
+                <span class="text-brand-600">Week 3 of 4</span>
+              </div>
+              <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+                <div class="h-full bg-brand-500 rounded-full" style="width: 85%"></div>
+              </div>
+            </div>
+
+            <div class="bg-surface-bg p-3 rounded-2xl space-y-1.5 text-xs">
+              <div class="flex justify-between text-slate-600">
+                <span>Ideal Temp:</span>
+                <strong class="text-slate-800">20 - 25°C</strong>
+              </div>
+              <div class="flex justify-between text-slate-600">
+                <span>Ideal Moisture:</span>
+                <strong class="text-slate-800">60 - 70%</strong>
+              </div>
+              <div class="flex justify-between text-slate-600">
+                <span>Last Fertigated:</span>
+                <strong class="text-slate-800">3 hours ago</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between pt-2 border-t border-slate-100">
+            <span class="text-xs font-semibold text-slate-600">Automated Care</span>
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" class="sr-only peer" checked>
+              <div class="w-9 h-5 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-brand-600"></div>
+            </label>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- VIEW 4: SCSS CODE SYSTEM INSPECTOR -->
+    <div id="view-scss" class="tab-view hidden space-y-4">
+      
+      <div class="flex items-center justify-between bg-white p-5 rounded-3xl shadow-soft border border-surface-border">
+        <div>
+          <h3 class="font-display font-bold text-slate-800 text-base flex items-center gap-2">
+            <i class="fa-solid fa-code text-brand-600"></i> SCSS Design Tokens & Typography Rules
+          </h3>
+          <p class="text-xs text-slate-500">Copy these SCSS variables and crisp typography rules directly into your frontend stylesheet</p>
+        </div>
+        <button onclick="copyScssCode()" class="px-4 py-2 bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs rounded-xl shadow-sm transition-all flex items-center gap-2">
+          <i class="fa-solid fa-copy"></i> <span id="copy-btn-text">Copy SCSS Rules</span>
+        </button>
+      </div>
+
+      <div class="bg-slate-900 text-slate-200 rounded-3xl p-6 shadow-float font-mono text-xs overflow-x-auto relative border border-slate-800">
+        <pre id="scss-code-block" class="leading-relaxed">
+<span class="text-emerald-400">// =================================================================
+// SPROUT OS - GREENHOUSE AUTOMATION SCSS DESIGN SYSTEM
+// Clean Light Mode Palette, Crisp Text Sharpening & Gauge Rules
+// =================================================================</span>
+
+<span class="text-purple-400">$font-family-sans</span>: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+<span class="text-purple-400">$font-family-display</span>: 'Plus Jakarta Sans', $font-family-sans;
+
+<span class="text-emerald-400">// SCSS Color Palette Tokens</span>
+<span class="text-purple-400">$bg-main</span>: #f3f6f3;
+<span class="text-purple-400">$surface-card</span>: #ffffff;
+<span class="text-purple-400">$surface-muted</span>: #f8faf8;
+<span class="text-purple-400">$border-color</span>: #e2e8e2;
+
+<span class="text-purple-400">$brand-50</span>: #f0fdf4;
+<span class="text-purple-400">$brand-100</span>: #dcfce7;
+<span class="text-purple-400">$brand-500</span>: #22c55e;
+<span class="text-purple-400">$brand-600</span>: #16a34a;
+<span class="text-purple-400">$brand-800</span>: #166534;
+<span class="text-purple-400">$brand-900</span>: #14532d;
+
+<span class="text-emerald-400">// Font Sharpening & Subpixel Rendering Utility Mixin</span>
+<span class="text-sky-400">@mixin</span> <span class="text-yellow-300">sharpen-typography</span> {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  letter-spacing: -0.015em;
+}
+
+<span class="text-sky-400">body</span> {
+  background-color: <span class="text-purple-400">$bg-main</span>;
+  font-family: <span class="text-purple-400">$font-family-sans</span>;
+  <span class="text-sky-400">@include</span> <span class="text-yellow-300">sharpen-typography</span>;
+}
+
+<span class="text-emerald-400">// Circular Dynamic Telemetry Gauge Styling</span>
+<span class="text-sky-400">.telemetry-gauge</span> {
+  position: relative;
+  width: 112px;
+  height: 112px;
+
+  <span class="text-sky-400">.gauge-circle</span> {
+    transition: stroke-dashoffset 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+  }
+
+  <span class="text-sky-400">.gauge-value</span> {
+    font-family: <span class="text-purple-400">$font-family-display</span>;
+    font-weight: 800;
+    color: <span class="text-purple-400">$brand-900</span>;
+  }
+}
+        </pre>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Interactive JavaScript Controller -->
+  <script>
+    // Tab View Switcher
+    function switchTab(tabId) {
+      // Hide all tab views
+      document.querySelectorAll('.tab-view').forEach(el => el.classList.add('hidden'));
+      
+      // Deactivate all nav buttons
+      document.querySelectorAll('.nav-btn').forEach(btn => {
+        btn.classList.remove('bg-white', 'text-brand-800', 'shadow-sm', 'font-semibold');
+        btn.classList.add('text-slate-600', 'font-medium');
+      });
+
+      // Show target tab
+      document.getElementById('view-' + tabId).classList.remove('hidden');
+
+      // Highlight target nav button
+      const activeBtn = document.getElementById('nav-' + tabId);
+      if (activeBtn) {
+        activeBtn.classList.add('bg-white', 'text-brand-800', 'shadow-sm', 'font-semibold');
+        activeBtn.classList.remove('text-slate-600', 'font-medium');
+      }
+    }
+
+    // Toggle Device View Mode (Desktop/Tablet vs Mobile Frame)
+    function setDeviceMode(mode) {
+      const appFrame = document.getElementById('app-frame');
+      const btnDesktop = document.getElementById('mode-desktop');
+      const btnMobile = document.getElementById('mode-mobile');
+
+      if (mode === 'mobile') {
+        appFrame.classList.add('mobile-wrapper');
+        btnMobile.classList.add('bg-white', 'shadow-xs', 'text-brand-800', 'font-semibold');
+        btnMobile.classList.remove('text-slate-500');
+
+        btnDesktop.classList.remove('bg-white', 'shadow-xs', 'text-brand-800', 'font-semibold');
+        btnDesktop.classList.add('text-slate-500');
+      } else {
+        appFrame.classList.remove('mobile-wrapper');
+        btnDesktop.classList.add('bg-white', 'shadow-xs', 'text-brand-800', 'font-semibold');
+        btnDesktop.classList.remove('text-slate-500');
+
+        btnMobile.classList.remove('bg-white', 'shadow-xs', 'text-brand-800', 'font-semibold');
+        btnMobile.classList.add('text-slate-500');
+      }
+    }
+
+    // Interactive Grow Cycle Phase Selector
+    function setGrowPhase(phaseNum) {
+      document.querySelectorAll('.phase-btn').forEach(btn => {
+        btn.className = 'phase-btn flex-1 py-2 px-3 text-center bg-brand-50 text-slate-500 border border-surface-border hover:bg-brand-100 transition-all';
+      });
+
+      const activeBtn = document.getElementById('phase-' + phaseNum);
+      if (activeBtn) {
+        activeBtn.className = 'phase-btn flex-1 py-2 px-3 text-center bg-brand-600 text-white font-bold rounded-lg shadow-sm border border-brand-700 ring-2 ring-brand-300 transition-all';
+      }
+    }
+
+    // Live Telemetry Gauge Sliders & Updates
+    function updateMoisture(val) {
+      document.getElementById('val-moisture').innerText = val + '%';
+      
+      // Calculate SVG stroke offset (Circumference ~251.2)
+      const circumference = 251.2;
+      const offset = circumference - (val / 100) * circumference;
+      document.getElementById('gauge-moisture').style.strokeDashoffset = offset;
+    }
+
+    function updateTemp(val) {
+      document.getElementById('val-temp').innerText = val + '°';
+      
+      // Map temp range 15°C to 35°C
+      const percentage = (val - 15) / 20;
+      const circumference = 251.2;
+      const offset = circumference - Math.min(Math.max(percentage, 0.1), 0.9) * circumference;
+      document.getElementById('gauge-temp').style.strokeDashoffset = offset;
+    }
+
+    function triggerQuickWatering() {
+      let moistureInput = document.querySelector('input[oninput*="updateMoisture"]');
+      moistureInput.value = 85;
+      updateMoisture(85);
+      
+      const toggleWater = document.getElementById('toggle-water');
+      if (toggleWater) toggleWater.checked = true;
+    }
+
+    function handleToggle(systemName, isChecked) {
+      console.log(`${systemName} active status: ${isChecked}`);
+    }
+
+    function resetActuators() {
+      document.getElementById('toggle-light').checked = true;
+      document.getElementById('toggle-water').checked = true;
+      document.getElementById('toggle-vent').checked = true;
+      document.getElementById('toggle-nutrients').checked = false;
+    }
+
+    // Copy SCSS Code Snippet
+    function copyScssCode() {
+      const codeText = document.getElementById('scss-code-block').innerText;
+      
+      // Fallback copy using textarea
+      const el = document.createElement('textarea');
+      el.value = codeText;
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand('copy');
+      document.body.removeChild(el);
+
+      const btnText = document.getElementById('copy-btn-text');
+      btnText.innerText = 'Copied to Clipboard!';
+      setTimeout(() => {
+        btnText.innerText = 'Copy SCSS Rules';
+      }, 2500);
+    }
+  </script>
+</body>
+</html>

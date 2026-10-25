@@ -18,7 +18,7 @@ const mockRooms: Room[] = [
     lightCycleHours: 18,
     lightOnAt: '06:00:00',
     lightOn: true,
-    cycleStartDate: '2026-10-08',
+    cycleStartDate: '2025-06-16',
     fertilizerFamily: 'canna-coco',
     growWeek: 3
   },
@@ -35,9 +35,9 @@ const mockRooms: Room[] = [
     lightCycleHours: 12,
     lightOnAt: '06:00:00',
     lightOn: true,
-    cycleStartDate: '2026-09-18',
+    cycleStartDate: '2025-05-05',
     fertilizerFamily: 'canna-coco',
-    growWeek: 6
+    growWeek: 10
   },
   {
     id: 3,
