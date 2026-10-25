@@ -1,0 +1,2371 @@
+[
+  {
+    "id": "sunflower-microgreens",
+    "name": "Sunflower Microgreens",
+    "scientificName": "Helianthus annuus",
+    "category": "microgreen",
+    "description": "Sunflower Microgreens (Helianthus annuus) — a microgreen crop with a 1–2 week tray lifecycle under indoor light.",
+    "tags": [
+      "microgreen",
+      "fast-crop",
+      "day-neutral"
+    ],
+    "phases": [
+      {
+        "id": "microgreen-germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 26,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
+          "humidityMin": 72,
+          "humidityMax": 92,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 4
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-growth",
+        "label": "Growth",
+        "order": 2,
+        "durationWeeksMin": 0.3,
+        "durationWeeksMax": 0.6,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 26,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
+          "humidityMin": 70,
+          "humidityMax": 90,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Bottom-water only after germination to avoid flattening seedlings."
+          },
+          {
+            "category": "pest",
+            "note": "Ensure airflow to prevent damping-off in dense stands."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-harvest",
+        "label": "Harvest",
+        "order": 3,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 26,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
+          "humidityMin": 70,
+          "humidityMax": 90,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "harvest",
+            "note": "Cut just above soil line when first true leaves appear."
+          }
+        ]
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 1,
+      "max": 2
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://extension.psu.edu/growing-microgreens",
+      "https://www.urbanagnews.com/"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "pea-shoots",
+    "name": "Pea Shoots",
+    "scientificName": "Pisum sativum",
+    "category": "microgreen",
+    "description": "Pea Shoots (Pisum sativum) — a microgreen crop with a 1–2 week tray lifecycle under indoor light.",
+    "tags": [
+      "microgreen",
+      "fast-crop",
+      "day-neutral"
+    ],
+    "phases": [
+      {
+        "id": "microgreen-germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 22,
+          "tempNightMin": 14,
+          "tempNightMax": 16,
+          "humidityMin": 72,
+          "humidityMax": 87,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 4
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-growth",
+        "label": "Growth",
+        "order": 2,
+        "durationWeeksMin": 0.3,
+        "durationWeeksMax": 0.6,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 22,
+          "tempNightMin": 14,
+          "tempNightMax": 16,
+          "humidityMin": 70,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Bottom-water only after germination to avoid flattening seedlings."
+          },
+          {
+            "category": "pest",
+            "note": "Ensure airflow to prevent damping-off in dense stands."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-harvest",
+        "label": "Harvest",
+        "order": 3,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 22,
+          "tempNightMin": 14,
+          "tempNightMax": 16,
+          "humidityMin": 70,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "harvest",
+            "note": "Cut just above soil line when first true leaves appear."
+          }
+        ]
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 1,
+      "max": 2
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://extension.psu.edu/growing-microgreens",
+      "https://www.urbanagnews.com/"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "radish-microgreens",
+    "name": "Radish Microgreens",
+    "scientificName": "Raphanus sativus",
+    "category": "microgreen",
+    "description": "Radish Microgreens (Raphanus sativus) — a microgreen crop with a 1–1.5 week tray lifecycle under indoor light.",
+    "tags": [
+      "microgreen",
+      "fast-crop",
+      "day-neutral"
+    ],
+    "phases": [
+      {
+        "id": "microgreen-germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 72,
+          "humidityMax": 92,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 4
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-growth",
+        "label": "Growth",
+        "order": 2,
+        "durationWeeksMin": 0.3,
+        "durationWeeksMax": 0.6,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 70,
+          "humidityMax": 90,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Bottom-water only after germination to avoid flattening seedlings."
+          },
+          {
+            "category": "pest",
+            "note": "Ensure airflow to prevent damping-off in dense stands."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-harvest",
+        "label": "Harvest",
+        "order": 3,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 70,
+          "humidityMax": 90,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "harvest",
+            "note": "Cut just above soil line when first true leaves appear."
+          }
+        ]
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 1,
+      "max": 1.5
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://extension.psu.edu/growing-microgreens",
+      "https://www.urbanagnews.com/"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "broccoli-microgreens",
+    "name": "Broccoli Microgreens",
+    "scientificName": "Brassica oleracea var. italica",
+    "category": "microgreen",
+    "description": "Broccoli Microgreens (Brassica oleracea var. italica) — a microgreen crop with a 1.5–2 week tray lifecycle under indoor light.",
+    "tags": [
+      "microgreen",
+      "fast-crop",
+      "day-neutral"
+    ],
+    "phases": [
+      {
+        "id": "microgreen-germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 72,
+          "humidityMax": 92,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 4
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-growth",
+        "label": "Growth",
+        "order": 2,
+        "durationWeeksMin": 0.3,
+        "durationWeeksMax": 0.6,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 70,
+          "humidityMax": 90,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Bottom-water only after germination to avoid flattening seedlings."
+          },
+          {
+            "category": "pest",
+            "note": "Ensure airflow to prevent damping-off in dense stands."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-harvest",
+        "label": "Harvest",
+        "order": 3,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 70,
+          "humidityMax": 90,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "harvest",
+            "note": "Cut just above soil line when first true leaves appear."
+          }
+        ]
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 1.5,
+      "max": 2
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://extension.psu.edu/growing-microgreens",
+      "https://www.urbanagnews.com/"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "kale-microgreens",
+    "name": "Kale Microgreens",
+    "scientificName": "Brassica oleracea var. sabellica",
+    "category": "microgreen",
+    "description": "Kale Microgreens (Brassica oleracea var. sabellica) — a microgreen crop with a 1.5–2 week tray lifecycle under indoor light.",
+    "tags": [
+      "microgreen",
+      "fast-crop",
+      "day-neutral"
+    ],
+    "phases": [
+      {
+        "id": "microgreen-germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 72,
+          "humidityMax": 92,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 4
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-growth",
+        "label": "Growth",
+        "order": 2,
+        "durationWeeksMin": 0.3,
+        "durationWeeksMax": 0.6,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 70,
+          "humidityMax": 90,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Bottom-water only after germination to avoid flattening seedlings."
+          },
+          {
+            "category": "pest",
+            "note": "Ensure airflow to prevent damping-off in dense stands."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-harvest",
+        "label": "Harvest",
+        "order": 3,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 70,
+          "humidityMax": 90,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "harvest",
+            "note": "Cut just above soil line when first true leaves appear."
+          }
+        ]
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 1.5,
+      "max": 2
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://extension.psu.edu/growing-microgreens",
+      "https://www.urbanagnews.com/"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "arugula-microgreens",
+    "name": "Arugula Microgreens",
+    "scientificName": "Eruca vesicaria",
+    "category": "microgreen",
+    "description": "Arugula Microgreens (Eruca vesicaria) — a microgreen crop with a 1–1.5 week tray lifecycle under indoor light.",
+    "tags": [
+      "microgreen",
+      "fast-crop",
+      "day-neutral"
+    ],
+    "phases": [
+      {
+        "id": "microgreen-germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 22,
+          "tempNightMin": 14,
+          "tempNightMax": 16,
+          "humidityMin": 67,
+          "humidityMax": 87,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 4
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-growth",
+        "label": "Growth",
+        "order": 2,
+        "durationWeeksMin": 0.3,
+        "durationWeeksMax": 0.6,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 22,
+          "tempNightMin": 14,
+          "tempNightMax": 16,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Bottom-water only after germination to avoid flattening seedlings."
+          },
+          {
+            "category": "pest",
+            "note": "Ensure airflow to prevent damping-off in dense stands."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-harvest",
+        "label": "Harvest",
+        "order": 3,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 22,
+          "tempNightMin": 14,
+          "tempNightMax": 16,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "harvest",
+            "note": "Cut just above soil line when first true leaves appear."
+          }
+        ]
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 1,
+      "max": 1.5
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://extension.psu.edu/growing-microgreens",
+      "https://www.urbanagnews.com/"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "beet-microgreens",
+    "name": "Beet Microgreens",
+    "scientificName": "Beta vulgaris",
+    "category": "microgreen",
+    "description": "Beet Microgreens (Beta vulgaris) — a microgreen crop with a 2–3 week tray lifecycle under indoor light.",
+    "tags": [
+      "microgreen",
+      "fast-crop",
+      "day-neutral"
+    ],
+    "phases": [
+      {
+        "id": "microgreen-germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 72,
+          "humidityMax": 92,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 4
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-growth",
+        "label": "Growth",
+        "order": 2,
+        "durationWeeksMin": 0.3,
+        "durationWeeksMax": 0.6,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 70,
+          "humidityMax": 90,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Bottom-water only after germination to avoid flattening seedlings."
+          },
+          {
+            "category": "pest",
+            "note": "Ensure airflow to prevent damping-off in dense stands."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-harvest",
+        "label": "Harvest",
+        "order": 3,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 70,
+          "humidityMax": 90,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "harvest",
+            "note": "Cut just above soil line when first true leaves appear."
+          }
+        ]
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 2,
+      "max": 3
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://extension.psu.edu/growing-microgreens",
+      "https://www.urbanagnews.com/"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "chard-microgreens",
+    "name": "Chard Microgreens",
+    "scientificName": "Beta vulgaris var. cicla",
+    "category": "microgreen",
+    "description": "Chard Microgreens (Beta vulgaris var. cicla) — a microgreen crop with a 2–3 week tray lifecycle under indoor light.",
+    "tags": [
+      "microgreen",
+      "fast-crop",
+      "day-neutral"
+    ],
+    "phases": [
+      {
+        "id": "microgreen-germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 72,
+          "humidityMax": 92,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 4
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-growth",
+        "label": "Growth",
+        "order": 2,
+        "durationWeeksMin": 0.3,
+        "durationWeeksMax": 0.6,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 70,
+          "humidityMax": 90,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Bottom-water only after germination to avoid flattening seedlings."
+          },
+          {
+            "category": "pest",
+            "note": "Ensure airflow to prevent damping-off in dense stands."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-harvest",
+        "label": "Harvest",
+        "order": 3,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 70,
+          "humidityMax": 90,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "harvest",
+            "note": "Cut just above soil line when first true leaves appear."
+          }
+        ]
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 2,
+      "max": 3
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://extension.psu.edu/growing-microgreens",
+      "https://www.urbanagnews.com/"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "basil-microgreens",
+    "name": "Basil Microgreens",
+    "scientificName": "Ocimum basilicum",
+    "category": "microgreen",
+    "description": "Basil Microgreens (Ocimum basilicum) — a microgreen crop with a 2–3 week tray lifecycle under indoor light.",
+    "tags": [
+      "microgreen",
+      "fast-crop",
+      "day-neutral"
+    ],
+    "phases": [
+      {
+        "id": "microgreen-germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 26,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
+          "humidityMin": 67,
+          "humidityMax": 87,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 4
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-growth",
+        "label": "Growth",
+        "order": 2,
+        "durationWeeksMin": 0.3,
+        "durationWeeksMax": 0.6,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 26,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Bottom-water only after germination to avoid flattening seedlings."
+          },
+          {
+            "category": "pest",
+            "note": "Ensure airflow to prevent damping-off in dense stands."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-harvest",
+        "label": "Harvest",
+        "order": 3,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 26,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "harvest",
+            "note": "Cut just above soil line when first true leaves appear."
+          }
+        ]
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 2,
+      "max": 3
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://extension.psu.edu/growing-microgreens",
+      "https://www.urbanagnews.com/"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "cilantro-microgreens",
+    "name": "Cilantro Microgreens",
+    "scientificName": "Coriandrum sativum",
+    "category": "microgreen",
+    "description": "Cilantro Microgreens (Coriandrum sativum) — a microgreen crop with a 2–3 week tray lifecycle under indoor light.",
+    "tags": [
+      "microgreen",
+      "fast-crop",
+      "day-neutral"
+    ],
+    "phases": [
+      {
+        "id": "microgreen-germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 22,
+          "tempNightMin": 14,
+          "tempNightMax": 16,
+          "humidityMin": 72,
+          "humidityMax": 92,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 4
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-growth",
+        "label": "Growth",
+        "order": 2,
+        "durationWeeksMin": 0.3,
+        "durationWeeksMax": 0.6,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 22,
+          "tempNightMin": 14,
+          "tempNightMax": 16,
+          "humidityMin": 70,
+          "humidityMax": 90,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Bottom-water only after germination to avoid flattening seedlings."
+          },
+          {
+            "category": "pest",
+            "note": "Ensure airflow to prevent damping-off in dense stands."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-harvest",
+        "label": "Harvest",
+        "order": 3,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 22,
+          "tempNightMin": 14,
+          "tempNightMax": 16,
+          "humidityMin": 70,
+          "humidityMax": 90,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "harvest",
+            "note": "Cut just above soil line when first true leaves appear."
+          }
+        ]
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 2,
+      "max": 3
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://extension.psu.edu/growing-microgreens",
+      "https://www.urbanagnews.com/"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "amaranth-microgreens",
+    "name": "Amaranth Microgreens",
+    "scientificName": "Amaranthus spp.",
+    "category": "microgreen",
+    "description": "Amaranth Microgreens (Amaranthus spp.) — a microgreen crop with a 1.5–2.5 week tray lifecycle under indoor light.",
+    "tags": [
+      "microgreen",
+      "fast-crop",
+      "day-neutral"
+    ],
+    "phases": [
+      {
+        "id": "microgreen-germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 26,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
+          "humidityMin": 67,
+          "humidityMax": 87,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 4
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-growth",
+        "label": "Growth",
+        "order": 2,
+        "durationWeeksMin": 0.3,
+        "durationWeeksMax": 0.6,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 26,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Bottom-water only after germination to avoid flattening seedlings."
+          },
+          {
+            "category": "pest",
+            "note": "Ensure airflow to prevent damping-off in dense stands."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-harvest",
+        "label": "Harvest",
+        "order": 3,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 26,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "harvest",
+            "note": "Cut just above soil line when first true leaves appear."
+          }
+        ]
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 1.5,
+      "max": 2.5
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://extension.psu.edu/growing-microgreens",
+      "https://www.urbanagnews.com/"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "mustard-microgreens",
+    "name": "Mustard Microgreens",
+    "scientificName": "Brassica juncea",
+    "category": "microgreen",
+    "description": "Mustard Microgreens (Brassica juncea) — a microgreen crop with a 1–1.5 week tray lifecycle under indoor light.",
+    "tags": [
+      "microgreen",
+      "fast-crop",
+      "day-neutral"
+    ],
+    "phases": [
+      {
+        "id": "microgreen-germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 67,
+          "humidityMax": 87,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 4
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-growth",
+        "label": "Growth",
+        "order": 2,
+        "durationWeeksMin": 0.3,
+        "durationWeeksMax": 0.6,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Bottom-water only after germination to avoid flattening seedlings."
+          },
+          {
+            "category": "pest",
+            "note": "Ensure airflow to prevent damping-off in dense stands."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-harvest",
+        "label": "Harvest",
+        "order": 3,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "harvest",
+            "note": "Cut just above soil line when first true leaves appear."
+          }
+        ]
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 1,
+      "max": 1.5
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://extension.psu.edu/growing-microgreens",
+      "https://www.urbanagnews.com/"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "fenugreek-microgreens",
+    "name": "Fenugreek Microgreens",
+    "scientificName": "Trigonella foenum-graecum",
+    "category": "microgreen",
+    "description": "Fenugreek Microgreens (Trigonella foenum-graecum) — a microgreen crop with a 1.5–2.5 week tray lifecycle under indoor light.",
+    "tags": [
+      "microgreen",
+      "fast-crop",
+      "day-neutral"
+    ],
+    "phases": [
+      {
+        "id": "microgreen-germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 72,
+          "humidityMax": 87,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 4
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-growth",
+        "label": "Growth",
+        "order": 2,
+        "durationWeeksMin": 0.3,
+        "durationWeeksMax": 0.6,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 70,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Bottom-water only after germination to avoid flattening seedlings."
+          },
+          {
+            "category": "pest",
+            "note": "Ensure airflow to prevent damping-off in dense stands."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-harvest",
+        "label": "Harvest",
+        "order": 3,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 70,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "harvest",
+            "note": "Cut just above soil line when first true leaves appear."
+          }
+        ]
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 1.5,
+      "max": 2.5
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://extension.psu.edu/growing-microgreens",
+      "https://www.urbanagnews.com/"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "mung-bean-sprouts",
+    "name": "Mung Bean Sprouts",
+    "scientificName": "Vigna radiata",
+    "category": "microgreen",
+    "description": "Mung Bean Sprouts (Vigna radiata) — a microgreen crop with a 1–1 week tray lifecycle under indoor light.",
+    "tags": [
+      "microgreen",
+      "fast-crop",
+      "day-neutral"
+    ],
+    "phases": [
+      {
+        "id": "microgreen-germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 20,
+          "humidityMin": 82,
+          "humidityMax": 95,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 2
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-growth",
+        "label": "Growth",
+        "order": 2,
+        "durationWeeksMin": 0.3,
+        "durationWeeksMax": 0.6,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 20,
+          "humidityMin": 80,
+          "humidityMax": 95,
+          "lightCycleHours": 0,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 2
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Bottom-water only after germination to avoid flattening seedlings."
+          },
+          {
+            "category": "pest",
+            "note": "Ensure airflow to prevent damping-off in dense stands."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-harvest",
+        "label": "Harvest",
+        "order": 3,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 20,
+          "humidityMin": 80,
+          "humidityMax": 95,
+          "lightCycleHours": 0,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 2
+        },
+        "careNotes": [
+          {
+            "category": "harvest",
+            "note": "Cut just above soil line when first true leaves appear."
+          }
+        ]
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 1,
+      "max": 1
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://extension.psu.edu/growing-microgreens",
+      "https://www.urbanagnews.com/"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "wheatgrass",
+    "name": "Wheatgrass",
+    "scientificName": "Triticum aestivum",
+    "category": "microgreen",
+    "description": "Wheatgrass (Triticum aestivum) — a microgreen crop with a 1.5–2 week tray lifecycle under indoor light.",
+    "tags": [
+      "microgreen",
+      "fast-crop",
+      "day-neutral"
+    ],
+    "phases": [
+      {
+        "id": "microgreen-germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 72,
+          "humidityMax": 92,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 4
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-growth",
+        "label": "Growth",
+        "order": 2,
+        "durationWeeksMin": 0.3,
+        "durationWeeksMax": 0.6,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 70,
+          "humidityMax": 90,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Bottom-water only after germination to avoid flattening seedlings."
+          },
+          {
+            "category": "pest",
+            "note": "Ensure airflow to prevent damping-off in dense stands."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-harvest",
+        "label": "Harvest",
+        "order": 3,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 70,
+          "humidityMax": 90,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "harvest",
+            "note": "Cut just above soil line when first true leaves appear."
+          }
+        ]
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 1.5,
+      "max": 2
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://extension.psu.edu/growing-microgreens",
+      "https://www.urbanagnews.com/"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "buckwheat-microgreens",
+    "name": "Buckwheat Microgreens",
+    "scientificName": "Fagopyrum esculentum",
+    "category": "microgreen",
+    "description": "Buckwheat Microgreens (Fagopyrum esculentum) — a microgreen crop with a 1.5–2 week tray lifecycle under indoor light.",
+    "tags": [
+      "microgreen",
+      "fast-crop",
+      "day-neutral"
+    ],
+    "phases": [
+      {
+        "id": "microgreen-germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 67,
+          "humidityMax": 87,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 4
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-growth",
+        "label": "Growth",
+        "order": 2,
+        "durationWeeksMin": 0.3,
+        "durationWeeksMax": 0.6,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Bottom-water only after germination to avoid flattening seedlings."
+          },
+          {
+            "category": "pest",
+            "note": "Ensure airflow to prevent damping-off in dense stands."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-harvest",
+        "label": "Harvest",
+        "order": 3,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "harvest",
+            "note": "Cut just above soil line when first true leaves appear."
+          }
+        ]
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 1.5,
+      "max": 2
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://extension.psu.edu/growing-microgreens",
+      "https://www.urbanagnews.com/"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "clover-microgreens",
+    "name": "Clover Microgreens",
+    "scientificName": "Trifolium pratense",
+    "category": "microgreen",
+    "description": "Clover Microgreens (Trifolium pratense) — a microgreen crop with a 1.5–2 week tray lifecycle under indoor light.",
+    "tags": [
+      "microgreen",
+      "fast-crop",
+      "day-neutral"
+    ],
+    "phases": [
+      {
+        "id": "microgreen-germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 72,
+          "humidityMax": 92,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 4
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-growth",
+        "label": "Growth",
+        "order": 2,
+        "durationWeeksMin": 0.3,
+        "durationWeeksMax": 0.6,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 70,
+          "humidityMax": 90,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Bottom-water only after germination to avoid flattening seedlings."
+          },
+          {
+            "category": "pest",
+            "note": "Ensure airflow to prevent damping-off in dense stands."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-harvest",
+        "label": "Harvest",
+        "order": 3,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 70,
+          "humidityMax": 90,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "harvest",
+            "note": "Cut just above soil line when first true leaves appear."
+          }
+        ]
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 1.5,
+      "max": 2
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://extension.psu.edu/growing-microgreens",
+      "https://www.urbanagnews.com/"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "chia-microgreens",
+    "name": "Chia Microgreens",
+    "scientificName": "Salvia hispanica",
+    "category": "microgreen",
+    "description": "Chia Microgreens (Salvia hispanica) — a microgreen crop with a 2–3 week tray lifecycle under indoor light.",
+    "tags": [
+      "microgreen",
+      "fast-crop",
+      "day-neutral"
+    ],
+    "phases": [
+      {
+        "id": "microgreen-germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 26,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
+          "humidityMin": 72,
+          "humidityMax": 92,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 3
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-growth",
+        "label": "Growth",
+        "order": 2,
+        "durationWeeksMin": 0.3,
+        "durationWeeksMax": 0.6,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 26,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
+          "humidityMin": 70,
+          "humidityMax": 90,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 4
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Bottom-water only after germination to avoid flattening seedlings."
+          },
+          {
+            "category": "pest",
+            "note": "Ensure airflow to prevent damping-off in dense stands."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-harvest",
+        "label": "Harvest",
+        "order": 3,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 26,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
+          "humidityMin": 70,
+          "humidityMax": 90,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 4
+        },
+        "careNotes": [
+          {
+            "category": "harvest",
+            "note": "Cut just above soil line when first true leaves appear."
+          }
+        ]
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 2,
+      "max": 3
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://extension.psu.edu/growing-microgreens",
+      "https://www.urbanagnews.com/"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "flax-microgreens",
+    "name": "Flax Microgreens",
+    "scientificName": "Linum usitatissimum",
+    "category": "microgreen",
+    "description": "Flax Microgreens (Linum usitatissimum) — a microgreen crop with a 2–3 week tray lifecycle under indoor light.",
+    "tags": [
+      "microgreen",
+      "fast-crop",
+      "day-neutral"
+    ],
+    "phases": [
+      {
+        "id": "microgreen-germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 67,
+          "humidityMax": 87,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 3
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-growth",
+        "label": "Growth",
+        "order": 2,
+        "durationWeeksMin": 0.3,
+        "durationWeeksMax": 0.6,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 4
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Bottom-water only after germination to avoid flattening seedlings."
+          },
+          {
+            "category": "pest",
+            "note": "Ensure airflow to prevent damping-off in dense stands."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-harvest",
+        "label": "Harvest",
+        "order": 3,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 4
+        },
+        "careNotes": [
+          {
+            "category": "harvest",
+            "note": "Cut just above soil line when first true leaves appear."
+          }
+        ]
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 2,
+      "max": 3
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://extension.psu.edu/growing-microgreens",
+      "https://www.urbanagnews.com/"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "pak-choi-microgreens",
+    "name": "Pak Choi Microgreens",
+    "scientificName": "Brassica rapa var. chinensis",
+    "category": "microgreen",
+    "description": "Pak Choi Microgreens (Brassica rapa var. chinensis) — a microgreen crop with a 1.5–2 week tray lifecycle under indoor light.",
+    "tags": [
+      "microgreen",
+      "fast-crop",
+      "day-neutral"
+    ],
+    "phases": [
+      {
+        "id": "microgreen-germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 22,
+          "tempNightMin": 14,
+          "tempNightMax": 16,
+          "humidityMin": 72,
+          "humidityMax": 92,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 4
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-growth",
+        "label": "Growth",
+        "order": 2,
+        "durationWeeksMin": 0.3,
+        "durationWeeksMax": 0.6,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 22,
+          "tempNightMin": 14,
+          "tempNightMax": 16,
+          "humidityMin": 70,
+          "humidityMax": 90,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Bottom-water only after germination to avoid flattening seedlings."
+          },
+          {
+            "category": "pest",
+            "note": "Ensure airflow to prevent damping-off in dense stands."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-harvest",
+        "label": "Harvest",
+        "order": 3,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 22,
+          "tempNightMin": 14,
+          "tempNightMax": 16,
+          "humidityMin": 70,
+          "humidityMax": 90,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "harvest",
+            "note": "Cut just above soil line when first true leaves appear."
+          }
+        ]
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 1.5,
+      "max": 2
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://extension.psu.edu/growing-microgreens",
+      "https://www.urbanagnews.com/"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "kohlrabi-microgreens",
+    "name": "Kohlrabi Microgreens",
+    "scientificName": "Brassica oleracea Gongylodes Group",
+    "category": "microgreen",
+    "description": "Kohlrabi Microgreens (Brassica oleracea Gongylodes Group) — a microgreen crop with a 1.5–2 week tray lifecycle under indoor light.",
+    "tags": [
+      "microgreen",
+      "fast-crop",
+      "day-neutral"
+    ],
+    "phases": [
+      {
+        "id": "microgreen-germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 72,
+          "humidityMax": 92,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 4
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-growth",
+        "label": "Growth",
+        "order": 2,
+        "durationWeeksMin": 0.3,
+        "durationWeeksMax": 0.6,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 70,
+          "humidityMax": 90,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Bottom-water only after germination to avoid flattening seedlings."
+          },
+          {
+            "category": "pest",
+            "note": "Ensure airflow to prevent damping-off in dense stands."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-harvest",
+        "label": "Harvest",
+        "order": 3,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 70,
+          "humidityMax": 90,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "harvest",
+            "note": "Cut just above soil line when first true leaves appear."
+          }
+        ]
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 1.5,
+      "max": 2
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://extension.psu.edu/growing-microgreens",
+      "https://www.urbanagnews.com/"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "cabbage-microgreens",
+    "name": "Cabbage Microgreens",
+    "scientificName": "Brassica oleracea var. capitata",
+    "category": "microgreen",
+    "description": "Cabbage Microgreens (Brassica oleracea var. capitata) — a microgreen crop with a 1.5–2 week tray lifecycle under indoor light.",
+    "tags": [
+      "microgreen",
+      "fast-crop",
+      "day-neutral"
+    ],
+    "phases": [
+      {
+        "id": "microgreen-germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 22,
+          "tempNightMin": 14,
+          "tempNightMax": 16,
+          "humidityMin": 72,
+          "humidityMax": 92,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 4
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-growth",
+        "label": "Growth",
+        "order": 2,
+        "durationWeeksMin": 0.3,
+        "durationWeeksMax": 0.6,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 22,
+          "tempNightMin": 14,
+          "tempNightMax": 16,
+          "humidityMin": 70,
+          "humidityMax": 90,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Bottom-water only after germination to avoid flattening seedlings."
+          },
+          {
+            "category": "pest",
+            "note": "Ensure airflow to prevent damping-off in dense stands."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-harvest",
+        "label": "Harvest",
+        "order": 3,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 22,
+          "tempNightMin": 14,
+          "tempNightMax": 16,
+          "humidityMin": 70,
+          "humidityMax": 90,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "harvest",
+            "note": "Cut just above soil line when first true leaves appear."
+          }
+        ]
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 1.5,
+      "max": 2
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://extension.psu.edu/growing-microgreens",
+      "https://www.urbanagnews.com/"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "popcorn-microgreens",
+    "name": "Popcorn Microgreens",
+    "scientificName": "Zea mays everta",
+    "category": "microgreen",
+    "description": "Popcorn Microgreens (Zea mays everta) — a microgreen crop with a 1.5–2 week tray lifecycle under indoor light.",
+    "tags": [
+      "microgreen",
+      "fast-crop",
+      "day-neutral"
+    ],
+    "phases": [
+      {
+        "id": "microgreen-germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 26,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
+          "humidityMin": 67,
+          "humidityMax": 87,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-growth",
+        "label": "Growth",
+        "order": 2,
+        "durationWeeksMin": 0.3,
+        "durationWeeksMax": 0.6,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 26,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 6
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Bottom-water only after germination to avoid flattening seedlings."
+          },
+          {
+            "category": "pest",
+            "note": "Ensure airflow to prevent damping-off in dense stands."
+          }
+        ]
+      },
+      {
+        "id": "microgreen-harvest",
+        "label": "Harvest",
+        "order": 3,
+        "durationWeeksMin": 0.1,
+        "durationWeeksMax": 0.2,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 26,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 6
+        },
+        "careNotes": [
+          {
+            "category": "harvest",
+            "note": "Cut just above soil line when first true leaves appear."
+          }
+        ]
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 1.5,
+      "max": 2
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://extension.psu.edu/growing-microgreens",
+      "https://www.urbanagnews.com/"
+    ],
+    "updatedAt": "2026-10-25"
+  }
+]
