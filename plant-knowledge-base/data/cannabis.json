@@ -1,0 +1,326 @@
+[
+  {
+    "id": "cannabis",
+    "name": "Cannabis",
+    "scientificName": "Cannabis sativa",
+    "category": "cannabis",
+    "description": "Cannabis — the flagship crop of the growroom system. Photoperiod varieties shift from 18 h vegetative light to 12 h bloom light; week-by-week nutrient schedules map to the canna-coco and sensi-coco fertilizer families. Check local legality before cultivation.",
+    "tags": [
+      "photoperiod",
+      "annual",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "seedling",
+        "label": "Seedling",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 19,
+          "tempNightMax": 23,
+          "humidityMin": 62,
+          "humidityMax": 82,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12,
+          "vpdMin": 0.8,
+          "vpdMax": 1.2
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ],
+        "fertilizerHint": {
+          "phaseLabel": "Seedling",
+          "notes": [],
+          "familyId": "canna-coco",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 1.8
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          }
+        }
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 3,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 18,
+          "tempNightMax": 22,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 18,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 26,
+          "vpdMin": 0.8,
+          "vpdMax": 1.2
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Water at first sign of light substrate dry-back; avoid saturated media."
+          },
+          {
+            "category": "pruning",
+            "note": "Defoliate and lollipop in mid-veg to improve light penetration."
+          },
+          {
+            "category": "training",
+            "note": "Low-stress training (LST) or SCROG increases canopy uniformity."
+          }
+        ],
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "notes": [],
+          "familyId": "canna-coco",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 1.8
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          }
+        }
+      },
+      {
+        "id": "early-bloom",
+        "label": "Early Bloom",
+        "order": 3,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 26,
+          "tempNightMin": 20,
+          "tempNightMax": 22,
+          "humidityMin": 40,
+          "humidityMax": 55,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 21,
+          "vpdMin": 1.2,
+          "vpdMax": 1.6
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Verified: PMC meta-analysis confirms 12 h photoperiod switch maximizes floral biomass (standard 18→12 h transition)."
+          }
+        ],
+        "fertilizerHint": {
+          "phaseLabel": "Early Bloom",
+          "notes": [],
+          "familyId": "canna-coco",
+          "ecTarget": {
+            "min": 1.8,
+            "max": 2.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          }
+        }
+      },
+      {
+        "id": "bloom",
+        "label": "Bloom",
+        "order": 4,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 6,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 26,
+          "tempNightMin": 20,
+          "tempNightMax": 22,
+          "humidityMin": 40,
+          "humidityMax": 55,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 21,
+          "vpdMin": 1.2,
+          "vpdMax": 1.6
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Verified: Wageningen study (Holweg et al.) — bloom at 25/21 °C day/night maximizes specialized metabolite yield; 31/27 °C significantly reduces cannabinoid content."
+          }
+        ],
+        "fertilizerHint": {
+          "phaseLabel": "Bloom",
+          "notes": [],
+          "familyId": "canna-coco",
+          "ecTarget": {
+            "min": 1.8,
+            "max": 2.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          }
+        }
+      },
+      {
+        "id": "late-bloom",
+        "label": "Late Bloom",
+        "order": 5,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 3,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 26,
+          "tempNightMin": 20,
+          "tempNightMax": 22,
+          "humidityMin": 40,
+          "humidityMax": 55,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 21,
+          "vpdMin": 1.2,
+          "vpdMax": 1.6
+        },
+        "careNotes": [],
+        "fertilizerHint": {
+          "phaseLabel": "Late Bloom",
+          "notes": [],
+          "familyId": "canna-coco",
+          "ecTarget": {
+            "min": 1.8,
+            "max": 2.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          }
+        }
+      },
+      {
+        "id": "flush",
+        "label": "Flush",
+        "order": 6,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 18,
+          "tempNightMax": 22,
+          "humidityMin": 40,
+          "humidityMax": 55,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18,
+          "vpdMin": 1.2,
+          "vpdMax": 1.6
+        },
+        "careNotes": [],
+        "fertilizerHint": {
+          "phaseLabel": "Flush",
+          "notes": [],
+          "ecTarget": {
+            "min": 0,
+            "max": 0.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          }
+        }
+      }
+    ],
+    "varieties": [
+      {
+        "id": "blue-dream",
+        "name": "Blue Dream",
+        "description": "Popular cannabis variety for controlled-environment or garden cultivation.",
+        "tags": []
+      },
+      {
+        "id": "og-kush",
+        "name": "OG Kush",
+        "description": "Popular cannabis variety for controlled-environment or garden cultivation.",
+        "tags": []
+      },
+      {
+        "id": "white-widow",
+        "name": "White Widow",
+        "description": "Popular cannabis variety for controlled-environment or garden cultivation.",
+        "tags": []
+      },
+      {
+        "id": "northern-lights",
+        "name": "Northern Lights",
+        "description": "Popular cannabis variety for controlled-environment or garden cultivation.",
+        "tags": []
+      }
+    ],
+    "difficulty": "advanced",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 10,
+      "max": 20
+    },
+    "compatibleFertilizerFamilies": [
+      "canna-coco",
+      "sensi-coco"
+    ],
+    "sources": [
+      "https://www.canna.com/growing/",
+      "https://www.growbarato.net/blog/en/",
+      "https://edepot.wur.nl/686107",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC8786113/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 11,
+        "max": 25
+      },
+      "potDepthCm": {
+        "min": 25,
+        "max": 35
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 4
+      },
+      "spacingCm": {
+        "min": 60,
+        "max": 100
+      },
+      "canopyFootprintM2": 0.75,
+      "rootDepthCm": {
+        "min": 30,
+        "max": 45
+      },
+      "verticalClearanceCm": {
+        "min": 100,
+        "max": 180
+      },
+      "recommendedMedium": [
+        "coco",
+        "soil",
+        "hydro-dwc"
+      ],
+      "notes": [
+        "11 L suits 1–2 week veg / SOG; 15–20 L for 4+ week veg; up to 25 L for large photos.",
+        "Autoflowers do well in 11–15 L from seed to harvest."
+      ]
+    }
+  }
+]

@@ -1,0 +1,5637 @@
+[
+  {
+    "id": "lemon",
+    "name": "Lemon",
+    "scientificName": "Citrus limon",
+    "category": "fruit",
+    "description": "Lemon (Citrus limon) — a perennial fruit plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "tree",
+      "citrus",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 1,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 30,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 12,
+        "durationWeeksMax": 40,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 30,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 15
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Deep, infrequent watering once established."
+          },
+          {
+            "category": "pruning",
+            "note": "Annual structural pruning maintains an open canopy."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Flowering",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 30,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 37,
+          "humidityMax": 57,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Flowering",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "fruit-development",
+        "label": "Fruit Development",
+        "order": 4,
+        "durationWeeksMin": 8,
+        "durationWeeksMax": 20,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 30,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 37,
+          "humidityMax": 57,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Fruit Development",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 5,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 30,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 40,
+          "humidityMax": 60,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [
+      {
+        "id": "meyer",
+        "name": "Meyer",
+        "description": "Popular lemon variety for controlled-environment or garden cultivation.",
+        "tags": []
+      },
+      {
+        "id": "eureka",
+        "name": "Eureka",
+        "description": "Popular lemon variety for controlled-environment or garden cultivation.",
+        "tags": []
+      }
+    ],
+    "difficulty": "advanced",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 104,
+      "max": 260
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/fruit",
+      "https://crfg.org/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 20,
+        "max": 40
+      },
+      "plantsPerM2": {
+        "min": 0.5,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 100,
+        "max": 150
+      },
+      "rootDepthCm": {
+        "min": 40,
+        "max": 60
+      },
+      "verticalClearanceCm": {
+        "min": 100,
+        "max": 200
+      },
+      "recommendedMedium": [
+        "soil",
+        "coco"
+      ],
+      "notes": [
+        "Dwarf varieties (e.g. Meyer) stay container-sized; pot-on every 2–3 years."
+      ]
+    }
+  },
+  {
+    "id": "lime",
+    "name": "Lime",
+    "scientificName": "Citrus × latifolia",
+    "category": "fruit",
+    "description": "Lime (Citrus × latifolia) — a perennial fruit plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "tree",
+      "citrus",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 1,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 30,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 12,
+        "durationWeeksMax": 40,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 30,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 15
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Deep, infrequent watering once established."
+          },
+          {
+            "category": "pruning",
+            "note": "Annual structural pruning maintains an open canopy."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Flowering",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 30,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 37,
+          "humidityMax": 57,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Flowering",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "fruit-development",
+        "label": "Fruit Development",
+        "order": 4,
+        "durationWeeksMin": 8,
+        "durationWeeksMax": 20,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 30,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 37,
+          "humidityMax": 57,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Fruit Development",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 5,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 30,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 40,
+          "humidityMax": 60,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "advanced",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 104,
+      "max": 260
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/fruit",
+      "https://crfg.org/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 20,
+        "max": 40
+      },
+      "plantsPerM2": {
+        "min": 0.5,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 100,
+        "max": 150
+      },
+      "rootDepthCm": {
+        "min": 40,
+        "max": 60
+      },
+      "verticalClearanceCm": {
+        "min": 100,
+        "max": 200
+      },
+      "recommendedMedium": [
+        "soil",
+        "coco"
+      ]
+    }
+  },
+  {
+    "id": "orange",
+    "name": "Orange",
+    "scientificName": "Citrus sinensis",
+    "category": "fruit",
+    "description": "Orange (Citrus sinensis) — a perennial fruit plant suited to outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "tree",
+      "citrus",
+      "day-neutral",
+      "outdoor"
+    ],
+    "phases": [
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 1,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 30,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 12,
+        "durationWeeksMax": 40,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 30,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 15
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Deep, infrequent watering once established."
+          },
+          {
+            "category": "pruning",
+            "note": "Annual structural pruning maintains an open canopy."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Flowering",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 30,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 37,
+          "humidityMax": 57,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Flowering",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "fruit-development",
+        "label": "Fruit Development",
+        "order": 4,
+        "durationWeeksMin": 8,
+        "durationWeeksMax": 20,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 30,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 37,
+          "humidityMax": 57,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Fruit Development",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 5,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 30,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 40,
+          "humidityMax": 60,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "advanced",
+    "indoorSuitable": false,
+    "typicalTotalWeeks": {
+      "min": 104,
+      "max": 260
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/fruit",
+      "https://crfg.org/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 40,
+        "max": 80
+      },
+      "plantsPerM2": {
+        "min": 0.5,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 150,
+        "max": 250
+      },
+      "rootDepthCm": {
+        "min": 50,
+        "max": 80
+      },
+      "verticalClearanceCm": {
+        "min": 200,
+        "max": 350
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Full-size trees are greenhouse-scale only; choose dwarf/compact cultivars for indoor rooms."
+      ]
+    }
+  },
+  {
+    "id": "mandarin",
+    "name": "Mandarin",
+    "scientificName": "Citrus reticulata",
+    "category": "fruit",
+    "description": "Mandarin (Citrus reticulata) — a perennial fruit plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "tree",
+      "citrus",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 1,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 14,
+          "tempNightMax": 17,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 17
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 12,
+        "durationWeeksMax": 40,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 14,
+          "tempNightMax": 17,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Deep, infrequent watering once established."
+          },
+          {
+            "category": "pruning",
+            "note": "Annual structural pruning maintains an open canopy."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Flowering",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 14,
+          "tempNightMax": 17,
+          "humidityMin": 37,
+          "humidityMax": 57,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 17
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Flowering",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "fruit-development",
+        "label": "Fruit Development",
+        "order": 4,
+        "durationWeeksMin": 8,
+        "durationWeeksMax": 20,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 14,
+          "tempNightMax": 17,
+          "humidityMin": 37,
+          "humidityMax": 57,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 17
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Fruit Development",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 5,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 14,
+          "tempNightMax": 17,
+          "humidityMin": 40,
+          "humidityMax": 60,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 17
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "advanced",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 104,
+      "max": 260
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/fruit",
+      "https://crfg.org/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 20,
+        "max": 40
+      },
+      "plantsPerM2": {
+        "min": 0.5,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 100,
+        "max": 150
+      },
+      "rootDepthCm": {
+        "min": 40,
+        "max": 60
+      },
+      "verticalClearanceCm": {
+        "min": 100,
+        "max": 200
+      },
+      "recommendedMedium": [
+        "soil",
+        "coco"
+      ]
+    }
+  },
+  {
+    "id": "grapefruit",
+    "name": "Grapefruit",
+    "scientificName": "Citrus × paradisi",
+    "category": "fruit",
+    "description": "Grapefruit (Citrus × paradisi) — a perennial fruit plant suited to outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "tree",
+      "citrus",
+      "day-neutral",
+      "outdoor"
+    ],
+    "phases": [
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 1,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 30,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 12,
+        "durationWeeksMax": 40,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 30,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 15
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Deep, infrequent watering once established."
+          },
+          {
+            "category": "pruning",
+            "note": "Annual structural pruning maintains an open canopy."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Flowering",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 30,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 37,
+          "humidityMax": 57,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Flowering",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "fruit-development",
+        "label": "Fruit Development",
+        "order": 4,
+        "durationWeeksMin": 8,
+        "durationWeeksMax": 20,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 30,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 37,
+          "humidityMax": 57,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Fruit Development",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 5,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 30,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 40,
+          "humidityMax": 60,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "advanced",
+    "indoorSuitable": false,
+    "typicalTotalWeeks": {
+      "min": 104,
+      "max": 260
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/fruit",
+      "https://crfg.org/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 60,
+        "max": 100
+      },
+      "plantsPerM2": {
+        "min": 0.5,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 200,
+        "max": 300
+      },
+      "rootDepthCm": {
+        "min": 50,
+        "max": 90
+      },
+      "verticalClearanceCm": {
+        "min": 250,
+        "max": 400
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Too large for indoor long-term — greenhouse/orangery crop."
+      ]
+    }
+  },
+  {
+    "id": "avocado",
+    "name": "Avocado",
+    "scientificName": "Persea americana",
+    "category": "fruit",
+    "description": "Avocado (Persea americana) — a perennial fruit plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "tree",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 1,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 30,
+          "tempNightMin": 15,
+          "tempNightMax": 20,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 12,
+        "durationWeeksMax": 40,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 30,
+          "tempNightMin": 15,
+          "tempNightMax": 20,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Deep, infrequent watering once established."
+          },
+          {
+            "category": "pruning",
+            "note": "Annual structural pruning maintains an open canopy."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Flowering",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 30,
+          "tempNightMin": 15,
+          "tempNightMax": 20,
+          "humidityMin": 42,
+          "humidityMax": 62,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Flowering",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "fruit-development",
+        "label": "Fruit Development",
+        "order": 4,
+        "durationWeeksMin": 8,
+        "durationWeeksMax": 20,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 30,
+          "tempNightMin": 15,
+          "tempNightMax": 20,
+          "humidityMin": 42,
+          "humidityMax": 62,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Fruit Development",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 5,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 30,
+          "tempNightMin": 15,
+          "tempNightMax": 20,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [
+      {
+        "id": "hass",
+        "name": "Hass",
+        "description": "Popular avocado variety for controlled-environment or garden cultivation.",
+        "tags": []
+      },
+      {
+        "id": "bacon",
+        "name": "Bacon",
+        "description": "Popular avocado variety for controlled-environment or garden cultivation.",
+        "tags": []
+      }
+    ],
+    "difficulty": "advanced",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 104,
+      "max": 260
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/fruit",
+      "https://crfg.org/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 30,
+        "max": 60
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 100,
+        "max": 150
+      },
+      "rootDepthCm": {
+        "min": 40,
+        "max": 70
+      },
+      "verticalClearanceCm": {
+        "min": 150,
+        "max": 250
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Prune hard to keep container size; seed-grown trees rarely fruit true and grow very tall."
+      ]
+    }
+  },
+  {
+    "id": "banana",
+    "name": "Banana",
+    "scientificName": "Musa acuminata",
+    "category": "fruit",
+    "description": "Banana (Musa acuminata) — a perennial fruit plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "tropical",
+      "large-stature",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 1,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 25,
+          "tempDayMax": 30,
+          "tempNightMin": 20,
+          "tempNightMax": 24,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 12,
+        "durationWeeksMax": 40,
+        "environment": {
+          "tempDayMin": 25,
+          "tempDayMax": 30,
+          "tempNightMin": 20,
+          "tempNightMax": 24,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 15
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Deep, infrequent watering once established."
+          },
+          {
+            "category": "pruning",
+            "note": "Annual structural pruning maintains an open canopy."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Flowering",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 25,
+          "tempDayMax": 30,
+          "tempNightMin": 20,
+          "tempNightMax": 24,
+          "humidityMin": 52,
+          "humidityMax": 72,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Flowering",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "fruit-development",
+        "label": "Fruit Development",
+        "order": 4,
+        "durationWeeksMin": 8,
+        "durationWeeksMax": 20,
+        "environment": {
+          "tempDayMin": 25,
+          "tempDayMax": 30,
+          "tempNightMin": 20,
+          "tempNightMax": 24,
+          "humidityMin": 52,
+          "humidityMax": 72,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Fruit Development",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 5,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 25,
+          "tempDayMax": 30,
+          "tempNightMin": 20,
+          "tempNightMax": 24,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [
+      {
+        "id": "dwarf-cavendish",
+        "name": "Dwarf Cavendish",
+        "description": "Popular banana variety for controlled-environment or garden cultivation.",
+        "tags": []
+      },
+      {
+        "id": "super-dwarf",
+        "name": "Super Dwarf",
+        "description": "Popular banana variety for controlled-environment or garden cultivation.",
+        "tags": []
+      }
+    ],
+    "difficulty": "intermediate",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 52,
+      "max": 104
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/fruit",
+      "https://crfg.org/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 50,
+        "max": 100
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 150,
+        "max": 200
+      },
+      "rootDepthCm": {
+        "min": 40,
+        "max": 60
+      },
+      "verticalClearanceCm": {
+        "min": 200,
+        "max": 300
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Dwarf Cavendish (~1.5–2 m) is the only practical indoor form; needs a very large tub."
+      ]
+    }
+  },
+  {
+    "id": "pineapple",
+    "name": "Pineapple",
+    "scientificName": "Ananas comosus",
+    "category": "fruit",
+    "description": "Pineapple (Ananas comosus) — a perennial fruit plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "bromeliad",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 1,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 30,
+          "tempNightMin": 18,
+          "tempNightMax": 24,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 12,
+        "durationWeeksMax": 40,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 30,
+          "tempNightMin": 18,
+          "tempNightMax": 24,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Deep, infrequent watering once established."
+          },
+          {
+            "category": "pruning",
+            "note": "Annual structural pruning maintains an open canopy."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Flowering",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 30,
+          "tempNightMin": 18,
+          "tempNightMax": 24,
+          "humidityMin": 52,
+          "humidityMax": 72,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Flowering",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "fruit-development",
+        "label": "Fruit Development",
+        "order": 4,
+        "durationWeeksMin": 8,
+        "durationWeeksMax": 20,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 30,
+          "tempNightMin": 18,
+          "tempNightMax": 24,
+          "humidityMin": 52,
+          "humidityMax": 72,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Fruit Development",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 5,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 30,
+          "tempNightMin": 18,
+          "tempNightMax": 24,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "intermediate",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 104,
+      "max": 156
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/fruit",
+      "https://crfg.org/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 10,
+        "max": 20
+      },
+      "plantsPerM2": {
+        "min": 2,
+        "max": 4
+      },
+      "spacingCm": {
+        "min": 50,
+        "max": 60
+      },
+      "rootDepthCm": {
+        "min": 20,
+        "max": 35
+      },
+      "verticalClearanceCm": {
+        "min": 60,
+        "max": 120
+      },
+      "recommendedMedium": [
+        "soil",
+        "coco"
+      ],
+      "notes": [
+        "Shallow root system — a wide, shallow pot beats a deep one."
+      ]
+    }
+  },
+  {
+    "id": "papaya",
+    "name": "Papaya",
+    "scientificName": "Carica papaya",
+    "category": "fruit",
+    "description": "Papaya (Carica papaya) — a perennial fruit plant suited to outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "tropical",
+      "day-neutral",
+      "outdoor"
+    ],
+    "phases": [
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 1,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 25,
+          "tempDayMax": 30,
+          "tempNightMin": 20,
+          "tempNightMax": 24,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 12,
+        "durationWeeksMax": 40,
+        "environment": {
+          "tempDayMin": 25,
+          "tempDayMax": 30,
+          "tempNightMin": 20,
+          "tempNightMax": 24,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 15
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Deep, infrequent watering once established."
+          },
+          {
+            "category": "pruning",
+            "note": "Annual structural pruning maintains an open canopy."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Flowering",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 25,
+          "tempDayMax": 30,
+          "tempNightMin": 20,
+          "tempNightMax": 24,
+          "humidityMin": 52,
+          "humidityMax": 72,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Flowering",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "fruit-development",
+        "label": "Fruit Development",
+        "order": 4,
+        "durationWeeksMin": 8,
+        "durationWeeksMax": 20,
+        "environment": {
+          "tempDayMin": 25,
+          "tempDayMax": 30,
+          "tempNightMin": 20,
+          "tempNightMax": 24,
+          "humidityMin": 52,
+          "humidityMax": 72,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Fruit Development",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 5,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 25,
+          "tempDayMax": 30,
+          "tempNightMin": 20,
+          "tempNightMax": 24,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "intermediate",
+    "indoorSuitable": false,
+    "typicalTotalWeeks": {
+      "min": 40,
+      "max": 72
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/fruit",
+      "https://crfg.org/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 50,
+        "max": 100
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 150,
+        "max": 200
+      },
+      "rootDepthCm": {
+        "min": 40,
+        "max": 60
+      },
+      "verticalClearanceCm": {
+        "min": 150,
+        "max": 300
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
+  },
+  {
+    "id": "guava",
+    "name": "Guava",
+    "scientificName": "Psidium guajava",
+    "category": "fruit",
+    "description": "Guava (Psidium guajava) — a perennial fruit plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "tropical",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 1,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 23,
+          "tempDayMax": 30,
+          "tempNightMin": 18,
+          "tempNightMax": 22,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 12,
+        "durationWeeksMax": 40,
+        "environment": {
+          "tempDayMin": 23,
+          "tempDayMax": 30,
+          "tempNightMin": 18,
+          "tempNightMax": 22,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Deep, infrequent watering once established."
+          },
+          {
+            "category": "pruning",
+            "note": "Annual structural pruning maintains an open canopy."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Flowering",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 23,
+          "tempDayMax": 30,
+          "tempNightMin": 18,
+          "tempNightMax": 22,
+          "humidityMin": 47,
+          "humidityMax": 67,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Flowering",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "fruit-development",
+        "label": "Fruit Development",
+        "order": 4,
+        "durationWeeksMin": 8,
+        "durationWeeksMax": 20,
+        "environment": {
+          "tempDayMin": 23,
+          "tempDayMax": 30,
+          "tempNightMin": 18,
+          "tempNightMax": 22,
+          "humidityMin": 47,
+          "humidityMax": 67,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Fruit Development",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 5,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 23,
+          "tempDayMax": 30,
+          "tempNightMin": 18,
+          "tempNightMax": 22,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "intermediate",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 104,
+      "max": 208
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/fruit",
+      "https://crfg.org/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 30,
+        "max": 50
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 100,
+        "max": 150
+      },
+      "rootDepthCm": {
+        "min": 40,
+        "max": 60
+      },
+      "verticalClearanceCm": {
+        "min": 120,
+        "max": 250
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
+  },
+  {
+    "id": "passion-fruit",
+    "name": "Passion Fruit",
+    "scientificName": "Passiflora edulis",
+    "category": "fruit",
+    "description": "Passion Fruit (Passiflora edulis) — a perennial fruit plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "vine",
+      "tropical",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 1,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 16,
+          "tempNightMax": 20,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 12,
+        "durationWeeksMax": 40,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 16,
+          "tempNightMax": 20,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Deep, infrequent watering once established."
+          },
+          {
+            "category": "pruning",
+            "note": "Annual structural pruning maintains an open canopy."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Flowering",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 16,
+          "tempNightMax": 20,
+          "humidityMin": 52,
+          "humidityMax": 72,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Flowering",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "fruit-development",
+        "label": "Fruit Development",
+        "order": 4,
+        "durationWeeksMin": 8,
+        "durationWeeksMax": 20,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 16,
+          "tempNightMax": 20,
+          "humidityMin": 52,
+          "humidityMax": 72,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Fruit Development",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 5,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 16,
+          "tempNightMax": 20,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "intermediate",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 52,
+      "max": 104
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/fruit",
+      "https://crfg.org/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 30,
+        "max": 50
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 2
+      },
+      "spacingCm": {
+        "min": 80,
+        "max": 100
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 50
+      },
+      "verticalClearanceCm": {
+        "min": 200,
+        "max": 400
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Vigorous vine — needs a 2 m+ trellis; keep pruned to the structure."
+      ]
+    }
+  },
+  {
+    "id": "fig",
+    "name": "Fig",
+    "scientificName": "Ficus carica",
+    "category": "fruit",
+    "description": "Fig (Ficus carica) — a perennial fruit plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "tree",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 1,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 28,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 12,
+        "durationWeeksMax": 40,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 28,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Deep, infrequent watering once established."
+          },
+          {
+            "category": "pruning",
+            "note": "Annual structural pruning maintains an open canopy."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Flowering",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 28,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 37,
+          "humidityMax": 57,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Flowering",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "fruit-development",
+        "label": "Fruit Development",
+        "order": 4,
+        "durationWeeksMin": 8,
+        "durationWeeksMax": 20,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 28,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 37,
+          "humidityMax": 57,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Fruit Development",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 5,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 28,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 40,
+          "humidityMax": 60,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [
+      {
+        "id": "brown-turkey",
+        "name": "Brown Turkey",
+        "description": "Popular fig variety for controlled-environment or garden cultivation.",
+        "tags": []
+      },
+      {
+        "id": "chicago-hardy",
+        "name": "Chicago Hardy",
+        "description": "Popular fig variety for controlled-environment or garden cultivation.",
+        "tags": []
+      }
+    ],
+    "difficulty": "intermediate",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 104,
+      "max": 208
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/fruit",
+      "https://crfg.org/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 30,
+        "max": 50
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 2
+      },
+      "spacingCm": {
+        "min": 100,
+        "max": 120
+      },
+      "rootDepthCm": {
+        "min": 40,
+        "max": 70
+      },
+      "verticalClearanceCm": {
+        "min": 150,
+        "max": 300
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Root-prune and pot-on every 2–3 years; container restriction actually improves fruiting."
+      ]
+    }
+  },
+  {
+    "id": "mulberry",
+    "name": "Mulberry",
+    "scientificName": "Morus spp.",
+    "category": "fruit",
+    "description": "Mulberry (Morus spp.) — a perennial fruit plant suited to outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "tree",
+      "day-neutral",
+      "outdoor"
+    ],
+    "phases": [
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 1,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 28,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 12,
+        "durationWeeksMax": 40,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 28,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Deep, infrequent watering once established."
+          },
+          {
+            "category": "pruning",
+            "note": "Annual structural pruning maintains an open canopy."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Flowering",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 28,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 37,
+          "humidityMax": 57,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Flowering",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "fruit-development",
+        "label": "Fruit Development",
+        "order": 4,
+        "durationWeeksMin": 8,
+        "durationWeeksMax": 20,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 28,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 37,
+          "humidityMax": 57,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Fruit Development",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 5,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 28,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 40,
+          "humidityMax": 60,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "intermediate",
+    "indoorSuitable": false,
+    "typicalTotalWeeks": {
+      "min": 104,
+      "max": 208
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/fruit",
+      "https://crfg.org/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 50,
+        "max": 100
+      },
+      "plantsPerM2": {
+        "min": 0.5,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 150,
+        "max": 250
+      },
+      "rootDepthCm": {
+        "min": 50,
+        "max": 80
+      },
+      "verticalClearanceCm": {
+        "min": 200,
+        "max": 350
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
+  },
+  {
+    "id": "olive",
+    "name": "Olive",
+    "scientificName": "Olea europaea",
+    "category": "fruit",
+    "description": "Olive (Olea europaea) — a perennial fruit plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "tree",
+      "mediterranean",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 1,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 28,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 12,
+        "durationWeeksMax": 40,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 28,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 15
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Deep, infrequent watering once established."
+          },
+          {
+            "category": "pruning",
+            "note": "Annual structural pruning maintains an open canopy."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Flowering",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 28,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 35,
+          "humidityMax": 52,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Flowering",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "fruit-development",
+        "label": "Fruit Development",
+        "order": 4,
+        "durationWeeksMin": 8,
+        "durationWeeksMax": 20,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 28,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 35,
+          "humidityMax": 52,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Fruit Development",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 5,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 28,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 35,
+          "humidityMax": 55,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "advanced",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 104,
+      "max": 260
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/fruit",
+      "https://crfg.org/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 30,
+        "max": 50
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 100,
+        "max": 150
+      },
+      "rootDepthCm": {
+        "min": 40,
+        "max": 60
+      },
+      "verticalClearanceCm": {
+        "min": 100,
+        "max": 250
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Tolerates hard pruning — can be kept as a compact indoor shrub; free-draining mix essential."
+      ]
+    }
+  },
+  {
+    "id": "grape",
+    "name": "Grape",
+    "scientificName": "Vitis vinifera",
+    "category": "fruit",
+    "description": "Grape (Vitis vinifera) — a perennial fruit plant suited to outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "vine",
+      "day-neutral",
+      "outdoor"
+    ],
+    "phases": [
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 1,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 27,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 8,
+        "durationWeeksMax": 20,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 27,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 15
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Deep, infrequent watering once established."
+          },
+          {
+            "category": "pruning",
+            "note": "Annual structural pruning maintains an open canopy."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Flowering",
+        "order": 3,
+        "durationWeeksMin": 3,
+        "durationWeeksMax": 5,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 27,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 37,
+          "humidityMax": 57,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Flowering",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "fruit-development",
+        "label": "Fruit Development",
+        "order": 4,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 27,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 37,
+          "humidityMax": 57,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Fruit Development",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 5,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 27,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 40,
+          "humidityMax": 60,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [
+      {
+        "id": "thompson-seedless",
+        "name": "Thompson Seedless",
+        "description": "Popular grape variety for controlled-environment or garden cultivation.",
+        "tags": []
+      },
+      {
+        "id": "concord",
+        "name": "Concord",
+        "description": "Popular grape variety for controlled-environment or garden cultivation.",
+        "tags": []
+      }
+    ],
+    "difficulty": "advanced",
+    "indoorSuitable": false,
+    "typicalTotalWeeks": {
+      "min": 104,
+      "max": 156
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/fruit",
+      "https://crfg.org/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 40,
+        "max": 80
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 100,
+        "max": 150
+      },
+      "rootDepthCm": {
+        "min": 40,
+        "max": 80
+      },
+      "verticalClearanceCm": {
+        "min": 200,
+        "max": 350
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "One vine per large container with head-room trellis; greenhouse table-grape culture works well."
+      ]
+    }
+  },
+  {
+    "id": "blueberry",
+    "name": "Blueberry",
+    "scientificName": "Vaccinium corymbosum",
+    "category": "fruit",
+    "description": "Blueberry (Vaccinium corymbosum) — a perennial fruit plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "acid-lover",
+      "shrub",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 1,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 22,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 65,
+          "humidityMax": 80,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 8,
+        "durationWeeksMax": 20,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 22,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 65,
+          "humidityMax": 80,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Deep, infrequent watering once established."
+          },
+          {
+            "category": "pruning",
+            "note": "Annual structural pruning maintains an open canopy."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Flowering",
+        "order": 3,
+        "durationWeeksMin": 3,
+        "durationWeeksMax": 5,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 22,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 52,
+          "humidityMax": 67,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Flowering",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "fruit-development",
+        "label": "Fruit Development",
+        "order": 4,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 22,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 52,
+          "humidityMax": 67,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Fruit Development",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 5,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 22,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 55,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [
+      {
+        "id": "highbush",
+        "name": "Highbush",
+        "description": "Popular blueberry variety for controlled-environment or garden cultivation.",
+        "tags": []
+      },
+      {
+        "id": "rabbiteye",
+        "name": "Rabbiteye",
+        "description": "Popular blueberry variety for controlled-environment or garden cultivation.",
+        "tags": []
+      }
+    ],
+    "difficulty": "intermediate",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 104,
+      "max": 156
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/fruit",
+      "https://crfg.org/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 20,
+        "max": 40
+      },
+      "plantsPerM2": {
+        "min": 2,
+        "max": 3
+      },
+      "spacingCm": {
+        "min": 60,
+        "max": 80
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 50
+      },
+      "verticalClearanceCm": {
+        "min": 100,
+        "max": 180
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Shallow, fine roots — use ericaceous (pH 4.5–5.5) mix; 2+ cultivars improve pollination."
+      ]
+    }
+  },
+  {
+    "id": "raspberry",
+    "name": "Raspberry",
+    "scientificName": "Rubus idaeus",
+    "category": "fruit",
+    "description": "Raspberry (Rubus idaeus) — a perennial fruit plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "cane",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 1,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 22,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 65,
+          "humidityMax": 80,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 8,
+        "durationWeeksMax": 20,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 22,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 65,
+          "humidityMax": 80,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Deep, infrequent watering once established."
+          },
+          {
+            "category": "pruning",
+            "note": "Annual structural pruning maintains an open canopy."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Flowering",
+        "order": 3,
+        "durationWeeksMin": 3,
+        "durationWeeksMax": 5,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 22,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 52,
+          "humidityMax": 67,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Flowering",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "fruit-development",
+        "label": "Fruit Development",
+        "order": 4,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 22,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 52,
+          "humidityMax": 67,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Fruit Development",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 5,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 22,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 55,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "intermediate",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 52,
+      "max": 104
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/fruit",
+      "https://crfg.org/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 30,
+        "max": 50
+      },
+      "plantsPerM2": {
+        "min": 3,
+        "max": 4
+      },
+      "spacingCm": {
+        "min": 40,
+        "max": 50
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 50
+      },
+      "verticalClearanceCm": {
+        "min": 120,
+        "max": 200
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Grow a few canes per large trough with a support post; contain the suckering roots."
+      ]
+    }
+  },
+  {
+    "id": "blackberry",
+    "name": "Blackberry",
+    "scientificName": "Rubus spp.",
+    "category": "fruit",
+    "description": "Blackberry (Rubus spp.) — a perennial fruit plant suited to outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "cane",
+      "day-neutral",
+      "outdoor"
+    ],
+    "phases": [
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 1,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 65,
+          "humidityMax": 80,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 8,
+        "durationWeeksMax": 20,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 65,
+          "humidityMax": 80,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Deep, infrequent watering once established."
+          },
+          {
+            "category": "pruning",
+            "note": "Annual structural pruning maintains an open canopy."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Flowering",
+        "order": 3,
+        "durationWeeksMin": 3,
+        "durationWeeksMax": 5,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 52,
+          "humidityMax": 67,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Flowering",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "fruit-development",
+        "label": "Fruit Development",
+        "order": 4,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 52,
+          "humidityMax": 67,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Fruit Development",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 5,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 55,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "intermediate",
+    "indoorSuitable": false,
+    "typicalTotalWeeks": {
+      "min": 52,
+      "max": 104
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/fruit",
+      "https://crfg.org/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 40,
+        "max": 60
+      },
+      "plantsPerM2": {
+        "min": 2,
+        "max": 3
+      },
+      "spacingCm": {
+        "min": 60,
+        "max": 80
+      },
+      "rootDepthCm": {
+        "min": 40,
+        "max": 60
+      },
+      "verticalClearanceCm": {
+        "min": 150,
+        "max": 250
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Thornless varieties on a trellis are far friendlier indoors."
+      ]
+    }
+  },
+  {
+    "id": "currant",
+    "name": "Currant",
+    "scientificName": "Ribes spp.",
+    "category": "fruit",
+    "description": "Currant (Ribes spp.) — a perennial fruit plant suited to outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "shrub",
+      "cool-season",
+      "day-neutral",
+      "outdoor"
+    ],
+    "phases": [
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 1,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 21,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 65,
+          "humidityMax": 80,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 13
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 8,
+        "durationWeeksMax": 20,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 21,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 65,
+          "humidityMax": 80,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 11
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Deep, infrequent watering once established."
+          },
+          {
+            "category": "pruning",
+            "note": "Annual structural pruning maintains an open canopy."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Flowering",
+        "order": 3,
+        "durationWeeksMin": 3,
+        "durationWeeksMax": 5,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 21,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 52,
+          "humidityMax": 67,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 13
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Flowering",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "fruit-development",
+        "label": "Fruit Development",
+        "order": 4,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 21,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 52,
+          "humidityMax": 67,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 13
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Fruit Development",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 5,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 21,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 55,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 13
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [
+      {
+        "id": "black",
+        "name": "Black",
+        "description": "Popular currant variety for controlled-environment or garden cultivation.",
+        "tags": []
+      },
+      {
+        "id": "red",
+        "name": "Red",
+        "description": "Popular currant variety for controlled-environment or garden cultivation.",
+        "tags": []
+      },
+      {
+        "id": "white",
+        "name": "White",
+        "description": "Popular currant variety for controlled-environment or garden cultivation.",
+        "tags": []
+      }
+    ],
+    "difficulty": "intermediate",
+    "indoorSuitable": false,
+    "typicalTotalWeeks": {
+      "min": 52,
+      "max": 104
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/fruit",
+      "https://crfg.org/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 30,
+        "max": 50
+      },
+      "plantsPerM2": {
+        "min": 2,
+        "max": 3
+      },
+      "spacingCm": {
+        "min": 60,
+        "max": 80
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 50
+      },
+      "verticalClearanceCm": {
+        "min": 100,
+        "max": 150
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
+  },
+  {
+    "id": "goji-berry",
+    "name": "Goji Berry",
+    "scientificName": "Lycium barbarum",
+    "category": "fruit",
+    "description": "Goji Berry (Lycium barbarum) — a perennial fruit plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "shrub",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 1,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 26,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 8,
+        "durationWeeksMax": 20,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 26,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Deep, infrequent watering once established."
+          },
+          {
+            "category": "pruning",
+            "note": "Annual structural pruning maintains an open canopy."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Flowering",
+        "order": 3,
+        "durationWeeksMin": 3,
+        "durationWeeksMax": 5,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 26,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 42,
+          "humidityMax": 62,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Flowering",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "fruit-development",
+        "label": "Fruit Development",
+        "order": 4,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 26,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 42,
+          "humidityMax": 62,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Fruit Development",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 5,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 26,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "intermediate",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 52,
+      "max": 104
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/fruit",
+      "https://crfg.org/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 20,
+        "max": 40
+      },
+      "plantsPerM2": {
+        "min": 2,
+        "max": 3
+      },
+      "spacingCm": {
+        "min": 60,
+        "max": 80
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 50
+      },
+      "verticalClearanceCm": {
+        "min": 120,
+        "max": 200
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
+  },
+  {
+    "id": "kiwi",
+    "name": "Kiwi",
+    "scientificName": "Actinidia deliciosa",
+    "category": "fruit",
+    "description": "Kiwi (Actinidia deliciosa) — a perennial fruit plant suited to outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "vine",
+      "day-neutral",
+      "outdoor"
+    ],
+    "phases": [
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 1,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 27,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 8,
+        "durationWeeksMax": 20,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 27,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 15
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Deep, infrequent watering once established."
+          },
+          {
+            "category": "pruning",
+            "note": "Annual structural pruning maintains an open canopy."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Flowering",
+        "order": 3,
+        "durationWeeksMin": 3,
+        "durationWeeksMax": 5,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 27,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 52,
+          "humidityMax": 72,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Flowering",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "fruit-development",
+        "label": "Fruit Development",
+        "order": 4,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 27,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 52,
+          "humidityMax": 72,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Fruit Development",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 5,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 27,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "advanced",
+    "indoorSuitable": false,
+    "typicalTotalWeeks": {
+      "min": 104,
+      "max": 156
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/fruit",
+      "https://crfg.org/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 60,
+        "max": 100
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 150,
+        "max": 200
+      },
+      "rootDepthCm": {
+        "min": 50,
+        "max": 80
+      },
+      "verticalClearanceCm": {
+        "min": 250,
+        "max": 400
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Needs a male and female plant (or self-fertile cultivar) plus a very strong trellis; greenhouse-scale."
+      ]
+    }
+  },
+  {
+    "id": "dragon-fruit",
+    "name": "Dragon Fruit",
+    "scientificName": "Selenicereus undatus",
+    "category": "fruit",
+    "description": "Dragon Fruit (Selenicereus undatus) — a perennial fruit plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "cactus",
+      "epiphytic",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 1,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 30,
+          "tempNightMin": 18,
+          "tempNightMax": 21,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 12,
+        "durationWeeksMax": 40,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 30,
+          "tempNightMin": 18,
+          "tempNightMax": 21,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Deep, infrequent watering once established."
+          },
+          {
+            "category": "pruning",
+            "note": "Annual structural pruning maintains an open canopy."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Flowering",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 30,
+          "tempNightMin": 18,
+          "tempNightMax": 21,
+          "humidityMin": 42,
+          "humidityMax": 62,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Flowering",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "fruit-development",
+        "label": "Fruit Development",
+        "order": 4,
+        "durationWeeksMin": 8,
+        "durationWeeksMax": 20,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 30,
+          "tempNightMin": 18,
+          "tempNightMax": 21,
+          "humidityMin": 42,
+          "humidityMax": 62,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Fruit Development",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 5,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 30,
+          "tempNightMin": 18,
+          "tempNightMax": 21,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "advanced",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 104,
+      "max": 208
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/fruit",
+      "https://crfg.org/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 30,
+        "max": 50
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 2
+      },
+      "spacingCm": {
+        "min": 80,
+        "max": 100
+      },
+      "rootDepthCm": {
+        "min": 20,
+        "max": 40
+      },
+      "verticalClearanceCm": {
+        "min": 150,
+        "max": 300
+      },
+      "recommendedMedium": [
+        "soil",
+        "coco"
+      ],
+      "notes": [
+        "Epiphytic cactus — give a strong post to climb and let the branches cascade; shallow roots in free-draining mix."
+      ]
+    }
+  },
+  {
+    "id": "coffee",
+    "name": "Coffee",
+    "scientificName": "Coffea arabica",
+    "category": "fruit",
+    "description": "Coffee (Coffea arabica) — a perennial fruit plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "shrub",
+      "shade-tolerant",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 1,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 17,
+          "tempNightMax": 20,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 8
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 12,
+        "durationWeeksMax": 40,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 17,
+          "tempNightMax": 20,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 7
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Deep, infrequent watering once established."
+          },
+          {
+            "category": "pruning",
+            "note": "Annual structural pruning maintains an open canopy."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Flowering",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 17,
+          "tempNightMax": 20,
+          "humidityMin": 52,
+          "humidityMax": 72,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 8
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Flowering",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "fruit-development",
+        "label": "Fruit Development",
+        "order": 4,
+        "durationWeeksMin": 8,
+        "durationWeeksMax": 20,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 17,
+          "tempNightMax": 20,
+          "humidityMin": 52,
+          "humidityMax": 72,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 8
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Fruit Development",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 5,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 17,
+          "tempNightMax": 20,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 8
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "advanced",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 104,
+      "max": 260
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/fruit",
+      "https://crfg.org/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 20,
+        "max": 40
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 2
+      },
+      "spacingCm": {
+        "min": 80,
+        "max": 100
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 50
+      },
+      "verticalClearanceCm": {
+        "min": 150,
+        "max": 250
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Prune to 1.5 m for indoor production; shallow-rooted, prefers a wide pot."
+      ]
+    }
+  },
+  {
+    "id": "strawberry",
+    "name": "Strawberry",
+    "scientificName": "Fragaria × ananassa",
+    "category": "fruit",
+    "description": "Strawberry (Fragaria × ananassa) — a perennial fruit plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "runner",
+      "greenhouse-favorite",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 1,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 65,
+          "humidityMax": 80,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 17
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 8,
+        "durationWeeksMax": 20,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 65,
+          "humidityMax": 80,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Deep, infrequent watering once established."
+          },
+          {
+            "category": "pruning",
+            "note": "Annual structural pruning maintains an open canopy."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Flowering",
+        "order": 3,
+        "durationWeeksMin": 3,
+        "durationWeeksMax": 5,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 52,
+          "humidityMax": 67,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 17
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Flowering",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "fruit-development",
+        "label": "Fruit Development",
+        "order": 4,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 52,
+          "humidityMax": 67,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 17
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Fruit Development",
+          "ecTarget": {
+            "min": 1.6,
+            "max": 2.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 5,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 55,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 17
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 2
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [
+      {
+        "id": "albion",
+        "name": "Albion",
+        "description": "Popular strawberry variety for controlled-environment or garden cultivation.",
+        "tags": []
+      },
+      {
+        "id": "seascape",
+        "name": "Seascape",
+        "description": "Popular strawberry variety for controlled-environment or garden cultivation.",
+        "tags": []
+      },
+      {
+        "id": "ozark-beauty",
+        "name": "Ozark Beauty",
+        "description": "Popular strawberry variety for controlled-environment or garden cultivation.",
+        "tags": []
+      }
+    ],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 12,
+      "max": 16
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/fruit",
+      "https://crfg.org/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 3,
+        "max": 5
+      },
+      "plantsPerM2": {
+        "min": 8,
+        "max": 16
+      },
+      "spacingCm": {
+        "min": 25,
+        "max": 30
+      },
+      "rootDepthCm": {
+        "min": 15,
+        "max": 25
+      },
+      "verticalClearanceCm": {
+        "min": 20,
+        "max": 40
+      },
+      "recommendedMedium": [
+        "soil",
+        "coco",
+        "nft"
+      ],
+      "notes": [
+        "3–5 L per plant, or grow in gutters/towers at 8–16 plants/m²; day-neutral varieties fruit best indoors."
+      ]
+    }
+  }
+]

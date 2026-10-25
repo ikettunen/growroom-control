@@ -1,0 +1,1643 @@
+[
+  {
+    "id": "lettuce",
+    "name": "Lettuce",
+    "scientificName": "Lactuca sativa",
+    "category": "leafy-green",
+    "description": "Lettuce (Lactuca sativa) — a fast leafy-green crop suited to indoor controlled-environment and outdoor cultivation, with a typical lifecycle of 6–10 weeks.",
+    "tags": [
+      "cut-and-come-again",
+      "cool-season",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 1,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
+          "humidityMin": 70,
+          "humidityMax": 85,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 8
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Germination",
+          "ecTarget": {
+            "min": 1.15,
+            "max": 1.25
+          },
+          "phTarget": {
+            "min": 5.6,
+            "max": 6
+          },
+          "notes": [
+            "Verified: Cornell CEA Hydroponic Lettuce Handbook — 24 °C day / 19 °C night, RH 50–70 %, DLI 17 mol/m²/d, EC 1.15–1.25 mS/cm above source water, pH 5.6–6.0, CO₂ 1500 ppm in light."
+          ]
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 24,
+          "tempNightMin": 19,
+          "tempNightMax": 19,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 17,
+          "co2Target": 1500
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 1.15,
+            "max": 1.25
+          },
+          "phTarget": {
+            "min": 5.6,
+            "max": 6
+          },
+          "notes": [
+            "Verified: Cornell CEA Hydroponic Lettuce Handbook — 24 °C day / 19 °C night, RH 50–70 %, DLI 17 mol/m²/d, EC 1.15–1.25 mS/cm above source water, pH 5.6–6.0, CO₂ 1500 ppm in light."
+          ]
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Keep media evenly moist; greens dislike drying back."
+          },
+          {
+            "category": "pest",
+            "note": "Watch for fungus gnats in moist media."
+          },
+          {
+            "category": "general",
+            "note": "Harvest outer leaves to allow continuous regrowth."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 3,
+        "durationWeeksMax": 5,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 24,
+          "tempNightMin": 19,
+          "tempNightMax": 19,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 17,
+          "co2Target": 1500
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 1.15,
+            "max": 1.25
+          },
+          "phTarget": {
+            "min": 5.6,
+            "max": 6
+          },
+          "notes": [
+            "Verified: Cornell CEA Hydroponic Lettuce Handbook — 24 °C day / 19 °C night, RH 50–70 %, DLI 17 mol/m²/d, EC 1.15–1.25 mS/cm above source water, pH 5.6–6.0, CO₂ 1500 ppm in light."
+          ]
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Verified setpoints: 24 °C day / 19 °C night, RH 50–70 %, DLI 17 (Cornell CEA Handbook); heat-stress tipburn risk above ~25 °C."
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 1,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 24,
+          "tempNightMin": 19,
+          "tempNightMax": 19,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 17,
+          "co2Target": 1500
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1.15,
+            "max": 1.25
+          },
+          "phTarget": {
+            "min": 5.6,
+            "max": 6
+          },
+          "notes": [
+            "Verified: Cornell CEA Hydroponic Lettuce Handbook — 24 °C day / 19 °C night, RH 50–70 %, DLI 17 mol/m²/d, EC 1.15–1.25 mS/cm above source water, pH 5.6–6.0, CO₂ 1500 ppm in light."
+          ]
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [
+      {
+        "id": "butterhead",
+        "name": "Butterhead",
+        "description": "Popular lettuce variety for controlled-environment or garden cultivation.",
+        "tags": []
+      },
+      {
+        "id": "romaine",
+        "name": "Romaine",
+        "description": "Popular lettuce variety for controlled-environment or garden cultivation.",
+        "tags": []
+      },
+      {
+        "id": "oakleaf",
+        "name": "Oakleaf",
+        "description": "Popular lettuce variety for controlled-environment or garden cultivation.",
+        "tags": []
+      },
+      {
+        "id": "bibb",
+        "name": "Bibb",
+        "description": "Popular lettuce variety for controlled-environment or garden cultivation.",
+        "tags": []
+      }
+    ],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 6,
+      "max": 10
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.uvm.edu/extension",
+      "https://gardens.cornell.edu/vegetation-growing-guides/",
+      "https://cea.cals.cornell.edu/files/2019/06/Cornell-CEA-Lettuce-Handbook-.pdf"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 1.5,
+        "max": 4
+      },
+      "plantsPerM2": {
+        "min": 16,
+        "max": 25
+      },
+      "spacingCm": {
+        "min": 20,
+        "max": 25
+      },
+      "rootDepthCm": {
+        "min": 15,
+        "max": 25
+      },
+      "verticalClearanceCm": {
+        "min": 20,
+        "max": 35
+      },
+      "recommendedMedium": [
+        "nft",
+        "hydro-dwc",
+        "soil"
+      ],
+      "notes": [
+        "NFT/racking at 20–25 heads/m²; 2–4 L containers for standalone grows."
+      ]
+    }
+  },
+  {
+    "id": "spinach",
+    "name": "Spinach",
+    "scientificName": "Spinacia oleracea",
+    "category": "leafy-green",
+    "description": "Spinach (Spinacia oleracea) — a fast leafy-green crop suited to indoor controlled-environment and outdoor cultivation, with a typical lifecycle of 6–10 weeks.",
+    "tags": [
+      "cool-season",
+      "bolts-in-heat",
+      "long-day",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 1,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
+          "humidityMin": 70,
+          "humidityMax": 85,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 8
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Germination",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.6,
+            "max": 6
+          },
+          "notes": [
+            "Verified: Cornell CEA Baby Spinach Handbook — 24 °C day / 19 °C night, RH 50–70 %, DLI 17–22 mol/m²/d, EC 1.3 ± 0.1 mS/cm above source water, pH 5.6–6.0, CO₂ 1000–1500 ppm."
+          ]
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 24,
+          "tempNightMin": 19,
+          "tempNightMax": 19,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 20,
+          "co2Target": 1200
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.6,
+            "max": 6
+          },
+          "notes": [
+            "Verified: Cornell CEA Baby Spinach Handbook — 24 °C day / 19 °C night, RH 50–70 %, DLI 17–22 mol/m²/d, EC 1.3 ± 0.1 mS/cm above source water, pH 5.6–6.0, CO₂ 1000–1500 ppm."
+          ]
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Keep media evenly moist; greens dislike drying back."
+          },
+          {
+            "category": "pest",
+            "note": "Watch for fungus gnats in moist media."
+          },
+          {
+            "category": "general",
+            "note": "Harvest outer leaves to allow continuous regrowth."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 3,
+        "durationWeeksMax": 5,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 24,
+          "tempNightMin": 19,
+          "tempNightMax": 19,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 20,
+          "co2Target": 1200
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.6,
+            "max": 6
+          },
+          "notes": [
+            "Verified: Cornell CEA Baby Spinach Handbook — 24 °C day / 19 °C night, RH 50–70 %, DLI 17–22 mol/m²/d, EC 1.3 ± 0.1 mS/cm above source water, pH 5.6–6.0, CO₂ 1000–1500 ppm."
+          ]
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Verified setpoints: 24 °C day / 19 °C night, RH 50–70 %, DLI 17–22 (Cornell CEA Handbook)."
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 1,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 24,
+          "tempNightMin": 19,
+          "tempNightMax": 19,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 20,
+          "co2Target": 1200
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.6,
+            "max": 6
+          },
+          "notes": [
+            "Verified: Cornell CEA Baby Spinach Handbook — 24 °C day / 19 °C night, RH 50–70 %, DLI 17–22 mol/m²/d, EC 1.3 ± 0.1 mS/cm above source water, pH 5.6–6.0, CO₂ 1000–1500 ppm."
+          ]
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 6,
+      "max": 10
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.uvm.edu/extension",
+      "https://gardens.cornell.edu/vegetation-growing-guides/",
+      "https://bpb-us-e1.wpmucdn.com/blogs.cornell.edu/dist/8/8824/files/2019/06/Cornell-CEA-baby-spinach-handbook.pdf"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 2,
+        "max": 4
+      },
+      "plantsPerM2": {
+        "min": 16,
+        "max": 25
+      },
+      "spacingCm": {
+        "min": 15,
+        "max": 20
+      },
+      "rootDepthCm": {
+        "min": 20,
+        "max": 30
+      },
+      "verticalClearanceCm": {
+        "min": 15,
+        "max": 30
+      },
+      "recommendedMedium": [
+        "nft",
+        "hydro-dwc",
+        "soil"
+      ]
+    }
+  },
+  {
+    "id": "swiss-chard",
+    "name": "Swiss Chard",
+    "scientificName": "Beta vulgaris var. cicla",
+    "category": "leafy-green",
+    "description": "Swiss Chard (Beta vulgaris var. cicla) — a fast leafy-green crop suited to indoor controlled-environment and outdoor cultivation, with a typical lifecycle of 8–12 weeks.",
+    "tags": [
+      "cut-and-come-again",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 1,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 62,
+          "humidityMax": 82,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 6
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Germination",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.6
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 25,
+          "tempDayMax": 29,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.6
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Keep media evenly moist; greens dislike drying back."
+          },
+          {
+            "category": "pest",
+            "note": "Watch for fungus gnats in moist media."
+          },
+          {
+            "category": "general",
+            "note": "Harvest outer leaves to allow continuous regrowth."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 3,
+        "durationWeeksMax": 5,
+        "environment": {
+          "tempDayMin": 25,
+          "tempDayMax": 29,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.6
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Verified: Purdue/UNH growth-chamber research (GPN) — optimal fresh-mass temperature for Swiss chard is 26.6 °C at DLI 14 mol/m²/d."
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 1,
+        "environment": {
+          "tempDayMin": 25,
+          "tempDayMax": 29,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.6
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 8,
+      "max": 12
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.uvm.edu/extension",
+      "https://gardens.cornell.edu/vegetation-growing-guides/",
+      "https://gpnmag.com/article/managing-air-temperature-for-specialty-leafy-greens/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 5,
+        "max": 10
+      },
+      "plantsPerM2": {
+        "min": 9,
+        "max": 12
+      },
+      "spacingCm": {
+        "min": 25,
+        "max": 30
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 45
+      },
+      "verticalClearanceCm": {
+        "min": 40,
+        "max": 60
+      },
+      "recommendedMedium": [
+        "soil",
+        "coco"
+      ]
+    }
+  },
+  {
+    "id": "arugula",
+    "name": "Arugula",
+    "scientificName": "Eruca vesicaria",
+    "category": "leafy-green",
+    "description": "Arugula (Eruca vesicaria) — a fast leafy-green crop suited to indoor controlled-environment and outdoor cultivation, with a typical lifecycle of 4–8 weeks.",
+    "tags": [
+      "fast-crop",
+      "cool-season",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 1,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 21,
+          "tempNightMin": 11,
+          "tempNightMax": 15,
+          "humidityMin": 62,
+          "humidityMax": 82,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Germination",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.6
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 26,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.6
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Keep media evenly moist; greens dislike drying back."
+          },
+          {
+            "category": "pest",
+            "note": "Watch for fungus gnats in moist media."
+          },
+          {
+            "category": "general",
+            "note": "Harvest outer leaves to allow continuous regrowth."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 3,
+        "durationWeeksMax": 5,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 26,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.6
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Verified: Purdue/UNH growth-chamber research (GPN) — optimal fresh-mass temperature for arugula is 23.8 °C at DLI 14 mol/m²/d."
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 1,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 26,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.6
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 4,
+      "max": 8
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.uvm.edu/extension",
+      "https://gardens.cornell.edu/vegetation-growing-guides/",
+      "https://gpnmag.com/article/managing-air-temperature-for-specialty-leafy-greens/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 1,
+        "max": 2
+      },
+      "plantsPerM2": {
+        "min": 25,
+        "max": 40
+      },
+      "spacingCm": {
+        "min": 10,
+        "max": 15
+      },
+      "rootDepthCm": {
+        "min": 10,
+        "max": 15
+      },
+      "verticalClearanceCm": {
+        "min": 10,
+        "max": 25
+      },
+      "recommendedMedium": [
+        "soil",
+        "nft"
+      ]
+    }
+  },
+  {
+    "id": "endive",
+    "name": "Endive",
+    "scientificName": "Cichorium endivia",
+    "category": "leafy-green",
+    "description": "Endive (Cichorium endivia) — a fast leafy-green crop suited to indoor controlled-environment and outdoor cultivation, with a typical lifecycle of 10–12 weeks.",
+    "tags": [
+      "cool-season",
+      "bitter-green",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 1,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 20,
+          "tempNightMin": 11,
+          "tempNightMax": 14,
+          "humidityMin": 72,
+          "humidityMax": 87,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Germination",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.6
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 20,
+          "tempNightMin": 10,
+          "tempNightMax": 13,
+          "humidityMin": 65,
+          "humidityMax": 80,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 13
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.6
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Keep media evenly moist; greens dislike drying back."
+          },
+          {
+            "category": "pest",
+            "note": "Watch for fungus gnats in moist media."
+          },
+          {
+            "category": "general",
+            "note": "Harvest outer leaves to allow continuous regrowth."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 3,
+        "durationWeeksMax": 5,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 20,
+          "tempNightMin": 10,
+          "tempNightMax": 13,
+          "humidityMin": 65,
+          "humidityMax": 80,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 11
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.6
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 1,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 20,
+          "tempNightMin": 10,
+          "tempNightMax": 13,
+          "humidityMin": 55,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 13
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.6
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "intermediate",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 10,
+      "max": 12
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.uvm.edu/extension",
+      "https://gardens.cornell.edu/vegetation-growing-guides/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 3,
+        "max": 5
+      },
+      "plantsPerM2": {
+        "min": 9,
+        "max": 16
+      },
+      "spacingCm": {
+        "min": 25,
+        "max": 30
+      },
+      "rootDepthCm": {
+        "min": 20,
+        "max": 30
+      },
+      "verticalClearanceCm": {
+        "min": 25,
+        "max": 40
+      },
+      "recommendedMedium": [
+        "soil",
+        "hydro-dwc"
+      ]
+    }
+  },
+  {
+    "id": "m-che",
+    "name": "Mâche",
+    "scientificName": "Valerianella locusta",
+    "category": "leafy-green",
+    "description": "Mâche (Valerianella locusta) — a fast leafy-green crop suited to indoor controlled-environment and outdoor cultivation, with a typical lifecycle of 10–12 weeks.",
+    "tags": [
+      "cold-hardy",
+      "cool-season",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 1,
+        "environment": {
+          "tempDayMin": 14,
+          "tempDayMax": 18,
+          "tempNightMin": 9,
+          "tempNightMax": 13,
+          "humidityMin": 72,
+          "humidityMax": 87,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 4
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Germination",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.6
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 14,
+          "tempDayMax": 18,
+          "tempNightMin": 8,
+          "tempNightMax": 12,
+          "humidityMin": 65,
+          "humidityMax": 80,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 10
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.6
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Keep media evenly moist; greens dislike drying back."
+          },
+          {
+            "category": "pest",
+            "note": "Watch for fungus gnats in moist media."
+          },
+          {
+            "category": "general",
+            "note": "Harvest outer leaves to allow continuous regrowth."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 3,
+        "durationWeeksMax": 5,
+        "environment": {
+          "tempDayMin": 14,
+          "tempDayMax": 18,
+          "tempNightMin": 8,
+          "tempNightMax": 12,
+          "humidityMin": 65,
+          "humidityMax": 80,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 9
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.6
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 1,
+        "environment": {
+          "tempDayMin": 14,
+          "tempDayMax": 18,
+          "tempNightMin": 8,
+          "tempNightMax": 12,
+          "humidityMin": 55,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 10
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.6
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 10,
+      "max": 12
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.uvm.edu/extension",
+      "https://gardens.cornell.edu/vegetation-growing-guides/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 1,
+        "max": 2
+      },
+      "plantsPerM2": {
+        "min": 25,
+        "max": 40
+      },
+      "spacingCm": {
+        "min": 8,
+        "max": 12
+      },
+      "rootDepthCm": {
+        "min": 10,
+        "max": 15
+      },
+      "verticalClearanceCm": {
+        "min": 10,
+        "max": 20
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
+  },
+  {
+    "id": "watercress",
+    "name": "Watercress",
+    "scientificName": "Nasturtium officinale",
+    "category": "leafy-green",
+    "description": "Watercress (Nasturtium officinale) — a fast leafy-green crop suited to indoor controlled-environment and outdoor cultivation, with a typical lifecycle of 8–12 weeks.",
+    "tags": [
+      "aquatic",
+      "cut-and-come-again",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 1,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 20,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 82,
+          "humidityMax": 92,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Germination",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.6
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 20,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 75,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.6
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Keep media evenly moist; greens dislike drying back."
+          },
+          {
+            "category": "pest",
+            "note": "Watch for fungus gnats in moist media."
+          },
+          {
+            "category": "general",
+            "note": "Harvest outer leaves to allow continuous regrowth."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 3,
+        "durationWeeksMax": 5,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 20,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 75,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 10
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.6
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 1,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 20,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 65,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.6
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "intermediate",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 8,
+      "max": 12
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.uvm.edu/extension",
+      "https://gardens.cornell.edu/vegetation-growing-guides/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "plantsPerM2": {
+        "min": 16,
+        "max": 25
+      },
+      "spacingCm": {
+        "min": 15,
+        "max": 20
+      },
+      "rootDepthCm": {
+        "min": 10,
+        "max": 20
+      },
+      "verticalClearanceCm": {
+        "min": 15,
+        "max": 30
+      },
+      "recommendedMedium": [
+        "nft",
+        "hydro-dwc"
+      ],
+      "notes": [
+        "Aquatic/semi-aquatic — thrives in NFT or deep-water beds rather than pots."
+      ]
+    }
+  },
+  {
+    "id": "mustard-greens",
+    "name": "Mustard Greens",
+    "scientificName": "Brassica juncea",
+    "category": "leafy-green",
+    "description": "Mustard Greens (Brassica juncea) — a fast leafy-green crop suited to indoor controlled-environment and outdoor cultivation, with a typical lifecycle of 6–10 weeks.",
+    "tags": [
+      "fast-crop",
+      "spicy-green",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "germination",
+        "label": "Germination",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 1,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 22,
+          "tempNightMin": 11,
+          "tempNightMax": 15,
+          "humidityMin": 62,
+          "humidityMax": 82,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Germination",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.6
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 22,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 13
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.6
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "watering",
+            "note": "Keep media evenly moist; greens dislike drying back."
+          },
+          {
+            "category": "pest",
+            "note": "Watch for fungus gnats in moist media."
+          },
+          {
+            "category": "general",
+            "note": "Harvest outer leaves to allow continuous regrowth."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 3,
+        "durationWeeksMax": 5,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 22,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 11
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.6
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 1,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 22,
+          "tempNightMin": 10,
+          "tempNightMax": 14,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 13
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.6
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 6,
+      "max": 10
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.uvm.edu/extension",
+      "https://gardens.cornell.edu/vegetation-growing-guides/"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 2,
+        "max": 4
+      },
+      "plantsPerM2": {
+        "min": 16,
+        "max": 25
+      },
+      "spacingCm": {
+        "min": 15,
+        "max": 20
+      },
+      "rootDepthCm": {
+        "min": 15,
+        "max": 25
+      },
+      "verticalClearanceCm": {
+        "min": 20,
+        "max": 40
+      },
+      "recommendedMedium": [
+        "soil",
+        "nft"
+      ]
+    }
+  }
+]

@@ -1,6 +1,6 @@
 # Plant Knowledge Base — Data Model
 
-**Version:** 1.0  
+**Version:** 1.1  
 **Date:** 2026-10-25  
 
 ---
@@ -138,6 +138,9 @@ interface Crop {
   indoorSuitable: boolean;
   typicalTotalWeeks: { min: number; max: number };
 
+  // Space / container requirements (optional, guideline ranges)
+  space?:    SpaceRequirement;
+
   // Compatible fertilizer families from the growroom backend
   compatibleFertilizerFamilies: string[];   // e.g. ['canna-coco', 'sensi-coco']
 
@@ -164,6 +167,26 @@ interface PlantKnowledgeBase {
   crops:     Crop[];
 }
 ```
+
+### 3.6 Space Requirements (optional)
+
+Container and spacing guidelines for a full-cycle indoor plant. Values are guideline ranges (min/max), not prescriptive.
+
+```ts
+interface SpaceRequirement {
+  potSizeLiters?:       { min: number; max: number };   // container volume (L), full cycle
+  potDepthCm?:           { min: number; max: number };   // container depth (cm)
+  plantsPerM2?:          { min: number; max: number };   // final planting density
+  spacingCm?:            { min: number; max: number };   // plant-to-plant spacing
+  canopyFootprintM2?:    number;                        // canopy area per plant at maturity
+  rootDepthCm?:          { min: number; max: number };   // expected root depth
+  verticalClearanceCm?:  { min: number; max: number };  // height incl. pot + light clearance
+  recommendedMedium?:    string[];                      // 'soil' | 'coco' | 'hydro-dwc' | 'nft' | ...
+  notes?:                string[];
+}
+```
+
+Microgreens typically use shallow standard 10×20 cm trays instead of pots; their `space` block sets tray density instead of `potSizeLiters`.
 
 ---
 

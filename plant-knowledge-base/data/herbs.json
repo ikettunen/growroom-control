@@ -1,0 +1,3999 @@
+[
+  {
+    "id": "basil",
+    "name": "Basil",
+    "scientificName": "Ocimum basilicum",
+    "category": "herb",
+    "description": "Basil (Ocimum basilicum) — a annual herb suited to windowsill, indoor and outdoor cultivation.",
+    "tags": [
+      "annual",
+      "heat-loving",
+      "cut-and-come-again",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "propagation",
+        "label": "Propagation",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
+          "humidityMin": 62,
+          "humidityMax": 82,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 6
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Propagation",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Start from seed or cuttings; keep humidity high until rooted."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 3,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch growing tips to encourage bushiness and delay flowering."
+          },
+          {
+            "category": "watering",
+            "note": "Allow slight dry-back between waterings; most herbs resent wet feet."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 24,
+          "tempDayMax": 28,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Verified: PLOS ONE modeling study — sweet basil branching increases with mean daily temperature 23→35 °C and DLI 5.5→13.2 mol/m²/d; keep ≥14 DLI for compact high-yield growth."
+          }
+        ]
+      }
+    ],
+    "varieties": [
+      {
+        "id": "genovese",
+        "name": "Genovese",
+        "description": "Popular basil variety for controlled-environment or garden cultivation.",
+        "tags": []
+      },
+      {
+        "id": "thai",
+        "name": "Thai",
+        "description": "Popular basil variety for controlled-environment or garden cultivation.",
+        "tags": []
+      },
+      {
+        "id": "lemon",
+        "name": "Lemon",
+        "description": "Popular basil variety for controlled-environment or garden cultivation.",
+        "tags": []
+      },
+      {
+        "id": "purple-opal",
+        "name": "Purple Opal",
+        "description": "Popular basil variety for controlled-environment or garden cultivation.",
+        "tags": []
+      }
+    ],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 4,
+      "max": 8
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://hort.purdue.edu/newcrop/",
+      "https://www.rhs.org.uk/plants/types/herbs/growing-guide",
+      "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0294905"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 2,
+        "max": 5
+      },
+      "plantsPerM2": {
+        "min": 8,
+        "max": 12
+      },
+      "spacingCm": {
+        "min": 25,
+        "max": 30
+      },
+      "rootDepthCm": {
+        "min": 20,
+        "max": 30
+      },
+      "verticalClearanceCm": {
+        "min": 30,
+        "max": 50
+      },
+      "recommendedMedium": [
+        "soil",
+        "coco",
+        "hydro-dwc"
+      ]
+    }
+  },
+  {
+    "id": "mint",
+    "name": "Mint",
+    "scientificName": "Mentha spicata",
+    "category": "herb",
+    "description": "Mint (Mentha spicata) — a perennial herb suited to windowsill, indoor and outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "invasive-runner",
+      "moisture-loving",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "propagation",
+        "label": "Propagation",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 72,
+          "humidityMax": 87,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Propagation",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Start from seed or cuttings; keep humidity high until rooted."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 3,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 65,
+          "humidityMax": 80,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch growing tips to encourage bushiness and delay flowering."
+          },
+          {
+            "category": "watering",
+            "note": "Allow slight dry-back between waterings; most herbs resent wet feet."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 65,
+          "humidityMax": 80,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 10
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Verified: PLOS ONE modeling study (sage ‘Extrakta’, spearmint ‘Spanish’) — branching increases with mean daily temperature 23→35 °C and DLI 5.5→13.2 mol/m²/d; moderate setpoints preferred for oil-rich herbs."
+          }
+        ]
+      }
+    ],
+    "varieties": [
+      {
+        "id": "spearmint",
+        "name": "Spearmint",
+        "description": "Popular mint variety for controlled-environment or garden cultivation.",
+        "tags": []
+      },
+      {
+        "id": "peppermint",
+        "name": "Peppermint",
+        "description": "Popular mint variety for controlled-environment or garden cultivation.",
+        "tags": []
+      }
+    ],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 6,
+      "max": 10
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://hort.purdue.edu/newcrop/",
+      "https://www.rhs.org.uk/plants/types/herbs/growing-guide",
+      "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0294905"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 3,
+        "max": 5
+      },
+      "plantsPerM2": {
+        "min": 8,
+        "max": 12
+      },
+      "spacingCm": {
+        "min": 30,
+        "max": 40
+      },
+      "rootDepthCm": {
+        "min": 20,
+        "max": 30
+      },
+      "verticalClearanceCm": {
+        "min": 30,
+        "max": 60
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Give mint its own pot — runners are invasive and will crowd shared containers."
+      ]
+    }
+  },
+  {
+    "id": "coriander",
+    "name": "Coriander",
+    "scientificName": "Coriandrum sativum",
+    "category": "herb",
+    "description": "Coriander (Coriandrum sativum) — a annual herb suited to windowsill, indoor and outdoor cultivation.",
+    "tags": [
+      "annual",
+      "bolts-in-heat",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "propagation",
+        "label": "Propagation",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 62,
+          "humidityMax": 82,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Propagation",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Start from seed or cuttings; keep humidity high until rooted."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 3,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch growing tips to encourage bushiness and delay flowering."
+          },
+          {
+            "category": "watering",
+            "note": "Allow slight dry-back between waterings; most herbs resent wet feet."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 10
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [
+      {
+        "id": "slow-bolt",
+        "name": "Slow-Bolt",
+        "description": "Popular coriander variety for controlled-environment or garden cultivation.",
+        "tags": []
+      },
+      {
+        "id": "leisure",
+        "name": "Leisure",
+        "description": "Popular coriander variety for controlled-environment or garden cultivation.",
+        "tags": []
+      }
+    ],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 6,
+      "max": 8
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://hort.purdue.edu/newcrop/",
+      "https://www.rhs.org.uk/plants/types/herbs/growing-guide"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 1,
+        "max": 3
+      },
+      "plantsPerM2": {
+        "min": 16,
+        "max": 25
+      },
+      "spacingCm": {
+        "min": 10,
+        "max": 15
+      },
+      "rootDepthCm": {
+        "min": 15,
+        "max": 25
+      },
+      "verticalClearanceCm": {
+        "min": 25,
+        "max": 45
+      },
+      "recommendedMedium": [
+        "soil",
+        "nft"
+      ]
+    }
+  },
+  {
+    "id": "parsley",
+    "name": "Parsley",
+    "scientificName": "Petroselinum crispum",
+    "category": "herb",
+    "description": "Parsley (Petroselinum crispum) — a annual herb suited to windowsill, indoor and outdoor cultivation.",
+    "tags": [
+      "biennial",
+      "slow-germinator",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "propagation",
+        "label": "Propagation",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 22,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 67,
+          "humidityMax": 82,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Propagation",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Start from seed or cuttings; keep humidity high until rooted."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 3,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 22,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 60,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch growing tips to encourage bushiness and delay flowering."
+          },
+          {
+            "category": "watering",
+            "note": "Allow slight dry-back between waterings; most herbs resent wet feet."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 22,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 60,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 10
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [
+      {
+        "id": "curly",
+        "name": "Curly",
+        "description": "Popular parsley variety for controlled-environment or garden cultivation.",
+        "tags": []
+      },
+      {
+        "id": "italian-flat-leaf",
+        "name": "Italian Flat-Leaf",
+        "description": "Popular parsley variety for controlled-environment or garden cultivation.",
+        "tags": []
+      }
+    ],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 10,
+      "max": 14
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://hort.purdue.edu/newcrop/",
+      "https://www.rhs.org.uk/plants/types/herbs/growing-guide"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 2,
+        "max": 4
+      },
+      "plantsPerM2": {
+        "min": 12,
+        "max": 16
+      },
+      "spacingCm": {
+        "min": 15,
+        "max": 20
+      },
+      "rootDepthCm": {
+        "min": 20,
+        "max": 30
+      },
+      "verticalClearanceCm": {
+        "min": 25,
+        "max": 40
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Taproot — prefer deeper pots and minimal transplanting."
+      ]
+    }
+  },
+  {
+    "id": "thyme",
+    "name": "Thyme",
+    "scientificName": "Thymus vulgaris",
+    "category": "herb",
+    "description": "Thyme (Thymus vulgaris) — a perennial herb suited to windowsill, indoor and outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "drought-tolerant",
+      "mediterranean",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "propagation",
+        "label": "Propagation",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 52,
+          "humidityMax": 72,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 6
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Propagation",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Start from seed or cuttings; keep humidity high until rooted."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 3,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch growing tips to encourage bushiness and delay flowering."
+          },
+          {
+            "category": "watering",
+            "note": "Allow slight dry-back between waterings; most herbs resent wet feet."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 10,
+      "max": 14
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://hort.purdue.edu/newcrop/",
+      "https://www.rhs.org.uk/plants/types/herbs/growing-guide"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 1,
+        "max": 3
+      },
+      "plantsPerM2": {
+        "min": 12,
+        "max": 20
+      },
+      "spacingCm": {
+        "min": 20,
+        "max": 25
+      },
+      "rootDepthCm": {
+        "min": 10,
+        "max": 20
+      },
+      "verticalClearanceCm": {
+        "min": 15,
+        "max": 30
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Shallow, free-draining pot; drought-tolerant once established."
+      ]
+    }
+  },
+  {
+    "id": "oregano",
+    "name": "Oregano",
+    "scientificName": "Origanum vulgare",
+    "category": "herb",
+    "description": "Oregano (Origanum vulgare) — a perennial herb suited to windowsill, indoor and outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "mediterranean",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "propagation",
+        "label": "Propagation",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 52,
+          "humidityMax": 72,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 6
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Propagation",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Start from seed or cuttings; keep humidity high until rooted."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 3,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch growing tips to encourage bushiness and delay flowering."
+          },
+          {
+            "category": "watering",
+            "note": "Allow slight dry-back between waterings; most herbs resent wet feet."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 10,
+      "max": 14
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://hort.purdue.edu/newcrop/",
+      "https://www.rhs.org.uk/plants/types/herbs/growing-guide"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 2,
+        "max": 4
+      },
+      "plantsPerM2": {
+        "min": 9,
+        "max": 12
+      },
+      "spacingCm": {
+        "min": 25,
+        "max": 30
+      },
+      "rootDepthCm": {
+        "min": 15,
+        "max": 25
+      },
+      "verticalClearanceCm": {
+        "min": 25,
+        "max": 50
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
+  },
+  {
+    "id": "rosemary",
+    "name": "Rosemary",
+    "scientificName": "Salvia rosmarinus",
+    "category": "herb",
+    "description": "Rosemary (Salvia rosmarinus) — a perennial herb suited to windowsill, indoor and outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "mediterranean",
+      "drought-tolerant",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "propagation",
+        "label": "Propagation",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 52,
+          "humidityMax": 72,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 6
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Propagation",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Start from seed or cuttings; keep humidity high until rooted."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 3,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 15
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch growing tips to encourage bushiness and delay flowering."
+          },
+          {
+            "category": "watering",
+            "note": "Allow slight dry-back between waterings; most herbs resent wet feet."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 13
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "intermediate",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 12,
+      "max": 16
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://hort.purdue.edu/newcrop/",
+      "https://www.rhs.org.uk/plants/types/herbs/growing-guide"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 5,
+        "max": 10
+      },
+      "plantsPerM2": {
+        "min": 4,
+        "max": 6
+      },
+      "spacingCm": {
+        "min": 40,
+        "max": 60
+      },
+      "rootDepthCm": {
+        "min": 20,
+        "max": 30
+      },
+      "verticalClearanceCm": {
+        "min": 40,
+        "max": 80
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
+  },
+  {
+    "id": "sage",
+    "name": "Sage",
+    "scientificName": "Salvia officinalis",
+    "category": "herb",
+    "description": "Sage (Salvia officinalis) — a perennial herb suited to windowsill, indoor and outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "mediterranean",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "propagation",
+        "label": "Propagation",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 52,
+          "humidityMax": 72,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 6
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Propagation",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Start from seed or cuttings; keep humidity high until rooted."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 3,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch growing tips to encourage bushiness and delay flowering."
+          },
+          {
+            "category": "watering",
+            "note": "Allow slight dry-back between waterings; most herbs resent wet feet."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Verified: PLOS ONE modeling study (sage ‘Extrakta’, spearmint ‘Spanish’) — branching increases with mean daily temperature 23→35 °C and DLI 5.5→13.2 mol/m²/d; moderate setpoints preferred for oil-rich herbs."
+          }
+        ]
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 10,
+      "max": 14
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://hort.purdue.edu/newcrop/",
+      "https://www.rhs.org.uk/plants/types/herbs/growing-guide",
+      "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0294905"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 5,
+        "max": 10
+      },
+      "plantsPerM2": {
+        "min": 4,
+        "max": 6
+      },
+      "spacingCm": {
+        "min": 40,
+        "max": 50
+      },
+      "rootDepthCm": {
+        "min": 20,
+        "max": 30
+      },
+      "verticalClearanceCm": {
+        "min": 40,
+        "max": 70
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
+  },
+  {
+    "id": "chives",
+    "name": "Chives",
+    "scientificName": "Allium schoenoprasum",
+    "category": "herb",
+    "description": "Chives (Allium schoenoprasum) — a perennial herb suited to windowsill, indoor and outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "clump-forming",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "propagation",
+        "label": "Propagation",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 62,
+          "humidityMax": 82,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Propagation",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Start from seed or cuttings; keep humidity high until rooted."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 3,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch growing tips to encourage bushiness and delay flowering."
+          },
+          {
+            "category": "watering",
+            "note": "Allow slight dry-back between waterings; most herbs resent wet feet."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 10
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 8,
+      "max": 12
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://hort.purdue.edu/newcrop/",
+      "https://www.rhs.org.uk/plants/types/herbs/growing-guide"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 2,
+        "max": 4
+      },
+      "plantsPerM2": {
+        "min": 9,
+        "max": 16
+      },
+      "spacingCm": {
+        "min": 15,
+        "max": 20
+      },
+      "rootDepthCm": {
+        "min": 10,
+        "max": 20
+      },
+      "verticalClearanceCm": {
+        "min": 20,
+        "max": 35
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
+  },
+  {
+    "id": "garlic-chives",
+    "name": "Garlic Chives",
+    "scientificName": "Allium tuberosum",
+    "category": "herb",
+    "description": "Garlic Chives (Allium tuberosum) — a perennial herb suited to windowsill, indoor and outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "clump-forming",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "propagation",
+        "label": "Propagation",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 62,
+          "humidityMax": 82,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Propagation",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Start from seed or cuttings; keep humidity high until rooted."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 3,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch growing tips to encourage bushiness and delay flowering."
+          },
+          {
+            "category": "watering",
+            "note": "Allow slight dry-back between waterings; most herbs resent wet feet."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 10
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 8,
+      "max": 12
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://hort.purdue.edu/newcrop/",
+      "https://www.rhs.org.uk/plants/types/herbs/growing-guide"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 2,
+        "max": 4
+      },
+      "plantsPerM2": {
+        "min": 9,
+        "max": 16
+      },
+      "spacingCm": {
+        "min": 15,
+        "max": 20
+      },
+      "rootDepthCm": {
+        "min": 10,
+        "max": 20
+      },
+      "verticalClearanceCm": {
+        "min": 20,
+        "max": 40
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
+  },
+  {
+    "id": "dill",
+    "name": "Dill",
+    "scientificName": "Anethum graveolens",
+    "category": "herb",
+    "description": "Dill (Anethum graveolens) — a annual herb suited to windowsill, indoor and outdoor cultivation.",
+    "tags": [
+      "annual",
+      "bolts-in-heat",
+      "long-day",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "propagation",
+        "label": "Propagation",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 62,
+          "humidityMax": 82,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Propagation",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Start from seed or cuttings; keep humidity high until rooted."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 3,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 13
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch growing tips to encourage bushiness and delay flowering."
+          },
+          {
+            "category": "watering",
+            "note": "Allow slight dry-back between waterings; most herbs resent wet feet."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 11
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [
+      {
+        "id": "fernleaf",
+        "name": "Fernleaf",
+        "description": "Popular dill variety for controlled-environment or garden cultivation.",
+        "tags": []
+      },
+      {
+        "id": "bouquet",
+        "name": "Bouquet",
+        "description": "Popular dill variety for controlled-environment or garden cultivation.",
+        "tags": []
+      }
+    ],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 8,
+      "max": 10
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://hort.purdue.edu/newcrop/",
+      "https://www.rhs.org.uk/plants/types/herbs/growing-guide"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 2,
+        "max": 5
+      },
+      "plantsPerM2": {
+        "min": 9,
+        "max": 16
+      },
+      "spacingCm": {
+        "min": 20,
+        "max": 30
+      },
+      "rootDepthCm": {
+        "min": 25,
+        "max": 40
+      },
+      "verticalClearanceCm": {
+        "min": 40,
+        "max": 90
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Deep taproot — use the deepest pot in the range and sow in place where possible."
+      ]
+    }
+  },
+  {
+    "id": "tarragon",
+    "name": "Tarragon",
+    "scientificName": "Artemisia dracunculus",
+    "category": "herb",
+    "description": "Tarragon (Artemisia dracunculus) — a perennial herb suited to windowsill, indoor and outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "clonally-propagated",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "propagation",
+        "label": "Propagation",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 57,
+          "humidityMax": 77,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Propagation",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Start from seed or cuttings; keep humidity high until rooted."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 3,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 13
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch growing tips to encourage bushiness and delay flowering."
+          },
+          {
+            "category": "watering",
+            "note": "Allow slight dry-back between waterings; most herbs resent wet feet."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 11
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "intermediate",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 12,
+      "max": 16
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://hort.purdue.edu/newcrop/",
+      "https://www.rhs.org.uk/plants/types/herbs/growing-guide"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 3,
+        "max": 5
+      },
+      "plantsPerM2": {
+        "min": 8,
+        "max": 12
+      },
+      "spacingCm": {
+        "min": 25,
+        "max": 30
+      },
+      "rootDepthCm": {
+        "min": 15,
+        "max": 25
+      },
+      "verticalClearanceCm": {
+        "min": 40,
+        "max": 80
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
+  },
+  {
+    "id": "marjoram",
+    "name": "Marjoram",
+    "scientificName": "Origanum majorana",
+    "category": "herb",
+    "description": "Marjoram (Origanum majorana) — a annual herb suited to windowsill, indoor and outdoor cultivation.",
+    "tags": [
+      "annual",
+      "mediterranean",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "propagation",
+        "label": "Propagation",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 57,
+          "humidityMax": 77,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Propagation",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Start from seed or cuttings; keep humidity high until rooted."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 3,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 13
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch growing tips to encourage bushiness and delay flowering."
+          },
+          {
+            "category": "watering",
+            "note": "Allow slight dry-back between waterings; most herbs resent wet feet."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 11
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 8,
+      "max": 12
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://hort.purdue.edu/newcrop/",
+      "https://www.rhs.org.uk/plants/types/herbs/growing-guide"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 2,
+        "max": 4
+      },
+      "plantsPerM2": {
+        "min": 9,
+        "max": 12
+      },
+      "spacingCm": {
+        "min": 20,
+        "max": 25
+      },
+      "rootDepthCm": {
+        "min": 15,
+        "max": 25
+      },
+      "verticalClearanceCm": {
+        "min": 20,
+        "max": 40
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
+  },
+  {
+    "id": "summer-savory",
+    "name": "Summer Savory",
+    "scientificName": "Satureja hortensis",
+    "category": "herb",
+    "description": "Summer Savory (Satureja hortensis) — a annual herb suited to windowsill, indoor and outdoor cultivation.",
+    "tags": [
+      "annual",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "propagation",
+        "label": "Propagation",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 62,
+          "humidityMax": 82,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Propagation",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Start from seed or cuttings; keep humidity high until rooted."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 3,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch growing tips to encourage bushiness and delay flowering."
+          },
+          {
+            "category": "watering",
+            "note": "Allow slight dry-back between waterings; most herbs resent wet feet."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 10
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 8,
+      "max": 10
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://hort.purdue.edu/newcrop/",
+      "https://www.rhs.org.uk/plants/types/herbs/growing-guide"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 2,
+        "max": 3
+      },
+      "plantsPerM2": {
+        "min": 12,
+        "max": 16
+      },
+      "spacingCm": {
+        "min": 15,
+        "max": 25
+      },
+      "rootDepthCm": {
+        "min": 15,
+        "max": 25
+      },
+      "verticalClearanceCm": {
+        "min": 25,
+        "max": 45
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
+  },
+  {
+    "id": "lemon-balm",
+    "name": "Lemon Balm",
+    "scientificName": "Melissa officinalis",
+    "category": "herb",
+    "description": "Lemon Balm (Melissa officinalis) — a perennial herb suited to windowsill, indoor and outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "shade-tolerant",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "propagation",
+        "label": "Propagation",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 67,
+          "humidityMax": 87,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Propagation",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Start from seed or cuttings; keep humidity high until rooted."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 3,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch growing tips to encourage bushiness and delay flowering."
+          },
+          {
+            "category": "watering",
+            "note": "Allow slight dry-back between waterings; most herbs resent wet feet."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 10
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 8,
+      "max": 12
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://hort.purdue.edu/newcrop/",
+      "https://www.rhs.org.uk/plants/types/herbs/growing-guide"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 3,
+        "max": 5
+      },
+      "plantsPerM2": {
+        "min": 8,
+        "max": 12
+      },
+      "spacingCm": {
+        "min": 30,
+        "max": 40
+      },
+      "rootDepthCm": {
+        "min": 15,
+        "max": 25
+      },
+      "verticalClearanceCm": {
+        "min": 30,
+        "max": 60
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
+  },
+  {
+    "id": "stevia",
+    "name": "Stevia",
+    "scientificName": "Stevia rebaudiana",
+    "category": "herb",
+    "description": "Stevia (Stevia rebaudiana) — a perennial herb suited to windowsill, indoor and outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "sweet-leaves",
+      "short-day",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "propagation",
+        "label": "Propagation",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 26,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 62,
+          "humidityMax": 77,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Propagation",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Start from seed or cuttings; keep humidity high until rooted."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 3,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 26,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 55,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 13
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch growing tips to encourage bushiness and delay flowering."
+          },
+          {
+            "category": "watering",
+            "note": "Allow slight dry-back between waterings; most herbs resent wet feet."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 26,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 55,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 11
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "intermediate",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 10,
+      "max": 14
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://hort.purdue.edu/newcrop/",
+      "https://www.rhs.org.uk/plants/types/herbs/growing-guide"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 2,
+        "max": 4
+      },
+      "plantsPerM2": {
+        "min": 12,
+        "max": 16
+      },
+      "spacingCm": {
+        "min": 20,
+        "max": 25
+      },
+      "rootDepthCm": {
+        "min": 15,
+        "max": 25
+      },
+      "verticalClearanceCm": {
+        "min": 30,
+        "max": 50
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
+  },
+  {
+    "id": "lemongrass",
+    "name": "Lemongrass",
+    "scientificName": "Cymbopogon citratus",
+    "category": "herb",
+    "description": "Lemongrass (Cymbopogon citratus) — a perennial herb suited to windowsill, indoor and outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "tropical",
+      "clump-forming",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "propagation",
+        "label": "Propagation",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 30,
+          "tempNightMin": 18,
+          "tempNightMax": 22,
+          "humidityMin": 72,
+          "humidityMax": 92,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 6
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Propagation",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Start from seed or cuttings; keep humidity high until rooted."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 3,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 30,
+          "tempNightMin": 18,
+          "tempNightMax": 22,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch growing tips to encourage bushiness and delay flowering."
+          },
+          {
+            "category": "watering",
+            "note": "Allow slight dry-back between waterings; most herbs resent wet feet."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 30,
+          "tempNightMin": 18,
+          "tempNightMax": 22,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "intermediate",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 12,
+      "max": 16
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://hort.purdue.edu/newcrop/",
+      "https://www.rhs.org.uk/plants/types/herbs/growing-guide"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 10,
+        "max": 20
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 3
+      },
+      "spacingCm": {
+        "min": 60,
+        "max": 100
+      },
+      "rootDepthCm": {
+        "min": 20,
+        "max": 30
+      },
+      "verticalClearanceCm": {
+        "min": 100,
+        "max": 150
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
+  },
+  {
+    "id": "ginger",
+    "name": "Ginger",
+    "scientificName": "Zingiber officinale",
+    "category": "herb",
+    "description": "Ginger (Zingiber officinale) — a perennial herb suited to windowsill, indoor and outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "rhizome",
+      "tropical",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "propagation",
+        "label": "Propagation",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 25,
+          "tempDayMax": 30,
+          "tempNightMin": 20,
+          "tempNightMax": 23,
+          "humidityMin": 82,
+          "humidityMax": 95,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 6
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Propagation",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Start from seed or cuttings; keep humidity high until rooted."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 3,
+        "environment": {
+          "tempDayMin": 25,
+          "tempDayMax": 30,
+          "tempNightMin": 20,
+          "tempNightMax": 23,
+          "humidityMin": 75,
+          "humidityMax": 88,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch growing tips to encourage bushiness and delay flowering."
+          },
+          {
+            "category": "watering",
+            "note": "Allow slight dry-back between waterings; most herbs resent wet feet."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 25,
+          "tempDayMax": 30,
+          "tempNightMin": 20,
+          "tempNightMax": 23,
+          "humidityMin": 75,
+          "humidityMax": 88,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "intermediate",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 36,
+      "max": 52
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://hort.purdue.edu/newcrop/",
+      "https://www.rhs.org.uk/plants/types/herbs/growing-guide"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 10,
+        "max": 20
+      },
+      "potDepthCm": {
+        "min": 30,
+        "max": 40
+      },
+      "plantsPerM2": {
+        "min": 2,
+        "max": 4
+      },
+      "spacingCm": {
+        "min": 40,
+        "max": 60
+      },
+      "rootDepthCm": {
+        "min": 20,
+        "max": 30
+      },
+      "verticalClearanceCm": {
+        "min": 60,
+        "max": 100
+      },
+      "recommendedMedium": [
+        "soil",
+        "coco"
+      ],
+      "notes": [
+        "Wide, shallow-to-medium tub; rhizomes grow horizontally near the surface."
+      ]
+    }
+  },
+  {
+    "id": "turmeric",
+    "name": "Turmeric",
+    "scientificName": "Curcuma longa",
+    "category": "herb",
+    "description": "Turmeric (Curcuma longa) — a perennial herb suited to windowsill, indoor and outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "rhizome",
+      "tropical",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "propagation",
+        "label": "Propagation",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 25,
+          "tempDayMax": 30,
+          "tempNightMin": 20,
+          "tempNightMax": 23,
+          "humidityMin": 82,
+          "humidityMax": 95,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 6
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Propagation",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Start from seed or cuttings; keep humidity high until rooted."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 3,
+        "environment": {
+          "tempDayMin": 25,
+          "tempDayMax": 30,
+          "tempNightMin": 20,
+          "tempNightMax": 23,
+          "humidityMin": 75,
+          "humidityMax": 88,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch growing tips to encourage bushiness and delay flowering."
+          },
+          {
+            "category": "watering",
+            "note": "Allow slight dry-back between waterings; most herbs resent wet feet."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 25,
+          "tempDayMax": 30,
+          "tempNightMin": 20,
+          "tempNightMax": 23,
+          "humidityMin": 75,
+          "humidityMax": 88,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "intermediate",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 36,
+      "max": 52
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://hort.purdue.edu/newcrop/",
+      "https://www.rhs.org.uk/plants/types/herbs/growing-guide"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 10,
+        "max": 20
+      },
+      "potDepthCm": {
+        "min": 30,
+        "max": 40
+      },
+      "plantsPerM2": {
+        "min": 2,
+        "max": 4
+      },
+      "spacingCm": {
+        "min": 40,
+        "max": 60
+      },
+      "rootDepthCm": {
+        "min": 20,
+        "max": 30
+      },
+      "verticalClearanceCm": {
+        "min": 60,
+        "max": 120
+      },
+      "recommendedMedium": [
+        "soil",
+        "coco"
+      ]
+    }
+  },
+  {
+    "id": "bay-laurel",
+    "name": "Bay Laurel",
+    "scientificName": "Laurus nobilis",
+    "category": "herb",
+    "description": "Bay Laurel (Laurus nobilis) — a perennial herb suited to windowsill, indoor and outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "tree",
+      "mediterranean",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "propagation",
+        "label": "Propagation",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 52,
+          "humidityMax": 72,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 6
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Propagation",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Start from seed or cuttings; keep humidity high until rooted."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 3,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch growing tips to encourage bushiness and delay flowering."
+          },
+          {
+            "category": "watering",
+            "note": "Allow slight dry-back between waterings; most herbs resent wet feet."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "intermediate",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 52,
+      "max": 104
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://hort.purdue.edu/newcrop/",
+      "https://www.rhs.org.uk/plants/types/herbs/growing-guide"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 15,
+        "max": 30
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 2
+      },
+      "spacingCm": {
+        "min": 80,
+        "max": 120
+      },
+      "rootDepthCm": {
+        "min": 25,
+        "max": 40
+      },
+      "verticalClearanceCm": {
+        "min": 100,
+        "max": 200
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Slow-growing tree — keep pruned to size indoors; pot-on every 2–3 years."
+      ]
+    }
+  },
+  {
+    "id": "lavender",
+    "name": "Lavender",
+    "scientificName": "Lavandula angustifolia",
+    "category": "herb",
+    "description": "Lavender (Lavandula angustifolia) — a perennial herb suited to windowsill, indoor and outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "mediterranean",
+      "drought-tolerant",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "propagation",
+        "label": "Propagation",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 52,
+          "humidityMax": 72,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 7
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Propagation",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Start from seed or cuttings; keep humidity high until rooted."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 3,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch growing tips to encourage bushiness and delay flowering."
+          },
+          {
+            "category": "watering",
+            "note": "Allow slight dry-back between waterings; most herbs resent wet feet."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 15
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [
+      {
+        "id": "english",
+        "name": "English",
+        "description": "Popular lavender variety for controlled-environment or garden cultivation.",
+        "tags": []
+      },
+      {
+        "id": "french",
+        "name": "French",
+        "description": "Popular lavender variety for controlled-environment or garden cultivation.",
+        "tags": []
+      }
+    ],
+    "difficulty": "intermediate",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 14,
+      "max": 20
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://hort.purdue.edu/newcrop/",
+      "https://www.rhs.org.uk/plants/types/herbs/growing-guide"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 5,
+        "max": 10
+      },
+      "plantsPerM2": {
+        "min": 4,
+        "max": 6
+      },
+      "spacingCm": {
+        "min": 40,
+        "max": 50
+      },
+      "rootDepthCm": {
+        "min": 20,
+        "max": 35
+      },
+      "verticalClearanceCm": {
+        "min": 40,
+        "max": 60
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Free-draining, gritty mix; hates wet feet."
+      ]
+    }
+  },
+  {
+    "id": "chamomile",
+    "name": "Chamomile",
+    "scientificName": "Matricaria chamomilla",
+    "category": "herb",
+    "description": "Chamomile (Matricaria chamomilla) — a annual herb suited to windowsill, indoor and outdoor cultivation.",
+    "tags": [
+      "annual",
+      "flower-tea",
+      "long-day",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "propagation",
+        "label": "Propagation",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 62,
+          "humidityMax": 82,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Propagation",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Start from seed or cuttings; keep humidity high until rooted."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 3,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 13
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch growing tips to encourage bushiness and delay flowering."
+          },
+          {
+            "category": "watering",
+            "note": "Allow slight dry-back between waterings; most herbs resent wet feet."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 11
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 8,
+      "max": 12
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://hort.purdue.edu/newcrop/",
+      "https://www.rhs.org.uk/plants/types/herbs/growing-guide"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 2,
+        "max": 4
+      },
+      "plantsPerM2": {
+        "min": 9,
+        "max": 12
+      },
+      "spacingCm": {
+        "min": 25,
+        "max": 30
+      },
+      "rootDepthCm": {
+        "min": 10,
+        "max": 20
+      },
+      "verticalClearanceCm": {
+        "min": 20,
+        "max": 40
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
+  },
+  {
+    "id": "borage",
+    "name": "Borage",
+    "scientificName": "Borago officinalis",
+    "category": "herb",
+    "description": "Borage (Borago officinalis) — a annual herb suited to windowsill, indoor and outdoor cultivation.",
+    "tags": [
+      "annual",
+      "self-seeding",
+      "edible-flower",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "propagation",
+        "label": "Propagation",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 22,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 62,
+          "humidityMax": 82,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Propagation",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Start from seed or cuttings; keep humidity high until rooted."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 3,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 22,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 13
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch growing tips to encourage bushiness and delay flowering."
+          },
+          {
+            "category": "watering",
+            "note": "Allow slight dry-back between waterings; most herbs resent wet feet."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 22,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 11
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 8,
+      "max": 10
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://hort.purdue.edu/newcrop/",
+      "https://www.rhs.org.uk/plants/types/herbs/growing-guide"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 5,
+        "max": 10
+      },
+      "plantsPerM2": {
+        "min": 4,
+        "max": 6
+      },
+      "spacingCm": {
+        "min": 40,
+        "max": 50
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 50
+      },
+      "verticalClearanceCm": {
+        "min": 50,
+        "max": 90
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Taproot resents transplanting — sow direct into the final pot."
+      ]
+    }
+  },
+  {
+    "id": "lovage",
+    "name": "Lovage",
+    "scientificName": "Levisticum officinale",
+    "category": "herb",
+    "description": "Lovage (Levisticum officinale) — a perennial herb suited to windowsill, indoor and outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "large-stature",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "propagation",
+        "label": "Propagation",
+        "order": 1,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 67,
+          "humidityMax": 87,
+          "lightCycleHours": 16,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 5
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Propagation",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Start from seed or cuttings; keep humidity high until rooted."
+          }
+        ]
+      },
+      {
+        "id": "establishment",
+        "label": "Establishment",
+        "order": 2,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 3,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 13
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Establishment",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch growing tips to encourage bushiness and delay flowering."
+          },
+          {
+            "category": "watering",
+            "note": "Allow slight dry-back between waterings; most herbs resent wet feet."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth",
+        "order": 3,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 8,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 16,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 11
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Growth",
+          "ecTarget": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "intermediate",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 12,
+      "max": 16
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://hort.purdue.edu/newcrop/",
+      "https://www.rhs.org.uk/plants/types/herbs/growing-guide"
+    ],
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 15,
+        "max": 25
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 2
+      },
+      "spacingCm": {
+        "min": 70,
+        "max": 100
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 45
+      },
+      "verticalClearanceCm": {
+        "min": 100,
+        "max": 180
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Large-stature perennial — one plant per big container."
+      ]
+    }
+  }
+]
