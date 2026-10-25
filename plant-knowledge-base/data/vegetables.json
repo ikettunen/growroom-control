@@ -206,7 +206,37 @@
       "https://cerberus.ext.msstate.edu/sites/default/files/publications/publications/p1828_web.pdf",
       "https://www.purdue.edu/hla/sites/cea/wp-content/uploads/sites/15/2024/05/Greenhouse-Tomato-Production.pdf"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 10,
+        "max": 20
+      },
+      "plantsPerM2": {
+        "min": 2.5,
+        "max": 3.5
+      },
+      "spacingCm": {
+        "min": 45,
+        "max": 60
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 45
+      },
+      "verticalClearanceCm": {
+        "min": 150,
+        "max": 220
+      },
+      "recommendedMedium": [
+        "soil",
+        "coco",
+        "hydro-dwc"
+      ],
+      "notes": [
+        "10 L suits determinate/bucket tomatoes; 15–20 L for indeterminate vines trained to a stake or trellis."
+      ]
+    }
   },
   {
     "id": "sweet-pepper",
@@ -408,7 +438,36 @@
       "https://extension.psu.edu/vegetable-gardening-resources",
       "https://prod-na02.johnnyseeds.com/growers-library/vegetables/peppers/greenhouse-peppers-key-growing-information.html"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 8,
+        "max": 15
+      },
+      "plantsPerM2": {
+        "min": 3,
+        "max": 3.5
+      },
+      "spacingCm": {
+        "min": 45,
+        "max": 50
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 40
+      },
+      "verticalClearanceCm": {
+        "min": 100,
+        "max": 180
+      },
+      "recommendedMedium": [
+        "soil",
+        "coco"
+      ],
+      "notes": [
+        "Johnny’s greenhouse protocol: 3–3.5 plants/m² at 45–50 cm in-row spacing."
+      ]
+    }
   },
   {
     "id": "chili-pepper",
@@ -616,7 +675,33 @@
       "https://extension.psu.edu/vegetable-gardening-resources",
       "https://prod-na02.johnnyseeds.com/growers-library/vegetables/peppers/greenhouse-peppers-key-growing-information.html"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 5,
+        "max": 10
+      },
+      "plantsPerM2": {
+        "min": 3,
+        "max": 4
+      },
+      "spacingCm": {
+        "min": 40,
+        "max": 50
+      },
+      "rootDepthCm": {
+        "min": 25,
+        "max": 40
+      },
+      "verticalClearanceCm": {
+        "min": 60,
+        "max": 120
+      },
+      "recommendedMedium": [
+        "soil",
+        "coco"
+      ]
+    }
   },
   {
     "id": "eggplant",
@@ -799,7 +884,36 @@
       "https://extension.psu.edu/vegetable-gardening-resources",
       "https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwf8c81bc9/assets/information/eggplant-greenhouse-production.pdf"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 10,
+        "max": 15
+      },
+      "plantsPerM2": {
+        "min": 2.5,
+        "max": 4
+      },
+      "spacingCm": {
+        "min": 45,
+        "max": 60
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 40
+      },
+      "verticalClearanceCm": {
+        "min": 80,
+        "max": 150
+      },
+      "recommendedMedium": [
+        "soil",
+        "coco"
+      ],
+      "notes": [
+        "Johnny’s protocol: 5–8 stems/m² when grown with 2–3 stems per plant; vertical trellising recommended."
+      ]
+    }
   },
   {
     "id": "cucumber",
@@ -996,7 +1110,37 @@
       "https://extension.psu.edu/vegetable-gardening-resources",
       "https://www.uaf.edu/ces/publications/database/gardening/growing-cucumbers-greenhouses.php"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 10,
+        "max": 15
+      },
+      "plantsPerM2": {
+        "min": 2,
+        "max": 3
+      },
+      "spacingCm": {
+        "min": 50,
+        "max": 60
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 45
+      },
+      "verticalClearanceCm": {
+        "min": 180,
+        "max": 250
+      },
+      "recommendedMedium": [
+        "soil",
+        "coco",
+        "hydro-dwc"
+      ],
+      "notes": [
+        "Greenhouse high-wire crops run 2–3 plants/m²; provide a tall trellis for vertical training."
+      ]
+    }
   },
   {
     "id": "zucchini",
@@ -1166,7 +1310,32 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 15,
+        "max": 25
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 2
+      },
+      "spacingCm": {
+        "min": 80,
+        "max": 100
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 45
+      },
+      "verticalClearanceCm": {
+        "min": 60,
+        "max": 100
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
   },
   {
     "id": "winter-squash",
@@ -1337,7 +1506,35 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 20,
+        "max": 40
+      },
+      "plantsPerM2": {
+        "min": 0.5,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 100,
+        "max": 150
+      },
+      "rootDepthCm": {
+        "min": 40,
+        "max": 60
+      },
+      "verticalClearanceCm": {
+        "min": 50,
+        "max": 80
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Large sprawling vines — give floor space or a strong trellis; one plant per big container."
+      ]
+    }
   },
   {
     "id": "pumpkin",
@@ -1508,7 +1705,35 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 40,
+        "max": 80
+      },
+      "plantsPerM2": {
+        "min": 0.5,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 120,
+        "max": 200
+      },
+      "rootDepthCm": {
+        "min": 40,
+        "max": 60
+      },
+      "verticalClearanceCm": {
+        "min": 50,
+        "max": 70
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Not space-efficient indoors — only compact varieties in the largest containers."
+      ]
+    }
   },
   {
     "id": "melon",
@@ -1678,7 +1903,35 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 15,
+        "max": 25
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 2
+      },
+      "spacingCm": {
+        "min": 60,
+        "max": 80
+      },
+      "rootDepthCm": {
+        "min": 35,
+        "max": 50
+      },
+      "verticalClearanceCm": {
+        "min": 150,
+        "max": 200
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Trellis with fruit slings to save floor space."
+      ]
+    }
   },
   {
     "id": "watermelon",
@@ -1849,7 +2102,32 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 20,
+        "max": 40
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 1.5
+      },
+      "spacingCm": {
+        "min": 100,
+        "max": 150
+      },
+      "rootDepthCm": {
+        "min": 40,
+        "max": 60
+      },
+      "verticalClearanceCm": {
+        "min": 150,
+        "max": 200
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
   },
   {
     "id": "okra",
@@ -2020,7 +2298,35 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 10,
+        "max": 15
+      },
+      "plantsPerM2": {
+        "min": 2,
+        "max": 3
+      },
+      "spacingCm": {
+        "min": 40,
+        "max": 50
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 45
+      },
+      "verticalClearanceCm": {
+        "min": 100,
+        "max": 180
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Tall plant — prune tops to keep an indoor canopy manageable."
+      ]
+    }
   },
   {
     "id": "tomatillo",
@@ -2190,7 +2496,35 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 10,
+        "max": 15
+      },
+      "plantsPerM2": {
+        "min": 2,
+        "max": 3
+      },
+      "spacingCm": {
+        "min": 50,
+        "max": 60
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 40
+      },
+      "verticalClearanceCm": {
+        "min": 80,
+        "max": 140
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Needs 2+ plants for cross-pollination and fruit set."
+      ]
+    }
   },
   {
     "id": "bush-bean",
@@ -2373,7 +2707,32 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 5,
+        "max": 10
+      },
+      "plantsPerM2": {
+        "min": 9,
+        "max": 12
+      },
+      "spacingCm": {
+        "min": 15,
+        "max": 20
+      },
+      "rootDepthCm": {
+        "min": 20,
+        "max": 30
+      },
+      "verticalClearanceCm": {
+        "min": 40,
+        "max": 60
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
   },
   {
     "id": "pole-bean",
@@ -2557,7 +2916,35 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 10,
+        "max": 15
+      },
+      "plantsPerM2": {
+        "min": 4,
+        "max": 6
+      },
+      "spacingCm": {
+        "min": 20,
+        "max": 30
+      },
+      "rootDepthCm": {
+        "min": 25,
+        "max": 40
+      },
+      "verticalClearanceCm": {
+        "min": 180,
+        "max": 250
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Requires a vertical trellis; plan 2 m of headroom."
+      ]
+    }
   },
   {
     "id": "garden-pea",
@@ -2747,7 +3134,32 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 5,
+        "max": 10
+      },
+      "plantsPerM2": {
+        "min": 9,
+        "max": 16
+      },
+      "spacingCm": {
+        "min": 8,
+        "max": 10
+      },
+      "rootDepthCm": {
+        "min": 20,
+        "max": 30
+      },
+      "verticalClearanceCm": {
+        "min": 100,
+        "max": 180
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
   },
   {
     "id": "sweet-corn",
@@ -2918,7 +3330,35 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 20,
+        "max": 40
+      },
+      "plantsPerM2": {
+        "min": 9,
+        "max": 12
+      },
+      "spacingCm": {
+        "min": 30,
+        "max": 40
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 45
+      },
+      "verticalClearanceCm": {
+        "min": 150,
+        "max": 250
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Wind-pollinated — plant in a dense block of 6+ plants, not singles, for pollination."
+      ]
+    }
   },
   {
     "id": "radish",
@@ -3089,7 +3529,35 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 2,
+        "max": 5
+      },
+      "plantsPerM2": {
+        "min": 40,
+        "max": 80
+      },
+      "spacingCm": {
+        "min": 5,
+        "max": 7
+      },
+      "rootDepthCm": {
+        "min": 10,
+        "max": 15
+      },
+      "verticalClearanceCm": {
+        "min": 15,
+        "max": 30
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Shallow but wide trays work; keep 5 cm between plants for bulb formation."
+      ]
+    }
   },
   {
     "id": "carrot",
@@ -3278,7 +3746,39 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 10,
+        "max": 15
+      },
+      "potDepthCm": {
+        "min": 20,
+        "max": 30
+      },
+      "plantsPerM2": {
+        "min": 40,
+        "max": 64
+      },
+      "spacingCm": {
+        "min": 5,
+        "max": 7
+      },
+      "rootDepthCm": {
+        "min": 15,
+        "max": 30
+      },
+      "verticalClearanceCm": {
+        "min": 30,
+        "max": 50
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Depth matters more than volume — at least 20–30 cm of loose medium; short varieties for containers."
+      ]
+    }
   },
   {
     "id": "beet",
@@ -3448,7 +3948,36 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 5,
+        "max": 10
+      },
+      "potDepthCm": {
+        "min": 20,
+        "max": 25
+      },
+      "plantsPerM2": {
+        "min": 25,
+        "max": 40
+      },
+      "spacingCm": {
+        "min": 8,
+        "max": 10
+      },
+      "rootDepthCm": {
+        "min": 20,
+        "max": 30
+      },
+      "verticalClearanceCm": {
+        "min": 30,
+        "max": 50
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
   },
   {
     "id": "turnip",
@@ -3618,7 +4147,32 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 5,
+        "max": 10
+      },
+      "plantsPerM2": {
+        "min": 25,
+        "max": 40
+      },
+      "spacingCm": {
+        "min": 10,
+        "max": 12
+      },
+      "rootDepthCm": {
+        "min": 15,
+        "max": 20
+      },
+      "verticalClearanceCm": {
+        "min": 30,
+        "max": 50
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
   },
   {
     "id": "parsnip",
@@ -3789,7 +4343,39 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 15,
+        "max": 20
+      },
+      "potDepthCm": {
+        "min": 40,
+        "max": 50
+      },
+      "plantsPerM2": {
+        "min": 16,
+        "max": 25
+      },
+      "spacingCm": {
+        "min": 15,
+        "max": 20
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 60
+      },
+      "verticalClearanceCm": {
+        "min": 40,
+        "max": 70
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Long roots need very deep containers — 40 cm+ of medium."
+      ]
+    }
   },
   {
     "id": "kohlrabi",
@@ -3959,7 +4545,32 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 5,
+        "max": 8
+      },
+      "plantsPerM2": {
+        "min": 16,
+        "max": 25
+      },
+      "spacingCm": {
+        "min": 15,
+        "max": 20
+      },
+      "rootDepthCm": {
+        "min": 20,
+        "max": 30
+      },
+      "verticalClearanceCm": {
+        "min": 30,
+        "max": 45
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
   },
   {
     "id": "potato",
@@ -4129,7 +4740,35 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 30,
+        "max": 50
+      },
+      "plantsPerM2": {
+        "min": 4,
+        "max": 6
+      },
+      "spacingCm": {
+        "min": 30,
+        "max": 40
+      },
+      "rootDepthCm": {
+        "min": 25,
+        "max": 40
+      },
+      "verticalClearanceCm": {
+        "min": 50,
+        "max": 80
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Grow bags ideal — hill up with medium as the plant grows; one plant per 30–40 L bag."
+      ]
+    }
   },
   {
     "id": "sweet-potato",
@@ -4300,7 +4939,35 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 20,
+        "max": 40
+      },
+      "plantsPerM2": {
+        "min": 2,
+        "max": 4
+      },
+      "spacingCm": {
+        "min": 40,
+        "max": 50
+      },
+      "rootDepthCm": {
+        "min": 20,
+        "max": 30
+      },
+      "verticalClearanceCm": {
+        "min": 100,
+        "max": 200
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Vines sprawl 1–2 m; trellis or let them cascade; tubers form in the top 25 cm of a wide container."
+      ]
+    }
   },
   {
     "id": "celeriac",
@@ -4471,7 +5138,32 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 8,
+        "max": 12
+      },
+      "plantsPerM2": {
+        "min": 9,
+        "max": 12
+      },
+      "spacingCm": {
+        "min": 25,
+        "max": 30
+      },
+      "rootDepthCm": {
+        "min": 20,
+        "max": 30
+      },
+      "verticalClearanceCm": {
+        "min": 40,
+        "max": 60
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
   },
   {
     "id": "onion",
@@ -4641,7 +5333,32 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 5,
+        "max": 10
+      },
+      "plantsPerM2": {
+        "min": 40,
+        "max": 64
+      },
+      "spacingCm": {
+        "min": 10,
+        "max": 12
+      },
+      "rootDepthCm": {
+        "min": 15,
+        "max": 30
+      },
+      "verticalClearanceCm": {
+        "min": 40,
+        "max": 70
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
   },
   {
     "id": "green-onion",
@@ -4812,7 +5529,35 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 2,
+        "max": 5
+      },
+      "plantsPerM2": {
+        "min": 64,
+        "max": 100
+      },
+      "spacingCm": {
+        "min": 4,
+        "max": 5
+      },
+      "rootDepthCm": {
+        "min": 10,
+        "max": 15
+      },
+      "verticalClearanceCm": {
+        "min": 25,
+        "max": 45
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Sow densely in wide shallow trays; harvest in bunches."
+      ]
+    }
   },
   {
     "id": "garlic",
@@ -4983,7 +5728,36 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 5,
+        "max": 10
+      },
+      "potDepthCm": {
+        "min": 20,
+        "max": 25
+      },
+      "plantsPerM2": {
+        "min": 40,
+        "max": 64
+      },
+      "spacingCm": {
+        "min": 10,
+        "max": 15
+      },
+      "rootDepthCm": {
+        "min": 15,
+        "max": 30
+      },
+      "verticalClearanceCm": {
+        "min": 50,
+        "max": 80
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
   },
   {
     "id": "leek",
@@ -5154,7 +5928,36 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 8,
+        "max": 12
+      },
+      "potDepthCm": {
+        "min": 25,
+        "max": 30
+      },
+      "plantsPerM2": {
+        "min": 16,
+        "max": 25
+      },
+      "spacingCm": {
+        "min": 15,
+        "max": 20
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 50
+      },
+      "verticalClearanceCm": {
+        "min": 50,
+        "max": 90
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
   },
   {
     "id": "shallot",
@@ -5324,7 +6127,32 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 5,
+        "max": 8
+      },
+      "plantsPerM2": {
+        "min": 25,
+        "max": 40
+      },
+      "spacingCm": {
+        "min": 15,
+        "max": 18
+      },
+      "rootDepthCm": {
+        "min": 20,
+        "max": 30
+      },
+      "verticalClearanceCm": {
+        "min": 40,
+        "max": 60
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
   },
   {
     "id": "celery",
@@ -5495,7 +6323,32 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 8,
+        "max": 12
+      },
+      "plantsPerM2": {
+        "min": 9,
+        "max": 12
+      },
+      "spacingCm": {
+        "min": 25,
+        "max": 30
+      },
+      "rootDepthCm": {
+        "min": 20,
+        "max": 35
+      },
+      "verticalClearanceCm": {
+        "min": 40,
+        "max": 60
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
   },
   {
     "id": "bulb-fennel",
@@ -5665,7 +6518,32 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 8,
+        "max": 12
+      },
+      "plantsPerM2": {
+        "min": 9,
+        "max": 16
+      },
+      "spacingCm": {
+        "min": 20,
+        "max": 25
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 40
+      },
+      "verticalClearanceCm": {
+        "min": 40,
+        "max": 70
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
   },
   {
     "id": "asparagus",
@@ -5835,7 +6713,39 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 20,
+        "max": 40
+      },
+      "potDepthCm": {
+        "min": 40,
+        "max": 50
+      },
+      "plantsPerM2": {
+        "min": 2,
+        "max": 4
+      },
+      "spacingCm": {
+        "min": 40,
+        "max": 45
+      },
+      "rootDepthCm": {
+        "min": 60,
+        "max": 90
+      },
+      "verticalClearanceCm": {
+        "min": 120,
+        "max": 180
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Perennial crowns with 1 m-deep root systems — needs a deep raised bed or half-barrel; a multi-year commitment."
+      ]
+    }
   },
   {
     "id": "globe-artichoke",
@@ -6005,7 +6915,32 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 20,
+        "max": 40
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 2
+      },
+      "spacingCm": {
+        "min": 80,
+        "max": 100
+      },
+      "rootDepthCm": {
+        "min": 40,
+        "max": 60
+      },
+      "verticalClearanceCm": {
+        "min": 100,
+        "max": 180
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
   },
   {
     "id": "rhubarb",
@@ -6175,7 +7110,35 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 30,
+        "max": 50
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 100,
+        "max": 120
+      },
+      "rootDepthCm": {
+        "min": 40,
+        "max": 60
+      },
+      "verticalClearanceCm": {
+        "min": 60,
+        "max": 100
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Large perennial crown — one plant per large tub; needs winter chilling."
+      ]
+    }
   },
   {
     "id": "broccoli",
@@ -6346,7 +7309,33 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 10,
+        "max": 15
+      },
+      "plantsPerM2": {
+        "min": 4,
+        "max": 6
+      },
+      "spacingCm": {
+        "min": 45,
+        "max": 60
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 45
+      },
+      "verticalClearanceCm": {
+        "min": 50,
+        "max": 80
+      },
+      "recommendedMedium": [
+        "soil",
+        "coco"
+      ]
+    }
   },
   {
     "id": "cauliflower",
@@ -6517,7 +7506,32 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 10,
+        "max": 15
+      },
+      "plantsPerM2": {
+        "min": 4,
+        "max": 6
+      },
+      "spacingCm": {
+        "min": 45,
+        "max": 60
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 45
+      },
+      "verticalClearanceCm": {
+        "min": 40,
+        "max": 60
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
   },
   {
     "id": "cabbage",
@@ -6688,7 +7702,32 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 10,
+        "max": 15
+      },
+      "plantsPerM2": {
+        "min": 4,
+        "max": 6
+      },
+      "spacingCm": {
+        "min": 40,
+        "max": 50
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 45
+      },
+      "verticalClearanceCm": {
+        "min": 40,
+        "max": 60
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
   },
   {
     "id": "brussels-sprouts",
@@ -6859,7 +7898,35 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://extension.psu.edu/vegetable-gardening-resources"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 15,
+        "max": 20
+      },
+      "plantsPerM2": {
+        "min": 3,
+        "max": 4
+      },
+      "spacingCm": {
+        "min": 50,
+        "max": 60
+      },
+      "rootDepthCm": {
+        "min": 35,
+        "max": 50
+      },
+      "verticalClearanceCm": {
+        "min": 80,
+        "max": 120
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Tall stalks — stake the plant; remove lower leaves as sprouts mature."
+      ]
+    }
   },
   {
     "id": "kale",
@@ -7055,7 +8122,33 @@
       "https://extension.psu.edu/vegetable-gardening-resources",
       "https://gpnmag.com/article/managing-air-temperature-for-specialty-leafy-greens/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 5,
+        "max": 10
+      },
+      "plantsPerM2": {
+        "min": 6,
+        "max": 9
+      },
+      "spacingCm": {
+        "min": 30,
+        "max": 40
+      },
+      "rootDepthCm": {
+        "min": 25,
+        "max": 40
+      },
+      "verticalClearanceCm": {
+        "min": 40,
+        "max": 80
+      },
+      "recommendedMedium": [
+        "soil",
+        "nft"
+      ]
+    }
   },
   {
     "id": "bok-choy",
@@ -7232,6 +8325,32 @@
       "https://extension.psu.edu/vegetable-gardening-resources",
       "https://gpnmag.com/article/managing-air-temperature-for-specialty-leafy-greens/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 5,
+        "max": 8
+      },
+      "plantsPerM2": {
+        "min": 9,
+        "max": 16
+      },
+      "spacingCm": {
+        "min": 20,
+        "max": 25
+      },
+      "rootDepthCm": {
+        "min": 20,
+        "max": 30
+      },
+      "verticalClearanceCm": {
+        "min": 25,
+        "max": 40
+      },
+      "recommendedMedium": [
+        "soil",
+        "nft"
+      ]
+    }
   }
 ]
