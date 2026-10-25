@@ -209,7 +209,37 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://cea.cals.cornell.edu/files/2019/06/Cornell-CEA-Lettuce-Handbook-.pdf"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 1.5,
+        "max": 4
+      },
+      "plantsPerM2": {
+        "min": 16,
+        "max": 25
+      },
+      "spacingCm": {
+        "min": 20,
+        "max": 25
+      },
+      "rootDepthCm": {
+        "min": 15,
+        "max": 25
+      },
+      "verticalClearanceCm": {
+        "min": 20,
+        "max": 35
+      },
+      "recommendedMedium": [
+        "nft",
+        "hydro-dwc",
+        "soil"
+      ],
+      "notes": [
+        "NFT/racking at 20–25 heads/m²; 2–4 L containers for standalone grows."
+      ]
+    }
   },
   {
     "id": "spinach",
@@ -396,7 +426,34 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://bpb-us-e1.wpmucdn.com/blogs.cornell.edu/dist/8/8824/files/2019/06/Cornell-CEA-baby-spinach-handbook.pdf"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 2,
+        "max": 4
+      },
+      "plantsPerM2": {
+        "min": 16,
+        "max": 25
+      },
+      "spacingCm": {
+        "min": 15,
+        "max": 20
+      },
+      "rootDepthCm": {
+        "min": 20,
+        "max": 30
+      },
+      "verticalClearanceCm": {
+        "min": 15,
+        "max": 30
+      },
+      "recommendedMedium": [
+        "nft",
+        "hydro-dwc",
+        "soil"
+      ]
+    }
   },
   {
     "id": "swiss-chard",
@@ -571,7 +628,33 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://gpnmag.com/article/managing-air-temperature-for-specialty-leafy-greens/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 5,
+        "max": 10
+      },
+      "plantsPerM2": {
+        "min": 9,
+        "max": 12
+      },
+      "spacingCm": {
+        "min": 25,
+        "max": 30
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 45
+      },
+      "verticalClearanceCm": {
+        "min": 40,
+        "max": 60
+      },
+      "recommendedMedium": [
+        "soil",
+        "coco"
+      ]
+    }
   },
   {
     "id": "arugula",
@@ -747,7 +830,33 @@
       "https://gardens.cornell.edu/vegetation-growing-guides/",
       "https://gpnmag.com/article/managing-air-temperature-for-specialty-leafy-greens/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 1,
+        "max": 2
+      },
+      "plantsPerM2": {
+        "min": 25,
+        "max": 40
+      },
+      "spacingCm": {
+        "min": 10,
+        "max": 15
+      },
+      "rootDepthCm": {
+        "min": 10,
+        "max": 15
+      },
+      "verticalClearanceCm": {
+        "min": 10,
+        "max": 25
+      },
+      "recommendedMedium": [
+        "soil",
+        "nft"
+      ]
+    }
   },
   {
     "id": "endive",
@@ -917,7 +1026,33 @@
       "https://www.uvm.edu/extension",
       "https://gardens.cornell.edu/vegetation-growing-guides/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 3,
+        "max": 5
+      },
+      "plantsPerM2": {
+        "min": 9,
+        "max": 16
+      },
+      "spacingCm": {
+        "min": 25,
+        "max": 30
+      },
+      "rootDepthCm": {
+        "min": 20,
+        "max": 30
+      },
+      "verticalClearanceCm": {
+        "min": 25,
+        "max": 40
+      },
+      "recommendedMedium": [
+        "soil",
+        "hydro-dwc"
+      ]
+    }
   },
   {
     "id": "m-che",
@@ -1087,7 +1222,32 @@
       "https://www.uvm.edu/extension",
       "https://gardens.cornell.edu/vegetation-growing-guides/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 1,
+        "max": 2
+      },
+      "plantsPerM2": {
+        "min": 25,
+        "max": 40
+      },
+      "spacingCm": {
+        "min": 8,
+        "max": 12
+      },
+      "rootDepthCm": {
+        "min": 10,
+        "max": 15
+      },
+      "verticalClearanceCm": {
+        "min": 10,
+        "max": 20
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
   },
   {
     "id": "watercress",
@@ -1257,7 +1417,32 @@
       "https://www.uvm.edu/extension",
       "https://gardens.cornell.edu/vegetation-growing-guides/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "plantsPerM2": {
+        "min": 16,
+        "max": 25
+      },
+      "spacingCm": {
+        "min": 15,
+        "max": 20
+      },
+      "rootDepthCm": {
+        "min": 10,
+        "max": 20
+      },
+      "verticalClearanceCm": {
+        "min": 15,
+        "max": 30
+      },
+      "recommendedMedium": [
+        "nft",
+        "hydro-dwc"
+      ],
+      "notes": [
+        "Aquatic/semi-aquatic — thrives in NFT or deep-water beds rather than pots."
+      ]
+    }
   },
   {
     "id": "mustard-greens",
@@ -1427,6 +1612,32 @@
       "https://www.uvm.edu/extension",
       "https://gardens.cornell.edu/vegetation-growing-guides/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 2,
+        "max": 4
+      },
+      "plantsPerM2": {
+        "min": 16,
+        "max": 25
+      },
+      "spacingCm": {
+        "min": 15,
+        "max": 20
+      },
+      "rootDepthCm": {
+        "min": 15,
+        "max": 25
+      },
+      "verticalClearanceCm": {
+        "min": 20,
+        "max": 40
+      },
+      "recommendedMedium": [
+        "soil",
+        "nft"
+      ]
+    }
   }
 ]

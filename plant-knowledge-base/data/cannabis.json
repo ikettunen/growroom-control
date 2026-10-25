@@ -285,6 +285,42 @@
       "https://edepot.wur.nl/686107",
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC8786113/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 11,
+        "max": 25
+      },
+      "potDepthCm": {
+        "min": 25,
+        "max": 35
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 4
+      },
+      "spacingCm": {
+        "min": 60,
+        "max": 100
+      },
+      "canopyFootprintM2": 0.75,
+      "rootDepthCm": {
+        "min": 30,
+        "max": 45
+      },
+      "verticalClearanceCm": {
+        "min": 100,
+        "max": 180
+      },
+      "recommendedMedium": [
+        "coco",
+        "soil",
+        "hydro-dwc"
+      ],
+      "notes": [
+        "11 L suits 1–2 week veg / SOG; 15–20 L for 4+ week veg; up to 25 L for large photos.",
+        "Autoflowers do well in 11–15 L from seed to harvest."
+      ]
+    }
   }
 ]
