@@ -213,7 +213,36 @@
       "https://www.rhs.org.uk/fruit",
       "https://crfg.org/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 20,
+        "max": 40
+      },
+      "plantsPerM2": {
+        "min": 0.5,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 100,
+        "max": 150
+      },
+      "rootDepthCm": {
+        "min": 40,
+        "max": 60
+      },
+      "verticalClearanceCm": {
+        "min": 100,
+        "max": 200
+      },
+      "recommendedMedium": [
+        "soil",
+        "coco"
+      ],
+      "notes": [
+        "Dwarf varieties (e.g. Meyer) stay container-sized; pot-on every 2–3 years."
+      ]
+    }
   },
   {
     "id": "lime",
@@ -416,7 +445,33 @@
       "https://www.rhs.org.uk/fruit",
       "https://crfg.org/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 20,
+        "max": 40
+      },
+      "plantsPerM2": {
+        "min": 0.5,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 100,
+        "max": 150
+      },
+      "rootDepthCm": {
+        "min": 40,
+        "max": 60
+      },
+      "verticalClearanceCm": {
+        "min": 100,
+        "max": 200
+      },
+      "recommendedMedium": [
+        "soil",
+        "coco"
+      ]
+    }
   },
   {
     "id": "orange",
@@ -619,7 +674,35 @@
       "https://www.rhs.org.uk/fruit",
       "https://crfg.org/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 40,
+        "max": 80
+      },
+      "plantsPerM2": {
+        "min": 0.5,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 150,
+        "max": 250
+      },
+      "rootDepthCm": {
+        "min": 50,
+        "max": 80
+      },
+      "verticalClearanceCm": {
+        "min": 200,
+        "max": 350
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Full-size trees are greenhouse-scale only; choose dwarf/compact cultivars for indoor rooms."
+      ]
+    }
   },
   {
     "id": "mandarin",
@@ -822,7 +905,33 @@
       "https://www.rhs.org.uk/fruit",
       "https://crfg.org/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 20,
+        "max": 40
+      },
+      "plantsPerM2": {
+        "min": 0.5,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 100,
+        "max": 150
+      },
+      "rootDepthCm": {
+        "min": 40,
+        "max": 60
+      },
+      "verticalClearanceCm": {
+        "min": 100,
+        "max": 200
+      },
+      "recommendedMedium": [
+        "soil",
+        "coco"
+      ]
+    }
   },
   {
     "id": "grapefruit",
@@ -1025,7 +1134,35 @@
       "https://www.rhs.org.uk/fruit",
       "https://crfg.org/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 60,
+        "max": 100
+      },
+      "plantsPerM2": {
+        "min": 0.5,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 200,
+        "max": 300
+      },
+      "rootDepthCm": {
+        "min": 50,
+        "max": 90
+      },
+      "verticalClearanceCm": {
+        "min": 250,
+        "max": 400
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Too large for indoor long-term — greenhouse/orangery crop."
+      ]
+    }
   },
   {
     "id": "avocado",
@@ -1240,7 +1377,35 @@
       "https://www.rhs.org.uk/fruit",
       "https://crfg.org/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 30,
+        "max": 60
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 100,
+        "max": 150
+      },
+      "rootDepthCm": {
+        "min": 40,
+        "max": 70
+      },
+      "verticalClearanceCm": {
+        "min": 150,
+        "max": 250
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Prune hard to keep container size; seed-grown trees rarely fruit true and grow very tall."
+      ]
+    }
   },
   {
     "id": "banana",
@@ -1456,7 +1621,35 @@
       "https://www.rhs.org.uk/fruit",
       "https://crfg.org/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 50,
+        "max": 100
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 150,
+        "max": 200
+      },
+      "rootDepthCm": {
+        "min": 40,
+        "max": 60
+      },
+      "verticalClearanceCm": {
+        "min": 200,
+        "max": 300
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Dwarf Cavendish (~1.5–2 m) is the only practical indoor form; needs a very large tub."
+      ]
+    }
   },
   {
     "id": "pineapple",
@@ -1658,7 +1851,36 @@
       "https://www.rhs.org.uk/fruit",
       "https://crfg.org/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 10,
+        "max": 20
+      },
+      "plantsPerM2": {
+        "min": 2,
+        "max": 4
+      },
+      "spacingCm": {
+        "min": 50,
+        "max": 60
+      },
+      "rootDepthCm": {
+        "min": 20,
+        "max": 35
+      },
+      "verticalClearanceCm": {
+        "min": 60,
+        "max": 120
+      },
+      "recommendedMedium": [
+        "soil",
+        "coco"
+      ],
+      "notes": [
+        "Shallow root system — a wide, shallow pot beats a deep one."
+      ]
+    }
   },
   {
     "id": "papaya",
@@ -1860,7 +2082,32 @@
       "https://www.rhs.org.uk/fruit",
       "https://crfg.org/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 50,
+        "max": 100
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 150,
+        "max": 200
+      },
+      "rootDepthCm": {
+        "min": 40,
+        "max": 60
+      },
+      "verticalClearanceCm": {
+        "min": 150,
+        "max": 300
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
   },
   {
     "id": "guava",
@@ -2062,7 +2309,32 @@
       "https://www.rhs.org.uk/fruit",
       "https://crfg.org/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 30,
+        "max": 50
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 100,
+        "max": 150
+      },
+      "rootDepthCm": {
+        "min": 40,
+        "max": 60
+      },
+      "verticalClearanceCm": {
+        "min": 120,
+        "max": 250
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
   },
   {
     "id": "passion-fruit",
@@ -2265,7 +2537,35 @@
       "https://www.rhs.org.uk/fruit",
       "https://crfg.org/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 30,
+        "max": 50
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 2
+      },
+      "spacingCm": {
+        "min": 80,
+        "max": 100
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 50
+      },
+      "verticalClearanceCm": {
+        "min": 200,
+        "max": 400
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Vigorous vine — needs a 2 m+ trellis; keep pruned to the structure."
+      ]
+    }
   },
   {
     "id": "fig",
@@ -2480,7 +2780,35 @@
       "https://www.rhs.org.uk/fruit",
       "https://crfg.org/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 30,
+        "max": 50
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 2
+      },
+      "spacingCm": {
+        "min": 100,
+        "max": 120
+      },
+      "rootDepthCm": {
+        "min": 40,
+        "max": 70
+      },
+      "verticalClearanceCm": {
+        "min": 150,
+        "max": 300
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Root-prune and pot-on every 2–3 years; container restriction actually improves fruiting."
+      ]
+    }
   },
   {
     "id": "mulberry",
@@ -2682,7 +3010,32 @@
       "https://www.rhs.org.uk/fruit",
       "https://crfg.org/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 50,
+        "max": 100
+      },
+      "plantsPerM2": {
+        "min": 0.5,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 150,
+        "max": 250
+      },
+      "rootDepthCm": {
+        "min": 50,
+        "max": 80
+      },
+      "verticalClearanceCm": {
+        "min": 200,
+        "max": 350
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
   },
   {
     "id": "olive",
@@ -2885,7 +3238,35 @@
       "https://www.rhs.org.uk/fruit",
       "https://crfg.org/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 30,
+        "max": 50
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 100,
+        "max": 150
+      },
+      "rootDepthCm": {
+        "min": 40,
+        "max": 60
+      },
+      "verticalClearanceCm": {
+        "min": 100,
+        "max": 250
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Tolerates hard pruning — can be kept as a compact indoor shrub; free-draining mix essential."
+      ]
+    }
   },
   {
     "id": "grape",
@@ -3100,7 +3481,35 @@
       "https://www.rhs.org.uk/fruit",
       "https://crfg.org/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 40,
+        "max": 80
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 100,
+        "max": 150
+      },
+      "rootDepthCm": {
+        "min": 40,
+        "max": 80
+      },
+      "verticalClearanceCm": {
+        "min": 200,
+        "max": 350
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "One vine per large container with head-room trellis; greenhouse table-grape culture works well."
+      ]
+    }
   },
   {
     "id": "blueberry",
@@ -3316,7 +3725,35 @@
       "https://www.rhs.org.uk/fruit",
       "https://crfg.org/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 20,
+        "max": 40
+      },
+      "plantsPerM2": {
+        "min": 2,
+        "max": 3
+      },
+      "spacingCm": {
+        "min": 60,
+        "max": 80
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 50
+      },
+      "verticalClearanceCm": {
+        "min": 100,
+        "max": 180
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Shallow, fine roots — use ericaceous (pH 4.5–5.5) mix; 2+ cultivars improve pollination."
+      ]
+    }
   },
   {
     "id": "raspberry",
@@ -3518,7 +3955,35 @@
       "https://www.rhs.org.uk/fruit",
       "https://crfg.org/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 30,
+        "max": 50
+      },
+      "plantsPerM2": {
+        "min": 3,
+        "max": 4
+      },
+      "spacingCm": {
+        "min": 40,
+        "max": 50
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 50
+      },
+      "verticalClearanceCm": {
+        "min": 120,
+        "max": 200
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Grow a few canes per large trough with a support post; contain the suckering roots."
+      ]
+    }
   },
   {
     "id": "blackberry",
@@ -3720,7 +4185,35 @@
       "https://www.rhs.org.uk/fruit",
       "https://crfg.org/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 40,
+        "max": 60
+      },
+      "plantsPerM2": {
+        "min": 2,
+        "max": 3
+      },
+      "spacingCm": {
+        "min": 60,
+        "max": 80
+      },
+      "rootDepthCm": {
+        "min": 40,
+        "max": 60
+      },
+      "verticalClearanceCm": {
+        "min": 150,
+        "max": 250
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Thornless varieties on a trellis are far friendlier indoors."
+      ]
+    }
   },
   {
     "id": "currant",
@@ -3942,7 +4435,32 @@
       "https://www.rhs.org.uk/fruit",
       "https://crfg.org/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 30,
+        "max": 50
+      },
+      "plantsPerM2": {
+        "min": 2,
+        "max": 3
+      },
+      "spacingCm": {
+        "min": 60,
+        "max": 80
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 50
+      },
+      "verticalClearanceCm": {
+        "min": 100,
+        "max": 150
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
   },
   {
     "id": "goji-berry",
@@ -4144,7 +4662,32 @@
       "https://www.rhs.org.uk/fruit",
       "https://crfg.org/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 20,
+        "max": 40
+      },
+      "plantsPerM2": {
+        "min": 2,
+        "max": 3
+      },
+      "spacingCm": {
+        "min": 60,
+        "max": 80
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 50
+      },
+      "verticalClearanceCm": {
+        "min": 120,
+        "max": 200
+      },
+      "recommendedMedium": [
+        "soil"
+      ]
+    }
   },
   {
     "id": "kiwi",
@@ -4346,7 +4889,35 @@
       "https://www.rhs.org.uk/fruit",
       "https://crfg.org/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 60,
+        "max": 100
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 1
+      },
+      "spacingCm": {
+        "min": 150,
+        "max": 200
+      },
+      "rootDepthCm": {
+        "min": 50,
+        "max": 80
+      },
+      "verticalClearanceCm": {
+        "min": 250,
+        "max": 400
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Needs a male and female plant (or self-fertile cultivar) plus a very strong trellis; greenhouse-scale."
+      ]
+    }
   },
   {
     "id": "dragon-fruit",
@@ -4549,7 +5120,36 @@
       "https://www.rhs.org.uk/fruit",
       "https://crfg.org/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 30,
+        "max": 50
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 2
+      },
+      "spacingCm": {
+        "min": 80,
+        "max": 100
+      },
+      "rootDepthCm": {
+        "min": 20,
+        "max": 40
+      },
+      "verticalClearanceCm": {
+        "min": 150,
+        "max": 300
+      },
+      "recommendedMedium": [
+        "soil",
+        "coco"
+      ],
+      "notes": [
+        "Epiphytic cactus — give a strong post to climb and let the branches cascade; shallow roots in free-draining mix."
+      ]
+    }
   },
   {
     "id": "coffee",
@@ -4752,7 +5352,35 @@
       "https://www.rhs.org.uk/fruit",
       "https://crfg.org/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 20,
+        "max": 40
+      },
+      "plantsPerM2": {
+        "min": 1,
+        "max": 2
+      },
+      "spacingCm": {
+        "min": 80,
+        "max": 100
+      },
+      "rootDepthCm": {
+        "min": 30,
+        "max": 50
+      },
+      "verticalClearanceCm": {
+        "min": 150,
+        "max": 250
+      },
+      "recommendedMedium": [
+        "soil"
+      ],
+      "notes": [
+        "Prune to 1.5 m for indoor production; shallow-rooted, prefers a wide pot."
+      ]
+    }
   },
   {
     "id": "strawberry",
@@ -4974,6 +5602,36 @@
       "https://www.rhs.org.uk/fruit",
       "https://crfg.org/"
     ],
-    "updatedAt": "2026-10-25"
+    "updatedAt": "2026-10-25",
+    "space": {
+      "potSizeLiters": {
+        "min": 3,
+        "max": 5
+      },
+      "plantsPerM2": {
+        "min": 8,
+        "max": 16
+      },
+      "spacingCm": {
+        "min": 25,
+        "max": 30
+      },
+      "rootDepthCm": {
+        "min": 15,
+        "max": 25
+      },
+      "verticalClearanceCm": {
+        "min": 20,
+        "max": 40
+      },
+      "recommendedMedium": [
+        "soil",
+        "coco",
+        "nft"
+      ],
+      "notes": [
+        "3–5 L per plant, or grow in gutters/towers at 8–16 plants/m²; day-neutral varieties fruit best indoors."
+      ]
+    }
   }
 ]
