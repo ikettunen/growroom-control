@@ -285,7 +285,12 @@
           },
           "notes": []
         },
-        "careNotes": []
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Verified: PLOS ONE modeling study (sage ‘Extrakta’, spearmint ‘Spanish’) — branching increases with mean daily temperature 23→35 °C and DLI 5.5→13.2 mol/m²/d; moderate setpoints preferred for oil-rich herbs."
+          }
+        ]
       }
     ],
     "varieties": [
@@ -311,7 +316,8 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://hort.purdue.edu/newcrop/",
-      "https://www.rhs.org.uk/plants/types/herbs/growing-guide"
+      "https://www.rhs.org.uk/plants/types/herbs/growing-guide",
+      "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0294905"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -1136,7 +1142,12 @@
           },
           "notes": []
         },
-        "careNotes": []
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Verified: PLOS ONE modeling study (sage ‘Extrakta’, spearmint ‘Spanish’) — branching increases with mean daily temperature 23→35 °C and DLI 5.5→13.2 mol/m²/d; moderate setpoints preferred for oil-rich herbs."
+          }
+        ]
       }
     ],
     "varieties": [],
@@ -1149,7 +1160,8 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://hort.purdue.edu/newcrop/",
-      "https://www.rhs.org.uk/plants/types/herbs/growing-guide"
+      "https://www.rhs.org.uk/plants/types/herbs/growing-guide",
+      "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0294905"
     ],
     "updatedAt": "2026-10-25"
   },

@@ -15,16 +15,16 @@
         "id": "microgreen-germination",
         "label": "Germination",
         "order": 1,
-        "durationWeeksMin": 0.1,
-        "durationWeeksMax": 0.2,
+        "durationWeeksMin": 0.43,
+        "durationWeeksMax": 0.43,
         "environment": {
-          "tempDayMin": 22,
-          "tempDayMax": 26,
-          "tempNightMin": 18,
-          "tempNightMax": 20,
-          "humidityMin": 72,
-          "humidityMax": 92,
-          "lightCycleHours": 16,
+          "tempDayMin": 23,
+          "tempDayMax": 23,
+          "tempNightMin": 21,
+          "tempNightMax": 21,
+          "humidityMin": 75,
+          "humidityMax": 90,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 4
         },
@@ -32,6 +32,10 @@
           {
             "category": "general",
             "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          },
+          {
+            "category": "general",
+            "note": "Verified: USU Extension — covered (blackout) 3–3 days, harvest at 9–10 days."
           }
         ]
       },
@@ -39,16 +43,16 @@
         "id": "microgreen-growth",
         "label": "Growth",
         "order": 2,
-        "durationWeeksMin": 0.3,
-        "durationWeeksMax": 0.6,
+        "durationWeeksMin": 0.86,
+        "durationWeeksMax": 1,
         "environment": {
           "tempDayMin": 22,
-          "tempDayMax": 26,
-          "tempNightMin": 18,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
           "tempNightMax": 20,
-          "humidityMin": 70,
-          "humidityMax": 90,
-          "lightCycleHours": 14,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -71,12 +75,12 @@
         "durationWeeksMax": 0.2,
         "environment": {
           "tempDayMin": 22,
-          "tempDayMax": 26,
-          "tempNightMin": 18,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
           "tempNightMax": 20,
-          "humidityMin": 70,
-          "humidityMax": 90,
-          "lightCycleHours": 14,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -92,13 +96,14 @@
     "difficulty": "beginner",
     "indoorSuitable": true,
     "typicalTotalWeeks": {
-      "min": 1,
-      "max": 2
+      "min": 1.29,
+      "max": 1.43
     },
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://extension.psu.edu/growing-microgreens",
-      "https://www.urbanagnews.com/"
+      "https://www.urbanagnews.com/",
+      "https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -118,16 +123,16 @@
         "id": "microgreen-germination",
         "label": "Germination",
         "order": 1,
-        "durationWeeksMin": 0.1,
-        "durationWeeksMax": 0.2,
+        "durationWeeksMin": 0.43,
+        "durationWeeksMax": 0.43,
         "environment": {
-          "tempDayMin": 18,
-          "tempDayMax": 22,
-          "tempNightMin": 14,
-          "tempNightMax": 16,
-          "humidityMin": 72,
-          "humidityMax": 87,
-          "lightCycleHours": 16,
+          "tempDayMin": 23,
+          "tempDayMax": 23,
+          "tempNightMin": 21,
+          "tempNightMax": 21,
+          "humidityMin": 75,
+          "humidityMax": 90,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 4
         },
@@ -135,6 +140,10 @@
           {
             "category": "general",
             "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          },
+          {
+            "category": "general",
+            "note": "Verified: USU Extension — covered (blackout) 3–3 days, harvest at 8–10 days."
           }
         ]
       },
@@ -142,16 +151,16 @@
         "id": "microgreen-growth",
         "label": "Growth",
         "order": 2,
-        "durationWeeksMin": 0.3,
-        "durationWeeksMax": 0.6,
+        "durationWeeksMin": 0.71,
+        "durationWeeksMax": 1,
         "environment": {
-          "tempDayMin": 18,
+          "tempDayMin": 22,
           "tempDayMax": 22,
-          "tempNightMin": 14,
-          "tempNightMax": 16,
-          "humidityMin": 70,
-          "humidityMax": 85,
-          "lightCycleHours": 14,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -173,13 +182,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 18,
+          "tempDayMin": 22,
           "tempDayMax": 22,
-          "tempNightMin": 14,
-          "tempNightMax": 16,
-          "humidityMin": 70,
-          "humidityMax": 85,
-          "lightCycleHours": 14,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -195,13 +204,14 @@
     "difficulty": "beginner",
     "indoorSuitable": true,
     "typicalTotalWeeks": {
-      "min": 1,
-      "max": 2
+      "min": 1.14,
+      "max": 1.43
     },
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://extension.psu.edu/growing-microgreens",
-      "https://www.urbanagnews.com/"
+      "https://www.urbanagnews.com/",
+      "https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -221,16 +231,16 @@
         "id": "microgreen-germination",
         "label": "Germination",
         "order": 1,
-        "durationWeeksMin": 0.1,
-        "durationWeeksMax": 0.2,
+        "durationWeeksMin": 0.14,
+        "durationWeeksMax": 0.29,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 72,
-          "humidityMax": 92,
-          "lightCycleHours": 16,
+          "tempDayMin": 23,
+          "tempDayMax": 23,
+          "tempNightMin": 21,
+          "tempNightMax": 21,
+          "humidityMin": 75,
+          "humidityMax": 90,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 4
         },
@@ -238,6 +248,10 @@
           {
             "category": "general",
             "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          },
+          {
+            "category": "general",
+            "note": "Verified: USU Extension — covered (blackout) 1–2 days, harvest at 8–12 days."
           }
         ]
       },
@@ -245,16 +259,16 @@
         "id": "microgreen-growth",
         "label": "Growth",
         "order": 2,
-        "durationWeeksMin": 0.3,
-        "durationWeeksMax": 0.6,
+        "durationWeeksMin": 0.86,
+        "durationWeeksMax": 1.57,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 70,
-          "humidityMax": 90,
-          "lightCycleHours": 14,
+          "tempDayMin": 22,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -276,13 +290,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 70,
-          "humidityMax": 90,
-          "lightCycleHours": 14,
+          "tempDayMin": 22,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -298,13 +312,14 @@
     "difficulty": "beginner",
     "indoorSuitable": true,
     "typicalTotalWeeks": {
-      "min": 1,
-      "max": 1.5
+      "min": 1.14,
+      "max": 1.71
     },
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://extension.psu.edu/growing-microgreens",
-      "https://www.urbanagnews.com/"
+      "https://www.urbanagnews.com/",
+      "https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -324,16 +339,16 @@
         "id": "microgreen-germination",
         "label": "Germination",
         "order": 1,
-        "durationWeeksMin": 0.1,
-        "durationWeeksMax": 0.2,
+        "durationWeeksMin": 0.29,
+        "durationWeeksMax": 0.57,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 72,
-          "humidityMax": 92,
-          "lightCycleHours": 16,
+          "tempDayMin": 23,
+          "tempDayMax": 23,
+          "tempNightMin": 21,
+          "tempNightMax": 21,
+          "humidityMin": 75,
+          "humidityMax": 90,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 4
         },
@@ -341,6 +356,10 @@
           {
             "category": "general",
             "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          },
+          {
+            "category": "general",
+            "note": "Verified: USU Extension — covered (blackout) 2–4 days, harvest at 8–12 days."
           }
         ]
       },
@@ -348,16 +367,16 @@
         "id": "microgreen-growth",
         "label": "Growth",
         "order": 2,
-        "durationWeeksMin": 0.3,
-        "durationWeeksMax": 0.6,
+        "durationWeeksMin": 0.57,
+        "durationWeeksMax": 1.43,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 70,
-          "humidityMax": 90,
-          "lightCycleHours": 14,
+          "tempDayMin": 22,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -379,13 +398,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 70,
-          "humidityMax": 90,
-          "lightCycleHours": 14,
+          "tempDayMin": 22,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -401,13 +420,14 @@
     "difficulty": "beginner",
     "indoorSuitable": true,
     "typicalTotalWeeks": {
-      "min": 1.5,
-      "max": 2
+      "min": 1.14,
+      "max": 1.71
     },
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://extension.psu.edu/growing-microgreens",
-      "https://www.urbanagnews.com/"
+      "https://www.urbanagnews.com/",
+      "https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -427,16 +447,16 @@
         "id": "microgreen-germination",
         "label": "Germination",
         "order": 1,
-        "durationWeeksMin": 0.1,
-        "durationWeeksMax": 0.2,
+        "durationWeeksMin": 0.14,
+        "durationWeeksMax": 0.29,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 72,
-          "humidityMax": 92,
-          "lightCycleHours": 16,
+          "tempDayMin": 23,
+          "tempDayMax": 23,
+          "tempNightMin": 21,
+          "tempNightMax": 21,
+          "humidityMin": 75,
+          "humidityMax": 90,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 4
         },
@@ -444,6 +464,10 @@
           {
             "category": "general",
             "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          },
+          {
+            "category": "general",
+            "note": "Verified: USU Extension — covered (blackout) 1–2 days, harvest at 8–12 days."
           }
         ]
       },
@@ -451,16 +475,16 @@
         "id": "microgreen-growth",
         "label": "Growth",
         "order": 2,
-        "durationWeeksMin": 0.3,
-        "durationWeeksMax": 0.6,
+        "durationWeeksMin": 0.86,
+        "durationWeeksMax": 1.57,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 70,
-          "humidityMax": 90,
-          "lightCycleHours": 14,
+          "tempDayMin": 22,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -482,13 +506,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 70,
-          "humidityMax": 90,
-          "lightCycleHours": 14,
+          "tempDayMin": 22,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -504,13 +528,14 @@
     "difficulty": "beginner",
     "indoorSuitable": true,
     "typicalTotalWeeks": {
-      "min": 1.5,
-      "max": 2
+      "min": 1.14,
+      "max": 1.71
     },
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://extension.psu.edu/growing-microgreens",
-      "https://www.urbanagnews.com/"
+      "https://www.urbanagnews.com/",
+      "https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -530,16 +555,16 @@
         "id": "microgreen-germination",
         "label": "Germination",
         "order": 1,
-        "durationWeeksMin": 0.1,
-        "durationWeeksMax": 0.2,
+        "durationWeeksMin": 0.14,
+        "durationWeeksMax": 0.29,
         "environment": {
-          "tempDayMin": 18,
-          "tempDayMax": 22,
-          "tempNightMin": 14,
-          "tempNightMax": 16,
-          "humidityMin": 67,
-          "humidityMax": 87,
-          "lightCycleHours": 16,
+          "tempDayMin": 23,
+          "tempDayMax": 23,
+          "tempNightMin": 21,
+          "tempNightMax": 21,
+          "humidityMin": 75,
+          "humidityMax": 90,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 4
         },
@@ -547,6 +572,10 @@
           {
             "category": "general",
             "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          },
+          {
+            "category": "general",
+            "note": "Verified: USU Extension — covered (blackout) 1–2 days, harvest at 6–8 days."
           }
         ]
       },
@@ -554,16 +583,16 @@
         "id": "microgreen-growth",
         "label": "Growth",
         "order": 2,
-        "durationWeeksMin": 0.3,
-        "durationWeeksMax": 0.6,
+        "durationWeeksMin": 0.57,
+        "durationWeeksMax": 1,
         "environment": {
-          "tempDayMin": 18,
+          "tempDayMin": 22,
           "tempDayMax": 22,
-          "tempNightMin": 14,
-          "tempNightMax": 16,
-          "humidityMin": 65,
-          "humidityMax": 85,
-          "lightCycleHours": 14,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -585,13 +614,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 18,
+          "tempDayMin": 22,
           "tempDayMax": 22,
-          "tempNightMin": 14,
-          "tempNightMax": 16,
-          "humidityMin": 65,
-          "humidityMax": 85,
-          "lightCycleHours": 14,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -607,13 +636,14 @@
     "difficulty": "beginner",
     "indoorSuitable": true,
     "typicalTotalWeeks": {
-      "min": 1,
-      "max": 1.5
+      "min": 0.86,
+      "max": 1.14
     },
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://extension.psu.edu/growing-microgreens",
-      "https://www.urbanagnews.com/"
+      "https://www.urbanagnews.com/",
+      "https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -636,13 +666,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 72,
-          "humidityMax": 92,
-          "lightCycleHours": 16,
+          "tempDayMin": 23,
+          "tempDayMax": 23,
+          "tempNightMin": 21,
+          "tempNightMax": 21,
+          "humidityMin": 75,
+          "humidityMax": 90,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 4
         },
@@ -650,6 +680,10 @@
           {
             "category": "general",
             "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          },
+          {
+            "category": "general",
+            "note": "Verified setpoints: 23 °C germination, 22 °C lights-on / 20 °C lights-off, 18 h photoperiod (USU Extension microgreens guide)."
           }
         ]
       },
@@ -660,13 +694,13 @@
         "durationWeeksMin": 0.3,
         "durationWeeksMax": 0.6,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 70,
-          "humidityMax": 90,
-          "lightCycleHours": 14,
+          "tempDayMin": 22,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -688,13 +722,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 70,
-          "humidityMax": 90,
-          "lightCycleHours": 14,
+          "tempDayMin": 22,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -716,7 +750,8 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://extension.psu.edu/growing-microgreens",
-      "https://www.urbanagnews.com/"
+      "https://www.urbanagnews.com/",
+      "https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -739,13 +774,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 72,
-          "humidityMax": 92,
-          "lightCycleHours": 16,
+          "tempDayMin": 23,
+          "tempDayMax": 23,
+          "tempNightMin": 21,
+          "tempNightMax": 21,
+          "humidityMin": 75,
+          "humidityMax": 90,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 4
         },
@@ -753,6 +788,10 @@
           {
             "category": "general",
             "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          },
+          {
+            "category": "general",
+            "note": "Verified setpoints: 23 °C germination, 22 °C lights-on / 20 °C lights-off, 18 h photoperiod (USU Extension microgreens guide)."
           }
         ]
       },
@@ -763,13 +802,13 @@
         "durationWeeksMin": 0.3,
         "durationWeeksMax": 0.6,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 70,
-          "humidityMax": 90,
-          "lightCycleHours": 14,
+          "tempDayMin": 22,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -791,13 +830,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 70,
-          "humidityMax": 90,
-          "lightCycleHours": 14,
+          "tempDayMin": 22,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -819,7 +858,8 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://extension.psu.edu/growing-microgreens",
-      "https://www.urbanagnews.com/"
+      "https://www.urbanagnews.com/",
+      "https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -839,16 +879,16 @@
         "id": "microgreen-germination",
         "label": "Germination",
         "order": 1,
-        "durationWeeksMin": 0.1,
-        "durationWeeksMax": 0.2,
+        "durationWeeksMin": 0.57,
+        "durationWeeksMax": 1,
         "environment": {
-          "tempDayMin": 22,
-          "tempDayMax": 26,
-          "tempNightMin": 18,
-          "tempNightMax": 20,
-          "humidityMin": 67,
-          "humidityMax": 87,
-          "lightCycleHours": 16,
+          "tempDayMin": 23,
+          "tempDayMax": 23,
+          "tempNightMin": 21,
+          "tempNightMax": 21,
+          "humidityMin": 75,
+          "humidityMax": 90,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 4
         },
@@ -856,6 +896,10 @@
           {
             "category": "general",
             "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          },
+          {
+            "category": "general",
+            "note": "Verified: USU Extension — covered (blackout) 4–7 days, harvest at 12–16 days."
           }
         ]
       },
@@ -863,16 +907,16 @@
         "id": "microgreen-growth",
         "label": "Growth",
         "order": 2,
-        "durationWeeksMin": 0.3,
-        "durationWeeksMax": 0.6,
+        "durationWeeksMin": 0.71,
+        "durationWeeksMax": 1.71,
         "environment": {
           "tempDayMin": 22,
-          "tempDayMax": 26,
-          "tempNightMin": 18,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
           "tempNightMax": 20,
-          "humidityMin": 65,
-          "humidityMax": 85,
-          "lightCycleHours": 14,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -895,12 +939,12 @@
         "durationWeeksMax": 0.2,
         "environment": {
           "tempDayMin": 22,
-          "tempDayMax": 26,
-          "tempNightMin": 18,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
           "tempNightMax": 20,
-          "humidityMin": 65,
-          "humidityMax": 85,
-          "lightCycleHours": 14,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -916,13 +960,14 @@
     "difficulty": "beginner",
     "indoorSuitable": true,
     "typicalTotalWeeks": {
-      "min": 2,
-      "max": 3
+      "min": 1.71,
+      "max": 2.29
     },
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://extension.psu.edu/growing-microgreens",
-      "https://www.urbanagnews.com/"
+      "https://www.urbanagnews.com/",
+      "https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -942,16 +987,16 @@
         "id": "microgreen-germination",
         "label": "Germination",
         "order": 1,
-        "durationWeeksMin": 0.1,
-        "durationWeeksMax": 0.2,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
         "environment": {
-          "tempDayMin": 18,
-          "tempDayMax": 22,
-          "tempNightMin": 14,
-          "tempNightMax": 16,
-          "humidityMin": 72,
-          "humidityMax": 92,
-          "lightCycleHours": 16,
+          "tempDayMin": 23,
+          "tempDayMax": 23,
+          "tempNightMin": 21,
+          "tempNightMax": 21,
+          "humidityMin": 75,
+          "humidityMax": 90,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 4
         },
@@ -959,6 +1004,10 @@
           {
             "category": "general",
             "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          },
+          {
+            "category": "general",
+            "note": "Verified: USU Extension — covered (blackout) 7–14 days, harvest at 21–28 days."
           }
         ]
       },
@@ -966,16 +1015,16 @@
         "id": "microgreen-growth",
         "label": "Growth",
         "order": 2,
-        "durationWeeksMin": 0.3,
-        "durationWeeksMax": 0.6,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 3,
         "environment": {
-          "tempDayMin": 18,
+          "tempDayMin": 22,
           "tempDayMax": 22,
-          "tempNightMin": 14,
-          "tempNightMax": 16,
-          "humidityMin": 70,
-          "humidityMax": 90,
-          "lightCycleHours": 14,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -997,13 +1046,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 18,
+          "tempDayMin": 22,
           "tempDayMax": 22,
-          "tempNightMin": 14,
-          "tempNightMax": 16,
-          "humidityMin": 70,
-          "humidityMax": 90,
-          "lightCycleHours": 14,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -1019,13 +1068,14 @@
     "difficulty": "beginner",
     "indoorSuitable": true,
     "typicalTotalWeeks": {
-      "min": 2,
-      "max": 3
+      "min": 3,
+      "max": 4
     },
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://extension.psu.edu/growing-microgreens",
-      "https://www.urbanagnews.com/"
+      "https://www.urbanagnews.com/",
+      "https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -1048,13 +1098,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 22,
-          "tempDayMax": 26,
-          "tempNightMin": 18,
-          "tempNightMax": 20,
-          "humidityMin": 67,
-          "humidityMax": 87,
-          "lightCycleHours": 16,
+          "tempDayMin": 23,
+          "tempDayMax": 23,
+          "tempNightMin": 21,
+          "tempNightMax": 21,
+          "humidityMin": 75,
+          "humidityMax": 90,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 4
         },
@@ -1062,6 +1112,10 @@
           {
             "category": "general",
             "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          },
+          {
+            "category": "general",
+            "note": "Verified setpoints: 23 °C germination, 22 °C lights-on / 20 °C lights-off, 18 h photoperiod (USU Extension microgreens guide)."
           }
         ]
       },
@@ -1073,12 +1127,12 @@
         "durationWeeksMax": 0.6,
         "environment": {
           "tempDayMin": 22,
-          "tempDayMax": 26,
-          "tempNightMin": 18,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
           "tempNightMax": 20,
-          "humidityMin": 65,
-          "humidityMax": 85,
-          "lightCycleHours": 14,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -1101,12 +1155,12 @@
         "durationWeeksMax": 0.2,
         "environment": {
           "tempDayMin": 22,
-          "tempDayMax": 26,
-          "tempNightMin": 18,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
           "tempNightMax": 20,
-          "humidityMin": 65,
-          "humidityMax": 85,
-          "lightCycleHours": 14,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -1128,7 +1182,8 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://extension.psu.edu/growing-microgreens",
-      "https://www.urbanagnews.com/"
+      "https://www.urbanagnews.com/",
+      "https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -1151,13 +1206,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 67,
-          "humidityMax": 87,
-          "lightCycleHours": 16,
+          "tempDayMin": 23,
+          "tempDayMax": 23,
+          "tempNightMin": 21,
+          "tempNightMax": 21,
+          "humidityMin": 75,
+          "humidityMax": 90,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 4
         },
@@ -1165,6 +1220,10 @@
           {
             "category": "general",
             "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          },
+          {
+            "category": "general",
+            "note": "Verified setpoints: 23 °C germination, 22 °C lights-on / 20 °C lights-off, 18 h photoperiod (USU Extension microgreens guide)."
           }
         ]
       },
@@ -1175,13 +1234,13 @@
         "durationWeeksMin": 0.3,
         "durationWeeksMax": 0.6,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 65,
-          "humidityMax": 85,
-          "lightCycleHours": 14,
+          "tempDayMin": 22,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -1203,13 +1262,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 65,
-          "humidityMax": 85,
-          "lightCycleHours": 14,
+          "tempDayMin": 22,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -1231,7 +1290,8 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://extension.psu.edu/growing-microgreens",
-      "https://www.urbanagnews.com/"
+      "https://www.urbanagnews.com/",
+      "https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -1254,13 +1314,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 72,
-          "humidityMax": 87,
-          "lightCycleHours": 16,
+          "tempDayMin": 23,
+          "tempDayMax": 23,
+          "tempNightMin": 21,
+          "tempNightMax": 21,
+          "humidityMin": 75,
+          "humidityMax": 90,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 4
         },
@@ -1268,6 +1328,10 @@
           {
             "category": "general",
             "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          },
+          {
+            "category": "general",
+            "note": "Verified setpoints: 23 °C germination, 22 °C lights-on / 20 °C lights-off, 18 h photoperiod (USU Extension microgreens guide)."
           }
         ]
       },
@@ -1278,13 +1342,13 @@
         "durationWeeksMin": 0.3,
         "durationWeeksMax": 0.6,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 70,
-          "humidityMax": 85,
-          "lightCycleHours": 14,
+          "tempDayMin": 22,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -1306,13 +1370,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 70,
-          "humidityMax": 85,
-          "lightCycleHours": 14,
+          "tempDayMin": 22,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -1334,7 +1398,8 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://extension.psu.edu/growing-microgreens",
-      "https://www.urbanagnews.com/"
+      "https://www.urbanagnews.com/",
+      "https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -1357,13 +1422,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 20,
-          "humidityMin": 82,
-          "humidityMax": 95,
-          "lightCycleHours": 16,
+          "tempDayMin": 23,
+          "tempDayMax": 23,
+          "tempNightMin": 21,
+          "tempNightMax": 21,
+          "humidityMin": 75,
+          "humidityMax": 90,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 2
         },
@@ -1371,6 +1436,10 @@
           {
             "category": "general",
             "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          },
+          {
+            "category": "general",
+            "note": "Verified setpoints: 23 °C germination, 22 °C lights-on / 20 °C lights-off, 18 h photoperiod (USU Extension microgreens guide)."
           }
         ]
       },
@@ -1381,13 +1450,13 @@
         "durationWeeksMin": 0.3,
         "durationWeeksMax": 0.6,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
+          "tempDayMin": 22,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
           "tempNightMax": 20,
-          "humidityMin": 80,
-          "humidityMax": 95,
-          "lightCycleHours": 0,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 2
         },
@@ -1409,13 +1478,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
+          "tempDayMin": 22,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
           "tempNightMax": 20,
-          "humidityMin": 80,
-          "humidityMax": 95,
-          "lightCycleHours": 0,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 2
         },
@@ -1437,7 +1506,8 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://extension.psu.edu/growing-microgreens",
-      "https://www.urbanagnews.com/"
+      "https://www.urbanagnews.com/",
+      "https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -1460,13 +1530,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 72,
-          "humidityMax": 92,
-          "lightCycleHours": 16,
+          "tempDayMin": 23,
+          "tempDayMax": 23,
+          "tempNightMin": 21,
+          "tempNightMax": 21,
+          "humidityMin": 75,
+          "humidityMax": 90,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 4
         },
@@ -1474,6 +1544,10 @@
           {
             "category": "general",
             "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          },
+          {
+            "category": "general",
+            "note": "Verified setpoints: 23 °C germination, 22 °C lights-on / 20 °C lights-off, 18 h photoperiod (USU Extension microgreens guide)."
           }
         ]
       },
@@ -1484,13 +1558,13 @@
         "durationWeeksMin": 0.3,
         "durationWeeksMax": 0.6,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 70,
-          "humidityMax": 90,
-          "lightCycleHours": 14,
+          "tempDayMin": 22,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -1512,13 +1586,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 70,
-          "humidityMax": 90,
-          "lightCycleHours": 14,
+          "tempDayMin": 22,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -1540,7 +1614,8 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://extension.psu.edu/growing-microgreens",
-      "https://www.urbanagnews.com/"
+      "https://www.urbanagnews.com/",
+      "https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -1563,13 +1638,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 67,
-          "humidityMax": 87,
-          "lightCycleHours": 16,
+          "tempDayMin": 23,
+          "tempDayMax": 23,
+          "tempNightMin": 21,
+          "tempNightMax": 21,
+          "humidityMin": 75,
+          "humidityMax": 90,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 4
         },
@@ -1577,6 +1652,10 @@
           {
             "category": "general",
             "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          },
+          {
+            "category": "general",
+            "note": "Verified setpoints: 23 °C germination, 22 °C lights-on / 20 °C lights-off, 18 h photoperiod (USU Extension microgreens guide)."
           }
         ]
       },
@@ -1587,13 +1666,13 @@
         "durationWeeksMin": 0.3,
         "durationWeeksMax": 0.6,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 65,
-          "humidityMax": 85,
-          "lightCycleHours": 14,
+          "tempDayMin": 22,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -1615,13 +1694,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 65,
-          "humidityMax": 85,
-          "lightCycleHours": 14,
+          "tempDayMin": 22,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -1643,7 +1722,8 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://extension.psu.edu/growing-microgreens",
-      "https://www.urbanagnews.com/"
+      "https://www.urbanagnews.com/",
+      "https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -1666,13 +1746,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 72,
-          "humidityMax": 92,
-          "lightCycleHours": 16,
+          "tempDayMin": 23,
+          "tempDayMax": 23,
+          "tempNightMin": 21,
+          "tempNightMax": 21,
+          "humidityMin": 75,
+          "humidityMax": 90,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 4
         },
@@ -1680,6 +1760,10 @@
           {
             "category": "general",
             "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          },
+          {
+            "category": "general",
+            "note": "Verified setpoints: 23 °C germination, 22 °C lights-on / 20 °C lights-off, 18 h photoperiod (USU Extension microgreens guide)."
           }
         ]
       },
@@ -1690,13 +1774,13 @@
         "durationWeeksMin": 0.3,
         "durationWeeksMax": 0.6,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 70,
-          "humidityMax": 90,
-          "lightCycleHours": 14,
+          "tempDayMin": 22,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -1718,13 +1802,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 70,
-          "humidityMax": 90,
-          "lightCycleHours": 14,
+          "tempDayMin": 22,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -1746,7 +1830,8 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://extension.psu.edu/growing-microgreens",
-      "https://www.urbanagnews.com/"
+      "https://www.urbanagnews.com/",
+      "https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -1769,13 +1854,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 22,
-          "tempDayMax": 26,
-          "tempNightMin": 18,
-          "tempNightMax": 20,
-          "humidityMin": 72,
-          "humidityMax": 92,
-          "lightCycleHours": 16,
+          "tempDayMin": 23,
+          "tempDayMax": 23,
+          "tempNightMin": 21,
+          "tempNightMax": 21,
+          "humidityMin": 75,
+          "humidityMax": 90,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 3
         },
@@ -1783,6 +1868,10 @@
           {
             "category": "general",
             "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          },
+          {
+            "category": "general",
+            "note": "Verified setpoints: 23 °C germination, 22 °C lights-on / 20 °C lights-off, 18 h photoperiod (USU Extension microgreens guide)."
           }
         ]
       },
@@ -1794,12 +1883,12 @@
         "durationWeeksMax": 0.6,
         "environment": {
           "tempDayMin": 22,
-          "tempDayMax": 26,
-          "tempNightMin": 18,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
           "tempNightMax": 20,
-          "humidityMin": 70,
-          "humidityMax": 90,
-          "lightCycleHours": 14,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 4
         },
@@ -1822,12 +1911,12 @@
         "durationWeeksMax": 0.2,
         "environment": {
           "tempDayMin": 22,
-          "tempDayMax": 26,
-          "tempNightMin": 18,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
           "tempNightMax": 20,
-          "humidityMin": 70,
-          "humidityMax": 90,
-          "lightCycleHours": 14,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 4
         },
@@ -1849,7 +1938,8 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://extension.psu.edu/growing-microgreens",
-      "https://www.urbanagnews.com/"
+      "https://www.urbanagnews.com/",
+      "https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -1872,13 +1962,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 67,
-          "humidityMax": 87,
-          "lightCycleHours": 16,
+          "tempDayMin": 23,
+          "tempDayMax": 23,
+          "tempNightMin": 21,
+          "tempNightMax": 21,
+          "humidityMin": 75,
+          "humidityMax": 90,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 3
         },
@@ -1886,6 +1976,10 @@
           {
             "category": "general",
             "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          },
+          {
+            "category": "general",
+            "note": "Verified setpoints: 23 °C germination, 22 °C lights-on / 20 °C lights-off, 18 h photoperiod (USU Extension microgreens guide)."
           }
         ]
       },
@@ -1896,13 +1990,13 @@
         "durationWeeksMin": 0.3,
         "durationWeeksMax": 0.6,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 65,
-          "humidityMax": 85,
-          "lightCycleHours": 14,
+          "tempDayMin": 22,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 4
         },
@@ -1924,13 +2018,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 65,
-          "humidityMax": 85,
-          "lightCycleHours": 14,
+          "tempDayMin": 22,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 4
         },
@@ -1952,7 +2046,8 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://extension.psu.edu/growing-microgreens",
-      "https://www.urbanagnews.com/"
+      "https://www.urbanagnews.com/",
+      "https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -1975,13 +2070,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 18,
-          "tempDayMax": 22,
-          "tempNightMin": 14,
-          "tempNightMax": 16,
-          "humidityMin": 72,
-          "humidityMax": 92,
-          "lightCycleHours": 16,
+          "tempDayMin": 23,
+          "tempDayMax": 23,
+          "tempNightMin": 21,
+          "tempNightMax": 21,
+          "humidityMin": 75,
+          "humidityMax": 90,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 4
         },
@@ -1989,6 +2084,10 @@
           {
             "category": "general",
             "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          },
+          {
+            "category": "general",
+            "note": "Verified setpoints: 23 °C germination, 22 °C lights-on / 20 °C lights-off, 18 h photoperiod (USU Extension microgreens guide)."
           }
         ]
       },
@@ -1999,13 +2098,13 @@
         "durationWeeksMin": 0.3,
         "durationWeeksMax": 0.6,
         "environment": {
-          "tempDayMin": 18,
+          "tempDayMin": 22,
           "tempDayMax": 22,
-          "tempNightMin": 14,
-          "tempNightMax": 16,
-          "humidityMin": 70,
-          "humidityMax": 90,
-          "lightCycleHours": 14,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -2027,13 +2126,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 18,
+          "tempDayMin": 22,
           "tempDayMax": 22,
-          "tempNightMin": 14,
-          "tempNightMax": 16,
-          "humidityMin": 70,
-          "humidityMax": 90,
-          "lightCycleHours": 14,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -2055,7 +2154,8 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://extension.psu.edu/growing-microgreens",
-      "https://www.urbanagnews.com/"
+      "https://www.urbanagnews.com/",
+      "https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -2078,13 +2178,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 72,
-          "humidityMax": 92,
-          "lightCycleHours": 16,
+          "tempDayMin": 23,
+          "tempDayMax": 23,
+          "tempNightMin": 21,
+          "tempNightMax": 21,
+          "humidityMin": 75,
+          "humidityMax": 90,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 4
         },
@@ -2092,6 +2192,10 @@
           {
             "category": "general",
             "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          },
+          {
+            "category": "general",
+            "note": "Verified setpoints: 23 °C germination, 22 °C lights-on / 20 °C lights-off, 18 h photoperiod (USU Extension microgreens guide)."
           }
         ]
       },
@@ -2102,13 +2206,13 @@
         "durationWeeksMin": 0.3,
         "durationWeeksMax": 0.6,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 70,
-          "humidityMax": 90,
-          "lightCycleHours": 14,
+          "tempDayMin": 22,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -2130,13 +2234,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 20,
-          "tempDayMax": 24,
-          "tempNightMin": 16,
-          "tempNightMax": 18,
-          "humidityMin": 70,
-          "humidityMax": 90,
-          "lightCycleHours": 14,
+          "tempDayMin": 22,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -2158,7 +2262,8 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://extension.psu.edu/growing-microgreens",
-      "https://www.urbanagnews.com/"
+      "https://www.urbanagnews.com/",
+      "https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -2181,13 +2286,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 18,
-          "tempDayMax": 22,
-          "tempNightMin": 14,
-          "tempNightMax": 16,
-          "humidityMin": 72,
-          "humidityMax": 92,
-          "lightCycleHours": 16,
+          "tempDayMin": 23,
+          "tempDayMax": 23,
+          "tempNightMin": 21,
+          "tempNightMax": 21,
+          "humidityMin": 75,
+          "humidityMax": 90,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 4
         },
@@ -2195,6 +2300,10 @@
           {
             "category": "general",
             "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          },
+          {
+            "category": "general",
+            "note": "Verified setpoints: 23 °C germination, 22 °C lights-on / 20 °C lights-off, 18 h photoperiod (USU Extension microgreens guide)."
           }
         ]
       },
@@ -2205,13 +2314,13 @@
         "durationWeeksMin": 0.3,
         "durationWeeksMax": 0.6,
         "environment": {
-          "tempDayMin": 18,
+          "tempDayMin": 22,
           "tempDayMax": 22,
-          "tempNightMin": 14,
-          "tempNightMax": 16,
-          "humidityMin": 70,
-          "humidityMax": 90,
-          "lightCycleHours": 14,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -2233,13 +2342,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 18,
+          "tempDayMin": 22,
           "tempDayMax": 22,
-          "tempNightMin": 14,
-          "tempNightMax": 16,
-          "humidityMin": 70,
-          "humidityMax": 90,
-          "lightCycleHours": 14,
+          "tempNightMin": 20,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -2261,7 +2370,8 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://extension.psu.edu/growing-microgreens",
-      "https://www.urbanagnews.com/"
+      "https://www.urbanagnews.com/",
+      "https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -2284,13 +2394,13 @@
         "durationWeeksMin": 0.1,
         "durationWeeksMax": 0.2,
         "environment": {
-          "tempDayMin": 22,
-          "tempDayMax": 26,
-          "tempNightMin": 18,
-          "tempNightMax": 20,
-          "humidityMin": 67,
-          "humidityMax": 87,
-          "lightCycleHours": 16,
+          "tempDayMin": 23,
+          "tempDayMax": 23,
+          "tempNightMin": 21,
+          "tempNightMax": 21,
+          "humidityMin": 75,
+          "humidityMax": 90,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 5
         },
@@ -2298,6 +2408,10 @@
           {
             "category": "general",
             "note": "Blackout/dome for 2–4 days after sowing, then expose to light."
+          },
+          {
+            "category": "general",
+            "note": "Verified setpoints: 23 °C germination, 22 °C lights-on / 20 °C lights-off, 18 h photoperiod (USU Extension microgreens guide)."
           }
         ]
       },
@@ -2309,12 +2423,12 @@
         "durationWeeksMax": 0.6,
         "environment": {
           "tempDayMin": 22,
-          "tempDayMax": 26,
-          "tempNightMin": 18,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
           "tempNightMax": 20,
-          "humidityMin": 65,
-          "humidityMax": 85,
-          "lightCycleHours": 14,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 6
         },
@@ -2337,12 +2451,12 @@
         "durationWeeksMax": 0.2,
         "environment": {
           "tempDayMin": 22,
-          "tempDayMax": 26,
-          "tempNightMin": 18,
+          "tempDayMax": 22,
+          "tempNightMin": 20,
           "tempNightMax": 20,
-          "humidityMin": 65,
-          "humidityMax": 85,
-          "lightCycleHours": 14,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 18,
           "lightOnAt": "06:00:00",
           "dliTarget": 6
         },
@@ -2364,7 +2478,8 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://extension.psu.edu/growing-microgreens",
-      "https://www.urbanagnews.com/"
+      "https://www.urbanagnews.com/",
+      "https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens"
     ],
     "updatedAt": "2026-10-25"
   }
