@@ -5,6 +5,16 @@ export function validateCrop(crop: Crop): string[] {
   if (!crop.id || !crop.name) errs.push('missing id/name');
   if (!['cannabis','vegetable','herb','leafy-green','fruit','microgreen','flower'].includes(crop.category)) errs.push(`bad category: ${crop.category}`);
   if (!crop.phases?.length) { errs.push('no phases'); return errs; }
+  if (crop.space) {
+    const s = crop.space;
+    const rangeOk = (r?: { min: number; max: number }) => !r || r.min <= r.max;
+    if (!rangeOk(s.potSizeLiters)) errs.push(`${crop.id}: inverted space.potSizeLiters`);
+    if (!rangeOk(s.potDepthCm)) errs.push(`${crop.id}: inverted space.potDepthCm`);
+    if (!rangeOk(s.plantsPerM2)) errs.push(`${crop.id}: inverted space.plantsPerM2`);
+    if (!rangeOk(s.spacingCm)) errs.push(`${crop.id}: inverted space.spacingCm`);
+    if (!rangeOk(s.rootDepthCm)) errs.push(`${crop.id}: inverted space.rootDepthCm`);
+    if (!rangeOk(s.verticalClearanceCm)) errs.push(`${crop.id}: inverted space.verticalClearanceCm`);
+  }
   crop.phases.forEach((p, i) => {
     if (p.order !== i + 1) errs.push(`${crop.id}: phase order gap at ${p.id}`);
     const e = p.environment;

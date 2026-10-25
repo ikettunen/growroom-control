@@ -39,6 +39,21 @@ export interface Variety {
 
 export type CropCategory = 'cannabis' | 'vegetable' | 'herb' | 'leafy-green' | 'fruit' | 'microgreen' | 'flower';
 
+export interface Range { min: number; max: number }
+
+// Space / container requirements (guideline ranges, indoor typicals)
+export interface SpaceRequirement {
+  potSizeLiters?: Range;        // container volume for a full-cycle plant
+  potDepthCm?: Range;           // container depth needed for the root system
+  plantsPerM2?: Range;          // final planting density
+  spacingCm?: Range;            // plant-to-plant spacing (in-row / pot-to-pot)
+  canopyFootprintM2?: number;   // canopy area per plant at maturity
+  rootDepthCm?: Range;          // expected root system depth
+  verticalClearanceCm?: Range;  // canopy height incl. container + light clearance
+  recommendedMedium?: string[]; // e.g. ['coco', 'soil', 'hydro-dwc', 'nft', 'aero']
+  notes?: string[];
+}
+
 export interface Crop {
   id: string; name: string; scientificName?: string;
   category: CropCategory; description: string; tags: string[];
@@ -46,6 +61,7 @@ export interface Crop {
   difficulty: 'beginner' | 'intermediate' | 'advanced';
   indoorSuitable: boolean;
   typicalTotalWeeks: { min: number; max: number };
+  space?: SpaceRequirement;
   compatibleFertilizerFamilies: string[];
   sources: string[]; updatedAt: string;
 }
