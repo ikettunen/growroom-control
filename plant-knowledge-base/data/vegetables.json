@@ -638,10 +638,10 @@
         "durationWeeksMin": 2,
         "durationWeeksMax": 3,
         "environment": {
-          "tempDayMin": 22,
-          "tempDayMax": 28,
-          "tempNightMin": 19,
-          "tempNightMax": 22,
+          "tempDayMin": 21,
+          "tempDayMax": 24,
+          "tempNightMin": 18,
+          "tempNightMax": 19,
           "humidityMin": 72,
           "humidityMax": 82,
           "lightCycleHours": 16,
@@ -656,14 +656,16 @@
         ],
         "fertilizerHint": {
           "phaseLabel": "Seedling",
-          "notes": [],
+          "notes": [
+            "Verified: Johnny’s greenhouse eggplant protocol — germination 27–32 °C until emergence then 21 °C; transplants 19–22 °C day / 18–19 °C night; feed EC 2.5–3.5, pH 5.5."
+          ],
           "ecTarget": {
-            "min": 0.8,
-            "max": 1.2
+            "min": 2.5,
+            "max": 3.5
           },
           "phTarget": {
-            "min": 5.8,
-            "max": 6.5
+            "min": 5.5,
+            "max": 6
           }
         }
       },
@@ -674,10 +676,10 @@
         "durationWeeksMin": 3,
         "durationWeeksMax": 5,
         "environment": {
-          "tempDayMin": 22,
-          "tempDayMax": 28,
+          "tempDayMin": 21,
+          "tempDayMax": 26,
           "tempNightMin": 18,
-          "tempNightMax": 21,
+          "tempNightMax": 20,
           "humidityMin": 65,
           "humidityMax": 75,
           "lightCycleHours": 18,
@@ -696,18 +698,24 @@
           {
             "category": "pruning",
             "note": "Prune lower foliage to improve airflow."
+          },
+          {
+            "category": "general",
+            "note": "Verified setpoints: production 21–26 °C day / 18–20 °C night, EC 2.5–3.5 (Johnny’s GH protocol)."
           }
         ],
         "fertilizerHint": {
           "phaseLabel": "Vegetative",
-          "notes": [],
+          "notes": [
+            "Verified: Johnny’s greenhouse eggplant protocol — germination 27–32 °C until emergence then 21 °C; transplants 19–22 °C day / 18–19 °C night; feed EC 2.5–3.5, pH 5.5."
+          ],
           "ecTarget": {
-            "min": 1.2,
-            "max": 2
+            "min": 2.5,
+            "max": 3.5
           },
           "phTarget": {
-            "min": 5.8,
-            "max": 6.5
+            "min": 5.5,
+            "max": 6
           }
         }
       },
@@ -718,10 +726,10 @@
         "durationWeeksMin": 5,
         "durationWeeksMax": 10,
         "environment": {
-          "tempDayMin": 22,
-          "tempDayMax": 28,
+          "tempDayMin": 21,
+          "tempDayMax": 26,
           "tempNightMin": 18,
-          "tempNightMax": 21,
+          "tempNightMax": 20,
           "humidityMin": 52,
           "humidityMax": 62,
           "lightCycleHours": 18,
@@ -731,14 +739,16 @@
         "careNotes": [],
         "fertilizerHint": {
           "phaseLabel": "Flowering & Fruit Set",
-          "notes": [],
+          "notes": [
+            "Verified: Johnny’s greenhouse eggplant protocol — germination 27–32 °C until emergence then 21 °C; transplants 19–22 °C day / 18–19 °C night; feed EC 2.5–3.5, pH 5.5."
+          ],
           "ecTarget": {
-            "min": 1.6,
-            "max": 2.4
+            "min": 2.5,
+            "max": 3.5
           },
           "phTarget": {
-            "min": 5.8,
-            "max": 6.5
+            "min": 5.5,
+            "max": 6
           }
         }
       },
@@ -749,10 +759,10 @@
         "durationWeeksMin": 1,
         "durationWeeksMax": 2,
         "environment": {
-          "tempDayMin": 22,
-          "tempDayMax": 28,
+          "tempDayMin": 21,
+          "tempDayMax": 26,
           "tempNightMin": 18,
-          "tempNightMax": 21,
+          "tempNightMax": 20,
           "humidityMin": 55,
           "humidityMax": 65,
           "lightCycleHours": 18,
@@ -762,14 +772,16 @@
         "careNotes": [],
         "fertilizerHint": {
           "phaseLabel": "Harvest",
-          "notes": [],
+          "notes": [
+            "Verified: Johnny’s greenhouse eggplant protocol — germination 27–32 °C until emergence then 21 °C; transplants 19–22 °C day / 18–19 °C night; feed EC 2.5–3.5, pH 5.5."
+          ],
           "ecTarget": {
-            "min": 1.2,
-            "max": 2
+            "min": 2.5,
+            "max": 3.5
           },
           "phTarget": {
-            "min": 5.8,
-            "max": 6.5
+            "min": 5.5,
+            "max": 6
           }
         }
       }
@@ -784,7 +796,8 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://gardens.cornell.edu/vegetation-growing-guides/",
-      "https://extension.psu.edu/vegetable-gardening-resources"
+      "https://extension.psu.edu/vegetable-gardening-resources",
+      "https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwf8c81bc9/assets/information/eggplant-greenhouse-production.pdf"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -6869,15 +6882,15 @@
         "durationWeeksMin": 1,
         "durationWeeksMax": 1,
         "environment": {
-          "tempDayMin": 16,
-          "tempDayMax": 21,
+          "tempDayMin": 24,
+          "tempDayMax": 28,
           "tempNightMin": 11,
           "tempNightMax": 14,
           "humidityMin": 67,
           "humidityMax": 82,
           "lightCycleHours": 16,
           "lightOnAt": "06:00:00",
-          "dliTarget": 6
+          "dliTarget": 14
         },
         "careNotes": [
           {
@@ -6905,8 +6918,8 @@
         "durationWeeksMin": 1,
         "durationWeeksMax": 2,
         "environment": {
-          "tempDayMin": 16,
-          "tempDayMax": 21,
+          "tempDayMin": 24,
+          "tempDayMax": 28,
           "tempNightMin": 10,
           "tempNightMax": 13,
           "humidityMin": 60,
@@ -6949,17 +6962,22 @@
         "durationWeeksMin": 3,
         "durationWeeksMax": 5,
         "environment": {
-          "tempDayMin": 16,
-          "tempDayMax": 21,
+          "tempDayMin": 24,
+          "tempDayMax": 28,
           "tempNightMin": 10,
           "tempNightMax": 13,
           "humidityMin": 60,
           "humidityMax": 75,
           "lightCycleHours": 16,
           "lightOnAt": "06:00:00",
-          "dliTarget": 12
+          "dliTarget": 14
         },
-        "careNotes": [],
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Verified: Purdue/UNH growth-chamber research (GPN) — optimal fresh-mass temperature for kale is 26 °C; development is linear between base and optimal temperature."
+          }
+        ],
         "fertilizerHint": {
           "phaseLabel": "Growth",
           "notes": [],
@@ -6980,8 +6998,8 @@
         "durationWeeksMin": 1,
         "durationWeeksMax": 1,
         "environment": {
-          "tempDayMin": 16,
-          "tempDayMax": 21,
+          "tempDayMin": 24,
+          "tempDayMax": 28,
           "tempNightMin": 10,
           "tempNightMax": 13,
           "humidityMin": 50,
@@ -7034,7 +7052,8 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://gardens.cornell.edu/vegetation-growing-guides/",
-      "https://extension.psu.edu/vegetable-gardening-resources"
+      "https://extension.psu.edu/vegetable-gardening-resources",
+      "https://gpnmag.com/article/managing-air-temperature-for-specialty-leafy-greens/"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -7095,15 +7114,15 @@
         "durationWeeksMin": 4,
         "durationWeeksMax": 6,
         "environment": {
-          "tempDayMin": 16,
-          "tempDayMax": 21,
+          "tempDayMin": 23,
+          "tempDayMax": 27,
           "tempNightMin": 10,
           "tempNightMax": 14,
           "humidityMin": 65,
           "humidityMax": 80,
           "lightCycleHours": 16,
           "lightOnAt": "06:00:00",
-          "dliTarget": 12
+          "dliTarget": 14
         },
         "careNotes": [
           {
@@ -7139,8 +7158,8 @@
         "durationWeeksMin": 5,
         "durationWeeksMax": 8,
         "environment": {
-          "tempDayMin": 16,
-          "tempDayMax": 21,
+          "tempDayMin": 23,
+          "tempDayMax": 27,
           "tempNightMin": 10,
           "tempNightMax": 14,
           "humidityMin": 60,
@@ -7149,7 +7168,12 @@
           "lightOnAt": "06:00:00",
           "dliTarget": 14
         },
-        "careNotes": [],
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Verified: Purdue/UNH growth-chamber research (GPN) — optimal fresh-mass temperature for pac choi is 25.2 °C; development is linear between base and optimal temperature."
+          }
+        ],
         "fertilizerHint": {
           "phaseLabel": "Head / Button Development",
           "notes": [],
@@ -7170,8 +7194,8 @@
         "durationWeeksMin": 1,
         "durationWeeksMax": 2,
         "environment": {
-          "tempDayMin": 16,
-          "tempDayMax": 21,
+          "tempDayMin": 23,
+          "tempDayMax": 27,
           "tempNightMin": 10,
           "tempNightMax": 14,
           "humidityMin": 55,
@@ -7205,7 +7229,8 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://gardens.cornell.edu/vegetation-growing-guides/",
-      "https://extension.psu.edu/vegetable-gardening-resources"
+      "https://extension.psu.edu/vegetable-gardening-resources",
+      "https://gpnmag.com/article/managing-air-temperature-for-specialty-leafy-greens/"
     ],
     "updatedAt": "2026-10-25"
   }

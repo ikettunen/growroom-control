@@ -453,8 +453,8 @@
         "durationWeeksMin": 1,
         "durationWeeksMax": 2,
         "environment": {
-          "tempDayMin": 18,
-          "tempDayMax": 24,
+          "tempDayMin": 25,
+          "tempDayMax": 29,
           "tempNightMin": 12,
           "tempNightMax": 15,
           "humidityMin": 55,
@@ -497,15 +497,15 @@
         "durationWeeksMin": 3,
         "durationWeeksMax": 5,
         "environment": {
-          "tempDayMin": 18,
-          "tempDayMax": 24,
+          "tempDayMin": 25,
+          "tempDayMax": 29,
           "tempNightMin": 12,
           "tempNightMax": 15,
           "humidityMin": 55,
           "humidityMax": 75,
           "lightCycleHours": 14,
           "lightOnAt": "06:00:00",
-          "dliTarget": 12
+          "dliTarget": 14
         },
         "fertilizerHint": {
           "phaseLabel": "Growth",
@@ -519,7 +519,12 @@
           },
           "notes": []
         },
-        "careNotes": []
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Verified: Purdue/UNH growth-chamber research (GPN) — optimal fresh-mass temperature for Swiss chard is 26.6 °C at DLI 14 mol/m²/d."
+          }
+        ]
       },
       {
         "id": "harvest",
@@ -528,8 +533,8 @@
         "durationWeeksMin": 1,
         "durationWeeksMax": 1,
         "environment": {
-          "tempDayMin": 18,
-          "tempDayMax": 24,
+          "tempDayMin": 25,
+          "tempDayMax": 29,
           "tempNightMin": 12,
           "tempNightMax": 15,
           "humidityMin": 45,
@@ -563,7 +568,8 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://www.uvm.edu/extension",
-      "https://gardens.cornell.edu/vegetation-growing-guides/"
+      "https://gardens.cornell.edu/vegetation-growing-guides/",
+      "https://gpnmag.com/article/managing-air-temperature-for-specialty-leafy-greens/"
     ],
     "updatedAt": "2026-10-25"
   },
@@ -623,15 +629,15 @@
         "durationWeeksMin": 1,
         "durationWeeksMax": 2,
         "environment": {
-          "tempDayMin": 16,
-          "tempDayMax": 21,
+          "tempDayMin": 22,
+          "tempDayMax": 26,
           "tempNightMin": 10,
           "tempNightMax": 14,
           "humidityMin": 55,
           "humidityMax": 75,
           "lightCycleHours": 14,
           "lightOnAt": "06:00:00",
-          "dliTarget": 12
+          "dliTarget": 14
         },
         "fertilizerHint": {
           "phaseLabel": "Establishment",
@@ -667,15 +673,15 @@
         "durationWeeksMin": 3,
         "durationWeeksMax": 5,
         "environment": {
-          "tempDayMin": 16,
-          "tempDayMax": 21,
+          "tempDayMin": 22,
+          "tempDayMax": 26,
           "tempNightMin": 10,
           "tempNightMax": 14,
           "humidityMin": 55,
           "humidityMax": 75,
           "lightCycleHours": 14,
           "lightOnAt": "06:00:00",
-          "dliTarget": 10
+          "dliTarget": 14
         },
         "fertilizerHint": {
           "phaseLabel": "Growth",
@@ -689,7 +695,12 @@
           },
           "notes": []
         },
-        "careNotes": []
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Verified: Purdue/UNH growth-chamber research (GPN) — optimal fresh-mass temperature for arugula is 23.8 °C at DLI 14 mol/m²/d."
+          }
+        ]
       },
       {
         "id": "harvest",
@@ -698,15 +709,15 @@
         "durationWeeksMin": 1,
         "durationWeeksMax": 1,
         "environment": {
-          "tempDayMin": 16,
-          "tempDayMax": 21,
+          "tempDayMin": 22,
+          "tempDayMax": 26,
           "tempNightMin": 10,
           "tempNightMax": 14,
           "humidityMin": 45,
           "humidityMax": 65,
           "lightCycleHours": 14,
           "lightOnAt": "06:00:00",
-          "dliTarget": 12
+          "dliTarget": 14
         },
         "fertilizerHint": {
           "phaseLabel": "Harvest",
@@ -733,7 +744,8 @@
     "compatibleFertilizerFamilies": [],
     "sources": [
       "https://www.uvm.edu/extension",
-      "https://gardens.cornell.edu/vegetation-growing-guides/"
+      "https://gardens.cornell.edu/vegetation-growing-guides/",
+      "https://gpnmag.com/article/managing-air-temperature-for-specialty-leafy-greens/"
     ],
     "updatedAt": "2026-10-25"
   },
