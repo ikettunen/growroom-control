@@ -1,0 +1,3465 @@
+[
+  {
+    "id": "marigold",
+    "name": "Marigold",
+    "scientificName": "Tagetes spp.",
+    "category": "flower",
+    "description": "Marigold (Tagetes spp.) — a annual flower plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "annual",
+      "pest-repellent",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "seedling",
+        "label": "Seedling",
+        "order": 1,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Seedling",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 6,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch young plants to encourage branching and more blooms."
+          },
+          {
+            "category": "watering",
+            "note": "Water at soil level to keep foliage dry."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Blooming",
+        "order": 3,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 42,
+          "humidityMax": 62,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Blooming",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 1.8
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest / Deadhead",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest / Deadhead",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [
+      {
+        "id": "french",
+        "name": "French",
+        "description": "Popular marigold variety for controlled-environment or garden cultivation.",
+        "tags": []
+      },
+      {
+        "id": "african",
+        "name": "African",
+        "description": "Popular marigold variety for controlled-environment or garden cultivation.",
+        "tags": []
+      }
+    ],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 8,
+      "max": 12
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/plants",
+      "https://extension.unh.edu/flowers"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "zinnia",
+    "name": "Zinnia",
+    "scientificName": "Zinnia elegans",
+    "category": "flower",
+    "description": "Zinnia (Zinnia elegans) — a annual flower plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "annual",
+      "cut-flower",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "seedling",
+        "label": "Seedling",
+        "order": 1,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Seedling",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 6,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch young plants to encourage branching and more blooms."
+          },
+          {
+            "category": "watering",
+            "note": "Water at soil level to keep foliage dry."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Blooming",
+        "order": 3,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 42,
+          "humidityMax": 62,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Blooming",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 1.8
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest / Deadhead",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest / Deadhead",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 8,
+      "max": 12
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/plants",
+      "https://extension.unh.edu/flowers"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "sunflower",
+    "name": "Sunflower",
+    "scientificName": "Helianthus annuus",
+    "category": "flower",
+    "description": "Sunflower (Helianthus annuus) — a annual flower plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "annual",
+      "cut-flower",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "seedling",
+        "label": "Seedling",
+        "order": 1,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 26,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 17
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Seedling",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 6,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 26,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 17
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch young plants to encourage branching and more blooms."
+          },
+          {
+            "category": "watering",
+            "note": "Water at soil level to keep foliage dry."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Blooming",
+        "order": 3,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 26,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 42,
+          "humidityMax": 62,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 20
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Blooming",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 1.8
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest / Deadhead",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 26,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 20
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest / Deadhead",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [
+      {
+        "id": "dwarf",
+        "name": "Dwarf",
+        "description": "Popular sunflower variety for controlled-environment or garden cultivation.",
+        "tags": []
+      },
+      {
+        "id": "teddy-bear",
+        "name": "Teddy Bear",
+        "description": "Popular sunflower variety for controlled-environment or garden cultivation.",
+        "tags": []
+      }
+    ],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 10,
+      "max": 14
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/plants",
+      "https://extension.unh.edu/flowers"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "petunia",
+    "name": "Petunia",
+    "scientificName": "Petunia × hybrida",
+    "category": "flower",
+    "description": "Petunia (Petunia × hybrida) — a annual flower plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "annual",
+      "trailing",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "seedling",
+        "label": "Seedling",
+        "order": 1,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 14,
+          "tempNightMax": 16,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 13
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Seedling",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 6,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 14,
+          "tempNightMax": 16,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 13
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch young plants to encourage branching and more blooms."
+          },
+          {
+            "category": "watering",
+            "note": "Water at soil level to keep foliage dry."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Blooming",
+        "order": 3,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 14,
+          "tempNightMax": 16,
+          "humidityMin": 42,
+          "humidityMax": 62,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 15
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Blooming",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 1.8
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest / Deadhead",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 14,
+          "tempNightMax": 16,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 15
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest / Deadhead",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 10,
+      "max": 14
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/plants",
+      "https://extension.unh.edu/flowers"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "pansy",
+    "name": "Pansy",
+    "scientificName": "Viola × wittrockiana",
+    "category": "flower",
+    "description": "Pansy (Viola × wittrockiana) — a annual flower plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "annual",
+      "cool-season",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "seedling",
+        "label": "Seedling",
+        "order": 1,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 15,
+          "tempDayMax": 20,
+          "tempNightMin": 8,
+          "tempNightMax": 12,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 10
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Seedling",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 6,
+        "environment": {
+          "tempDayMin": 15,
+          "tempDayMax": 20,
+          "tempNightMin": 8,
+          "tempNightMax": 12,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 10
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch young plants to encourage branching and more blooms."
+          },
+          {
+            "category": "watering",
+            "note": "Water at soil level to keep foliage dry."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Blooming",
+        "order": 3,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 15,
+          "tempDayMax": 20,
+          "tempNightMin": 8,
+          "tempNightMax": 12,
+          "humidityMin": 47,
+          "humidityMax": 67,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Blooming",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 1.8
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest / Deadhead",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 15,
+          "tempDayMax": 20,
+          "tempNightMin": 8,
+          "tempNightMax": 12,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest / Deadhead",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 10,
+      "max": 14
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/plants",
+      "https://extension.unh.edu/flowers"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "calendula",
+    "name": "Calendula",
+    "scientificName": "Calendula officinalis",
+    "category": "flower",
+    "description": "Calendula (Calendula officinalis) — a annual flower plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "annual",
+      "edible-flower",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "seedling",
+        "label": "Seedling",
+        "order": 1,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 23,
+          "tempNightMin": 12,
+          "tempNightMax": 14,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 11
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Seedling",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 6,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 23,
+          "tempNightMin": 12,
+          "tempNightMax": 14,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 11
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch young plants to encourage branching and more blooms."
+          },
+          {
+            "category": "watering",
+            "note": "Water at soil level to keep foliage dry."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Blooming",
+        "order": 3,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 23,
+          "tempNightMin": 12,
+          "tempNightMax": 14,
+          "humidityMin": 42,
+          "humidityMax": 62,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 13
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Blooming",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 1.8
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest / Deadhead",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 23,
+          "tempNightMin": 12,
+          "tempNightMax": 14,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 13
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest / Deadhead",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 8,
+      "max": 12
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/plants",
+      "https://extension.unh.edu/flowers"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "nasturtium",
+    "name": "Nasturtium",
+    "scientificName": "Tropaeolum majus",
+    "category": "flower",
+    "description": "Nasturtium (Tropaeolum majus) — a annual flower plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "annual",
+      "edible-flower",
+      "trailing",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "seedling",
+        "label": "Seedling",
+        "order": 1,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Seedling",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 6,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch young plants to encourage branching and more blooms."
+          },
+          {
+            "category": "watering",
+            "note": "Water at soil level to keep foliage dry."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Blooming",
+        "order": 3,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 42,
+          "humidityMax": 62,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Blooming",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 1.8
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest / Deadhead",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 24,
+          "tempNightMin": 12,
+          "tempNightMax": 15,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest / Deadhead",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 8,
+      "max": 12
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/plants",
+      "https://extension.unh.edu/flowers"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "snapdragon",
+    "name": "Snapdragon",
+    "scientificName": "Antirrhinum majus",
+    "category": "flower",
+    "description": "Snapdragon (Antirrhinum majus) — a annual flower plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "annual",
+      "cut-flower",
+      "long-day",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "seedling",
+        "label": "Seedling",
+        "order": 1,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 21,
+          "tempNightMin": 10,
+          "tempNightMax": 13,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Seedling",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 6,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 21,
+          "tempNightMin": 10,
+          "tempNightMax": 13,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch young plants to encourage branching and more blooms."
+          },
+          {
+            "category": "watering",
+            "note": "Water at soil level to keep foliage dry."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Blooming",
+        "order": 3,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 21,
+          "tempNightMin": 10,
+          "tempNightMax": 13,
+          "humidityMin": 42,
+          "humidityMax": 62,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Blooming",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 1.8
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest / Deadhead",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 16,
+          "tempDayMax": 21,
+          "tempNightMin": 10,
+          "tempNightMax": 13,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest / Deadhead",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "intermediate",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 12,
+      "max": 16
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/plants",
+      "https://extension.unh.edu/flowers"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "salvia",
+    "name": "Salvia",
+    "scientificName": "Salvia splendens",
+    "category": "flower",
+    "description": "Salvia (Salvia splendens) — a annual flower plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "annual",
+      "pollinator",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "seedling",
+        "label": "Seedling",
+        "order": 1,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Seedling",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 6,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch young plants to encourage branching and more blooms."
+          },
+          {
+            "category": "watering",
+            "note": "Water at soil level to keep foliage dry."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Blooming",
+        "order": 3,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 42,
+          "humidityMax": 62,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Blooming",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 1.8
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest / Deadhead",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest / Deadhead",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 10,
+      "max": 14
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/plants",
+      "https://extension.unh.edu/flowers"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "cosmos",
+    "name": "Cosmos",
+    "scientificName": "Cosmos bipinnatus",
+    "category": "flower",
+    "description": "Cosmos (Cosmos bipinnatus) — a annual flower plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "annual",
+      "cut-flower",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "seedling",
+        "label": "Seedling",
+        "order": 1,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 26,
+          "tempNightMin": 14,
+          "tempNightMax": 17,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Seedling",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 6,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 26,
+          "tempNightMin": 14,
+          "tempNightMax": 17,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch young plants to encourage branching and more blooms."
+          },
+          {
+            "category": "watering",
+            "note": "Water at soil level to keep foliage dry."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Blooming",
+        "order": 3,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 26,
+          "tempNightMin": 14,
+          "tempNightMax": 17,
+          "humidityMin": 42,
+          "humidityMax": 62,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Blooming",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 1.8
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest / Deadhead",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 26,
+          "tempNightMin": 14,
+          "tempNightMax": 17,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest / Deadhead",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 10,
+      "max": 14
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/plants",
+      "https://extension.unh.edu/flowers"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "dahlia",
+    "name": "Dahlia",
+    "scientificName": "Dahlia pinnata",
+    "category": "flower",
+    "description": "Dahlia (Dahlia pinnata) — a annual flower plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "perennial-tuber",
+      "cut-flower",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "seedling",
+        "label": "Seedling",
+        "order": 1,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 25,
+          "tempNightMin": 14,
+          "tempNightMax": 16,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Seedling",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 6,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 25,
+          "tempNightMin": 14,
+          "tempNightMax": 16,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch young plants to encourage branching and more blooms."
+          },
+          {
+            "category": "watering",
+            "note": "Water at soil level to keep foliage dry."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Blooming",
+        "order": 3,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 25,
+          "tempNightMin": 14,
+          "tempNightMax": 16,
+          "humidityMin": 42,
+          "humidityMax": 62,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Blooming",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 1.8
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest / Deadhead",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 25,
+          "tempNightMin": 14,
+          "tempNightMax": 16,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest / Deadhead",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "intermediate",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 12,
+      "max": 20
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/plants",
+      "https://extension.unh.edu/flowers"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "gerbera",
+    "name": "Gerbera",
+    "scientificName": "Gerbera jamesonii",
+    "category": "flower",
+    "description": "Gerbera (Gerbera jamesonii) — a perennial flower plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "cut-flower",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "seedling",
+        "label": "Seedling",
+        "order": 1,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 15,
+          "tempNightMax": 17,
+          "humidityMin": 60,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Seedling",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 6,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 15,
+          "tempNightMax": 17,
+          "humidityMin": 60,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch young plants to encourage branching and more blooms."
+          },
+          {
+            "category": "watering",
+            "note": "Water at soil level to keep foliage dry."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Blooming",
+        "order": 3,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 15,
+          "tempNightMax": 17,
+          "humidityMin": 47,
+          "humidityMax": 62,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Blooming",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 1.8
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest / Deadhead",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 15,
+          "tempNightMax": 17,
+          "humidityMin": 50,
+          "humidityMax": 65,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 16
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest / Deadhead",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "intermediate",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 14,
+      "max": 20
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/plants",
+      "https://extension.unh.edu/flowers"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "chrysanthemum",
+    "name": "Chrysanthemum",
+    "scientificName": "Chrysanthemum morifolium",
+    "category": "flower",
+    "description": "Chrysanthemum (Chrysanthemum morifolium) — a perennial flower plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "photoperiod-bloom",
+      "short-day",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "seedling",
+        "label": "Seedling",
+        "order": 1,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 23,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Seedling",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 6,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 23,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch young plants to encourage branching and more blooms."
+          },
+          {
+            "category": "watering",
+            "note": "Water at soil level to keep foliage dry."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Blooming",
+        "order": 3,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 23,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 42,
+          "humidityMax": 62,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Blooming",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 1.8
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest / Deadhead",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 23,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 14
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest / Deadhead",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "intermediate",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 14,
+      "max": 20
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/plants",
+      "https://extension.unh.edu/flowers"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "rose",
+    "name": "Rose",
+    "scientificName": "Rosa spp.",
+    "category": "flower",
+    "description": "Rose (Rosa spp.) — a perennial flower plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "shrub",
+      "cut-flower",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "seedling",
+        "label": "Seedling",
+        "order": 1,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 26,
+          "tempNightMin": 14,
+          "tempNightMax": 17,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 15
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Seedling",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 6,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 26,
+          "tempNightMin": 14,
+          "tempNightMax": 17,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 15
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch young plants to encourage branching and more blooms."
+          },
+          {
+            "category": "watering",
+            "note": "Water at soil level to keep foliage dry."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Blooming",
+        "order": 3,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 26,
+          "tempNightMin": 14,
+          "tempNightMax": 17,
+          "humidityMin": 42,
+          "humidityMax": 62,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Blooming",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 1.8
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest / Deadhead",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 26,
+          "tempNightMin": 14,
+          "tempNightMax": 17,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 18
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest / Deadhead",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [
+      {
+        "id": "hybrid-tea",
+        "name": "Hybrid Tea",
+        "description": "Popular rose variety for controlled-environment or garden cultivation.",
+        "tags": []
+      },
+      {
+        "id": "miniature",
+        "name": "Miniature",
+        "description": "Popular rose variety for controlled-environment or garden cultivation.",
+        "tags": []
+      }
+    ],
+    "difficulty": "advanced",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 52,
+      "max": 104
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/plants",
+      "https://extension.unh.edu/flowers"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "phalaenopsis-orchid",
+    "name": "Phalaenopsis Orchid",
+    "scientificName": "Phalaenopsis spp.",
+    "category": "flower",
+    "description": "Phalaenopsis Orchid (Phalaenopsis spp.) — a perennial flower plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "epiphytic",
+      "low-light",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "seedling",
+        "label": "Seedling",
+        "order": 1,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 18,
+          "tempNightMax": 22,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 7
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Seedling",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 6,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 18,
+          "tempNightMax": 22,
+          "humidityMin": 65,
+          "humidityMax": 85,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 7
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch young plants to encourage branching and more blooms."
+          },
+          {
+            "category": "watering",
+            "note": "Water at soil level to keep foliage dry."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Blooming",
+        "order": 3,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 18,
+          "tempNightMax": 22,
+          "humidityMin": 52,
+          "humidityMax": 72,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 8
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Blooming",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 1.8
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest / Deadhead",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 22,
+          "tempDayMax": 28,
+          "tempNightMin": 18,
+          "tempNightMax": 22,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 8
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest / Deadhead",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "advanced",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 52,
+      "max": 104
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/plants",
+      "https://extension.unh.edu/flowers"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "african-violet",
+    "name": "African Violet",
+    "scientificName": "Saintpaulia ionantha",
+    "category": "flower",
+    "description": "African Violet (Saintpaulia ionantha) — a perennial flower plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "houseplant",
+      "low-light",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "seedling",
+        "label": "Seedling",
+        "order": 1,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 24,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 7
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Seedling",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 6,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 24,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 7
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch young plants to encourage branching and more blooms."
+          },
+          {
+            "category": "watering",
+            "note": "Water at soil level to keep foliage dry."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Blooming",
+        "order": 3,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 24,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
+          "humidityMin": 47,
+          "humidityMax": 67,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 8
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Blooming",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 1.8
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest / Deadhead",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 24,
+          "tempNightMin": 18,
+          "tempNightMax": 20,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 12,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 8
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest / Deadhead",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 52,
+      "max": 104
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/plants",
+      "https://extension.unh.edu/flowers"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "begonia",
+    "name": "Begonia",
+    "scientificName": "Begonia spp.",
+    "category": "flower",
+    "description": "Begonia (Begonia spp.) — a perennial flower plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "houseplant",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "seedling",
+        "label": "Seedling",
+        "order": 1,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 10
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Seedling",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 6,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 10
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch young plants to encourage branching and more blooms."
+          },
+          {
+            "category": "watering",
+            "note": "Water at soil level to keep foliage dry."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Blooming",
+        "order": 3,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 47,
+          "humidityMax": 67,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Blooming",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 1.8
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest / Deadhead",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 24,
+          "tempNightMin": 15,
+          "tempNightMax": 18,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest / Deadhead",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 16,
+      "max": 24
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/plants",
+      "https://extension.unh.edu/flowers"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "geranium",
+    "name": "Geranium",
+    "scientificName": "Pelargonium × hortorum",
+    "category": "flower",
+    "description": "Geranium (Pelargonium × hortorum) — a perennial flower plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "houseplant",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "seedling",
+        "label": "Seedling",
+        "order": 1,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 25,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 13
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Seedling",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 6,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 25,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 55,
+          "humidityMax": 75,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 13
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch young plants to encourage branching and more blooms."
+          },
+          {
+            "category": "watering",
+            "note": "Water at soil level to keep foliage dry."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Blooming",
+        "order": 3,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 25,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 42,
+          "humidityMax": 62,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 15
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Blooming",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 1.8
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest / Deadhead",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 20,
+          "tempDayMax": 25,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 45,
+          "humidityMax": 65,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 15
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest / Deadhead",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 16,
+      "max": 24
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/plants",
+      "https://extension.unh.edu/flowers"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "fuchsia",
+    "name": "Fuchsia",
+    "scientificName": "Fuchsia spp.",
+    "category": "flower",
+    "description": "Fuchsia (Fuchsia spp.) — a perennial flower plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "perennial",
+      "hanging-basket",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "seedling",
+        "label": "Seedling",
+        "order": 1,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 23,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 10
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Seedling",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 6,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 23,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 10
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch young plants to encourage branching and more blooms."
+          },
+          {
+            "category": "watering",
+            "note": "Water at soil level to keep foliage dry."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Blooming",
+        "order": 3,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 23,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 47,
+          "humidityMax": 67,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Blooming",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 1.8
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest / Deadhead",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 18,
+          "tempDayMax": 23,
+          "tempNightMin": 13,
+          "tempNightMax": 16,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest / Deadhead",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "intermediate",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 16,
+      "max": 24
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/plants",
+      "https://extension.unh.edu/flowers"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "id": "impatiens",
+    "name": "Impatiens",
+    "scientificName": "Impatiens walleriana",
+    "category": "flower",
+    "description": "Impatiens (Impatiens walleriana) — a annual flower plant suited to indoor container and greenhouse as well as outdoor cultivation.",
+    "tags": [
+      "annual",
+      "shade-tolerant",
+      "day-neutral",
+      "indoor-suitable"
+    ],
+    "phases": [
+      {
+        "id": "seedling",
+        "label": "Seedling",
+        "order": 1,
+        "durationWeeksMin": 2,
+        "durationWeeksMax": 4,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 26,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 10
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Seedling",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Maintain high humidity and gentle light until roots or cotyledons establish."
+          }
+        ]
+      },
+      {
+        "id": "vegetative",
+        "label": "Vegetative",
+        "order": 2,
+        "durationWeeksMin": 4,
+        "durationWeeksMax": 6,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 26,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 60,
+          "humidityMax": 80,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 10
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Vegetative",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "general",
+            "note": "Pinch young plants to encourage branching and more blooms."
+          },
+          {
+            "category": "watering",
+            "note": "Water at soil level to keep foliage dry."
+          }
+        ]
+      },
+      {
+        "id": "bloom",
+        "label": "Blooming",
+        "order": 3,
+        "durationWeeksMin": 6,
+        "durationWeeksMax": 12,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 26,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 47,
+          "humidityMax": 67,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Blooming",
+          "ecTarget": {
+            "min": 1.2,
+            "max": 1.8
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": [
+          {
+            "category": "pest",
+            "note": "Monitor for scale, mites and fungal issues in still indoor air."
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "label": "Harvest / Deadhead",
+        "order": 4,
+        "durationWeeksMin": 1,
+        "durationWeeksMax": 2,
+        "environment": {
+          "tempDayMin": 21,
+          "tempDayMax": 26,
+          "tempNightMin": 16,
+          "tempNightMax": 18,
+          "humidityMin": 50,
+          "humidityMax": 70,
+          "lightCycleHours": 14,
+          "lightOnAt": "06:00:00",
+          "dliTarget": 12
+        },
+        "fertilizerHint": {
+          "phaseLabel": "Harvest / Deadhead",
+          "ecTarget": {
+            "min": 1,
+            "max": 1.5
+          },
+          "phTarget": {
+            "min": 5.8,
+            "max": 6.5
+          },
+          "notes": []
+        },
+        "careNotes": []
+      }
+    ],
+    "varieties": [],
+    "difficulty": "beginner",
+    "indoorSuitable": true,
+    "typicalTotalWeeks": {
+      "min": 14,
+      "max": 20
+    },
+    "compatibleFertilizerFamilies": [],
+    "sources": [
+      "https://www.rhs.org.uk/plants",
+      "https://extension.unh.edu/flowers"
+    ],
+    "updatedAt": "2026-10-25"
+  }
+]
